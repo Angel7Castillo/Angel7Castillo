@@ -71,6 +71,7 @@ Rather than claiming mastery over dozens of tools, I specialize in:
 
 ## 📬 Contact & Collaboration
 
+- **GitHub:** [github.com/Angel7Castillo](https://github.com/Angel7Castillo)
 - **Email:** [servicios.angelcastillo@gmail.com](mailto:servicios.angelcastillo@gmail.com)
 - **Role Open To:** Software Engineer / Systems Orchestrator / Full Stack Engineer (TypeScript & Multiplatform Focus)
 
