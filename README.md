@@ -1,81 +1,139 @@
 <div align="center">
 
 # Angel Castillo
-### Software Engineer & Systems Orchestrator
-**Building resilient, multiplatform architectures with disciplined engineering standards.**
+**Software Developer · Desktop & Mobile Systems**  
+*Montevideo, Uruguay*
 
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Architecture](https://img.shields.io/badge/Architecture-Clean%20%26%20Modular-blue?style=flat-square)](#engineering-pillars)
-[![Methodology](https://img.shields.io/badge/Methodology-ECC%20%26%20TDD-emerald?style=flat-square)](#engineering-philosophy)
-[![Docker](https://img.shields.io/badge/Environments-Docker%20%26%20CI%2FCD-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/)
+[ 🇪🇸 Versión en Español ](#-sobre-mí) &nbsp;|&nbsp; [ 🇬🇧 English Version ](#-about-me)
 
 ---
 
 </div>
 
-## 🧭 About My Engineering Approach
+## 🇪🇸 Sobre mí
 
-I approach software development not as a collector of frameworks, but as a **disciplined systems orchestrator**. My focus is on transforming complex business requirements into modular, predictable, and maintainable software architectures.
+Desarrollo aplicaciones de escritorio y móviles con foco en dos cosas: **que la interfaz responda rápido y que la arquitectura sea ordenada**. 
 
-Rather than claiming mastery over dozens of tools, I specialize in:
-- **System Architecture & Contracts:** Designing data models, API boundaries, and modular boundaries before writing execution code.
-- **Multiplatform Convergence:** Orchestrating cross-platform codebases (Web, Mobile, Desktop) with shared domain logic and deterministic builds.
-- **Engineering Discipline:** Enforcing strict type safety, predictable testing loops (TDD), zero dead code, and automated CI/CD pipelines.
+No me interesa coleccionar decenas de herramientas en el currículum. Prefiero dominar un núcleo sólido centrado en **TypeScript**, empaquetar aplicaciones que funcionen de forma consistente en distintos sistemas operativos y aplicar buenas prácticas de ingeniería: tipado estricto, entornos reproducibles con Docker y pruebas donde realmente importan.
 
----
-
-## 🏛️ Engineering Pillars
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                 SYSTEMS ORCHESTRATION                       │
-│    Monorepos · Multiplatform (Web/Desktop/Mobile) · Docker  │
-└──────────────────────────────┬──────────────────────────────┘
-                               │
-┌──────────────────────────────▼──────────────────────────────┐
-│                ENGINEERING DISCIPLINE (ECC)                 │
-│   Plan (Gate 1) ➔ Test (Gate 2) ➔ Clean Code ➔ Verification  │
-└──────────────────────────────┬──────────────────────────────┘
-                               │
-┌──────────────────────────────▼──────────────────────────────┐
-│                    FOCUSED TECH CORE                        │
-│   End-to-End TypeScript · Strict Contracts · SQL & APIs     │
-└─────────────────────────────────────────────────────────────┘
-```
-
-### 1. Architecture & Orchestration
-- **Modular Monorepos & Packages:** Clear boundaries between domain logic, UI adapters, and infrastructure services.
-- **Cross-Platform Convergence:** Reusable core libraries serving Web (React/Next), Mobile (Capacitor), and Desktop (Tauri).
-- **Deterministic Environments:** Containerized workflows (Docker, Nginx) ensuring that local development, staging, and production behave identically.
-
-### 2. Engineering Discipline (The 4 Quality Gates)
-- **Gate 1 — Plan First:** Architecture decision records (ADRs), interface specifications, and edge-case modeling prior to implementation.
-- **Gate 2 — Test-Driven Reliability:** Core logic validated through automated tests (TDD) before shipping.
-- **Gate 3 — Clean & Safe Implementation:** Atomic functions (<50 LOC), early returns, immutability, and zero unhandled exceptions.
-- **Gate 4 — Continuous Verification:** Strict typechecking, automated linters, and CI workflows preventing regression.
-
-### 3. Core Tech Focus
-- **Languages:** TypeScript (strict mode), JavaScript (ESNext), SQL.
-- **Front-End & UI:** React, Next.js, Vite, Tailwind CSS, Component Systems.
-- **Runtimes & Platforms:** Node.js, Tauri (Rust/Web Desktop), Capacitor (Mobile).
-- **DevOps & Infrastructure:** Docker, Docker Compose, Nginx, GitHub Actions, Linux.
+Mis proyectos principales no son maquetas: están empaquetados, probados y distribuidos a través de **tiendas oficiales**.
 
 ---
 
-## 📂 Featured Case Studies & Documentation
+## 🚀 Proyectos en Producción (Tiendas Oficiales)
 
-* 📖 **[Engineering Principles & Standards](./standards/engineering-principles.md)**: My manifesto on how maintainable software should be built and maintained.
-* 🛠️ **[Case Study: Orchestrating a Multiplatform System](./case-studies/01-multiplatform-architecture.md)**: Technical breakdown of a cross-platform architecture (Web, Desktop, Mobile) sharing a unified domain core without code duplication.
+### 1. Billet — Finanzas Personales & Control de Gastos
+> Aplicación móvil orientada a la gestión clara de ingresos, gastos y presupuestos, pensada para funcionar rápido en el día a día.
+
+* **Plataforma:** Android
+* **Puntos clave de ingeniería:**
+  * Enfoque *offline-first*: funciona sin conexión y protege los datos localmente.
+  * Interfaz limpia con navegación táctil fluida y tiempos de carga mínimos.
+  * Código modular estructurado en TypeScript para facilitar mantenimiento y nuevas funciones.
+* **Descarga oficial:**
+  [![Google Play](https://img.shields.io/badge/Google_Play-Disponible-414141?style=flat-square&logo=googleplay&logoColor=white)](#)
+  *(Disponible en Android Store / Google Play)*
 
 ---
 
-## 📬 Contact & Collaboration
+### 2. Biblioteca Pastoral — Gestión de Sermones y Contenido
+> Herramienta de escritorio diseñada para redactar, estructurar, catalogar y consultar sermones y material de estudio bíblico.
 
-- **GitHub:** [github.com/Angel7Castillo](https://github.com/Angel7Castillo)
-- **Email:** [servicios.angelcastillo@gmail.com](mailto:servicios.angelcastillo@gmail.com)
-- **Role Open To:** Software Engineer / Systems Orchestrator / Full Stack Engineer (TypeScript & Multiplatform Focus)
+* **Plataforma:** Windows (10 y 11)
+* **Puntos clave de ingeniería:**
+  * Empaquetado y certificado bajo los estándares de seguridad de Microsoft.
+  * Almacenamiento local estructurado: rápido, sin consumo innecesario de memoria y sin depender de la nube.
+  * Instalación y actualización limpia mediante la tienda del sistema.
+* **Descarga oficial:**
+  [![Microsoft Store](https://img.shields.io/badge/Microsoft_Store-Disponible-0078D4?style=flat-square&logo=microsoft&logoColor=white)](#)
+  *(Disponible en Microsoft Store para Windows)*
 
 ---
-<div align="center">
-<sub>Crafted with engineering rigor · Clean code · Predictable delivery</sub>
-</div>
+
+## 🛠️ Cómo trabajo (Criterio de Ingeniería)
+
+* **Planificar antes de codificar:** Dedicar tiempo a diseñar bien los contratos de datos y las interfaces ahorra semanas de refactorización desordenada.
+* **Tipado estricto:** TypeScript de punta a punta. Si los datos están bien tipados en las fronteras de entrada, los errores se detectan al compilar y no cuando el usuario usa la app.
+* **Entornos reproducibles:** Configuración de contenedores con Docker para que el código funcione igual en desarrollo que en producción.
+* **Código mantenible:** Funciones concretas, retornos tempranos y cero código muerto o librerías innecesarias.
+
+---
+
+## 🧰 Tecnologías Principales
+
+* **Lenguajes:** TypeScript, JavaScript, SQL.
+* **Frontend & Multiplataforma:** React, Vite, Tailwind CSS, Capacitor (Android), Tauri (Desktop).
+* **Entornos & Herramientas:** Docker, Nginx, Git, GitHub Actions, Linux.
+
+---
+
+## 📬 Contacto
+
+* **Email:** [servicios.angelcastillo@gmail.com](mailto:servicios.angelcastillo@gmail.com)
+* **GitHub:** [@Angel7Castillo](https://github.com/Angel7Castillo)
+
+<br/>
+
+<hr/>
+
+<br/>
+
+## 🇬🇧 About Me
+
+I build desktop and mobile applications focused on two fundamentals: **responsive user interfaces and clean, maintainable architecture**.
+
+Rather than listing dozens of frameworks on a resume, I focus on a solid core built around **TypeScript**, packaging reliable applications across different operating systems, and adhering to sound engineering practices: strict static typing, reproducible environments with Docker, and automated tests where they truly matter.
+
+My core projects are not just code samples—they are packaged, tested, and distributed through **official app stores**.
+
+---
+
+## 🚀 Shipped Products (Official Stores)
+
+### 1. Billet — Personal Finance & Expense Tracker
+> Mobile application designed for straightforward management of income, expenses, and personal budgets with immediate everyday responsiveness.
+
+* **Platform:** Android
+* **Engineering Highlights:**
+  * *Offline-first* design: fully functional without internet access, keeping data private on-device.
+  * Clean UI with fluid touch navigation and minimal load times.
+  * Modular codebase structured in TypeScript for long-term maintainability.
+* **Official Store:**
+  [![Google Play](https://img.shields.io/badge/Google_Play-Available-414141?style=flat-square&logo=googleplay&logoColor=white)](#)
+
+---
+
+### 2. Biblioteca Pastoral — Desktop Sermon & Content Management
+> Desktop tool designed for pastors and study leaders to write, organize, tag, and search sermons and reference materials.
+
+* **Platform:** Windows (10 & 11)
+* **Engineering Highlights:**
+  * Packaged and certified following Microsoft Store security and sandbox policies.
+  * Structured local persistence: fast lookups, low memory footprint, and zero cloud lock-in.
+  * Clean installation and updates managed directly through the OS store.
+* **Official Store:**
+  [![Microsoft Store](https://img.shields.io/badge/Microsoft_Store-Available-0078D4?style=flat-square&logo=microsoft&logoColor=white)](#)
+
+---
+
+## 🛠️ Engineering Mindset
+
+* **Design Before Code:** Defining data boundaries and contracts early prevents technical debt and messy refactoring later.
+* **Strict Type Safety:** TypeScript from end to end. Catching bugs at compile-time instead of runtime.
+* **Deterministic Environments:** Docker-based workflows to guarantee the software runs the same way across all machines.
+* **Simplicity First:** Atomic functions, clear early returns, and zero unused dependencies.
+
+---
+
+## 🧰 Core Stack
+
+* **Languages:** TypeScript, JavaScript, SQL.
+* **Front-End & Cross-Platform:** React, Vite, Tailwind CSS, Capacitor (Android), Tauri (Desktop).
+* **Environments & Tooling:** Docker, Nginx, Git, GitHub Actions, Linux.
+
+---
+
+## 📬 Get in Touch
+
+* **Email:** [servicios.angelcastillo@gmail.com](mailto:servicios.angelcastillo@gmail.com)
+* **GitHub:** [@Angel7Castillo](https://github.com/Angel7Castillo)
