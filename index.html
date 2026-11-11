@@ -217,8 +217,8 @@
     }
 
     .lang-btn {
-      min-height: 36px;
-      padding: 0.3rem 0.75rem;
+      min-height: 40px;
+      padding: 0.4rem 0.85rem;
       border: none;
       background: transparent;
       color: var(--text-muted);
@@ -230,6 +230,18 @@
       transition-property: background-color, color, transform;
       transition-duration: 150ms;
       transition-timing-function: ease-out;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent-blue);
+      outline-offset: 3px;
+    }
+
+    .btn:focus-visible,
+    .lang-btn:focus-visible {
+      outline: 2px solid var(--accent-blue);
+      outline-offset: 2px;
+      box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.25);
     }
 
     .lang-btn[aria-pressed="true"] {
@@ -341,7 +353,7 @@
     }
 
     .btn-primary {
-      background: #0284c7;
+      background: #0274b3;
       border-color: #38bdf8;
       color: #ffffff;
     }
@@ -544,6 +556,18 @@
         padding: 0.75rem 1rem;
       }
     }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -557,8 +581,8 @@
       </div>
       <div class="nav-actions">
         <div class="lang-switch" role="group" aria-label="Selector de idioma / Language switcher">
-          <button type="button" class="lang-btn" id="btn-es" aria-pressed="true" onclick="setLanguage('es')">🇪🇸 ES</button>
-          <button type="button" class="lang-btn" id="btn-en" aria-pressed="false" onclick="setLanguage('en')">🇬🇧 EN</button>
+          <button type="button" class="lang-btn" id="btn-es" aria-label="Cambiar idioma a Español" aria-pressed="true" onclick="setLanguage('es')"><span aria-hidden="true">🇪🇸</span> ES</button>
+          <button type="button" class="lang-btn" id="btn-en" aria-label="Switch language to English" aria-pressed="false" onclick="setLanguage('en')"><span aria-hidden="true">🇬🇧</span> EN</button>
         </div>
       </div>
     </div>
@@ -744,7 +768,7 @@
   </main>
 
   <!-- ==================== ENGLISH ==================== -->
-  <main class="container" data-lang="en">
+  <main class="container" data-lang="en" hidden>
     <section class="hero">
       <div class="hero-header">
         <img src="https://avatars.githubusercontent.com/u/116953135?v=4" alt="Angel Castillo profile photo" class="avatar" width="84" height="84" />
@@ -932,6 +956,8 @@
       const isEs = lang === 'es';
       document.getElementById('btn-es').setAttribute('aria-pressed', isEs ? 'true' : 'false');
       document.getElementById('btn-en').setAttribute('aria-pressed', !isEs ? 'true' : 'false');
+      document.querySelector('main[data-lang="es"]').hidden = !isEs;
+      document.querySelector('main[data-lang="en"]').hidden = isEs;
     }
   </script>
 </body>
