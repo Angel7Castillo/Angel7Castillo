@@ -4,17 +4,17 @@
 **Software Developer · Desktop & Mobile Systems**  
 *Montevideo, Uruguay*
 
-[ 🇪🇸 Versión en Español ](#-sobre-mí) &nbsp;|&nbsp; [ 🇬🇧 English Version ](#-about-me)
+[ Versión en Español ](#sobre-mí) &nbsp;|&nbsp; [ English Version ](#about-me)
 
 ---
 
 </div>
 
-## 🇪🇸 Sobre mí
+## Sobre mí
 
 Desarrollo aplicaciones de escritorio y móviles con foco en dos cosas: **que la interfaz responda rápido y que la arquitectura sea ordenada**. 
 
-No me interesa coleccionar decenas de herramientas en el currículum. Prefiero dominar un núcleo sólido centrado en **TypeScript**, empaquetar aplicaciones que funcionen de forma consistente en distintos sistemas operativos y aplicar buenas prácticas de ingeniería: tipado estricto, entornos reproducibles con Docker y pruebas donde realmente importan.
+No me interesa coleccionar decenas de herramientas en el currículum. Prefiero dominar un núcleo sólido centrado en **TypeScript**, empaquetar aplicaciones que funcionen de forma consistente en distintos sistemas operativos y aplicar buenas prácticas de ingeniería: tipado estricto, empaquetado nativo y pruebas donde realmente importan.
 
 Mis proyectos principales no son maquetas: están empaquetados, probados y distribuidos a través de **tiendas oficiales**.
 
@@ -54,7 +54,7 @@ Mis proyectos principales no son maquetas: están empaquetados, probados y distr
 
 * **Planificar antes de codificar:** Dedicar tiempo a diseñar bien los contratos de datos y las interfaces ahorra semanas de refactorización desordenada.
 * **Tipado estricto:** TypeScript de punta a punta. Si los datos están bien tipados en las fronteras de entrada, los errores se detectan al compilar y no cuando el usuario usa la app.
-* **Entornos reproducibles:** Configuración de contenedores con Docker para que el código funcione igual en desarrollo que en producción.
+* **Compilación y empaquetado consistente:** Gestión estricta de dependencias y scripts de empaquetado para garantizar estabilidad en cada versión.
 * **Código mantenible:** Funciones concretas, retornos tempranos y cero código muerto o librerías innecesarias.
 
 ---
@@ -63,7 +63,7 @@ Mis proyectos principales no son maquetas: están empaquetados, probados y distr
 
 * **Lenguajes:** TypeScript, JavaScript, SQL.
 * **Frontend & Multiplataforma:** React, Vite, Tailwind CSS, Capacitor (Android), Tauri (Desktop).
-* **Entornos & Herramientas:** Docker, Nginx, Git, GitHub Actions, Linux.
+* **Herramientas & Flujo:** Git, GitHub Actions, Nginx, Linux.
 
 ---
 
@@ -78,11 +78,11 @@ Mis proyectos principales no son maquetas: están empaquetados, probados y distr
 
 <br/>
 
-## 🇬🇧 About Me
+## About Me
 
 I build desktop and mobile applications focused on two fundamentals: **responsive user interfaces and clean, maintainable architecture**.
 
-Rather than listing dozens of frameworks on a resume, I focus on a solid core built around **TypeScript**, packaging reliable applications across different operating systems, and adhering to sound engineering practices: strict static typing, reproducible environments with Docker, and automated tests where they truly matter.
+Rather than listing dozens of frameworks on a resume, I focus on a solid core built around **TypeScript**, packaging reliable applications across different operating systems, and adhering to sound engineering practices: strict static typing, native packaging, and automated tests where they truly matter.
 
 My core projects are not just code samples—they are packaged, tested, and distributed through **official app stores**.
 
@@ -120,7 +120,7 @@ My core projects are not just code samples—they are packaged, tested, and dist
 
 * **Design Before Code:** Defining data boundaries and contracts early prevents technical debt and messy refactoring later.
 * **Strict Type Safety:** TypeScript from end to end. Catching bugs at compile-time instead of runtime.
-* **Deterministic Environments:** Docker-based workflows to guarantee the software runs the same way across all machines.
+* **Consistent Packaging:** Strict dependency locking and automated build processes to ensure stability across releases.
 * **Simplicity First:** Atomic functions, clear early returns, and zero unused dependencies.
 
 ---
@@ -129,7 +129,7 @@ My core projects are not just code samples—they are packaged, tested, and dist
 
 * **Languages:** TypeScript, JavaScript, SQL.
 * **Front-End & Cross-Platform:** React, Vite, Tailwind CSS, Capacitor (Android), Tauri (Desktop).
-* **Environments & Tooling:** Docker, Nginx, Git, GitHub Actions, Linux.
+* **Tooling & Workflow:** Git, GitHub Actions, Nginx, Linux.
 
 ---
 

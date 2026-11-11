@@ -39,7 +39,7 @@ When building software that must run across Web, Desktop, and Mobile environment
                                ▼
         ┌──────────────────────────────────────────────┐
         │        REPRODUCIBLE DEPLOYMENT LAYER         │
-        │      Docker Containers · Nginx Edge · CI     │
+        │      Optimized Assets · Nginx Edge · CI      │
         └──────────────────────────────────────────────┘
 ```
 
@@ -54,9 +54,9 @@ Instead of rewriting UI components per target, platform-specific adaptations wer
 * **Desktop (Tauri):** Utilizes the native OS webview backed by a high-performance native core, keeping binary sizes under 20MB and idle RAM consumption minimal compared to traditional Electron wrappers.
 * **Mobile (Capacitor):** Wraps responsive UI modules with direct access to hardware APIs (biometrics, secure storage, push notifications).
 
-### 2.3 Deterministic Containerization & Edge Proxy
-The service and distribution layers were encapsulated into Docker configurations:
-* Multi-stage Docker builds to strip build dependencies, producing lean production images.
+### 2.3 Automated Packaging & Edge Proxy
+The service and distribution layers were streamlined:
+* Optimized build pipelines to strip unused assets, producing lean production packages.
 * Nginx configured as an edge proxy to enforce security headers (CSP, HSTS, X-Frame-Options), gzip/brotli compression, and deterministic caching.
 
 ---

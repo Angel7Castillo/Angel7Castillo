@@ -33,9 +33,9 @@ Software complexity grows exponentially if boundaries are not defined early. Bef
 
 ## 2. Infrastructure & Orchestration
 
-### 2.1 Deterministic Environments
-* Local development, testing pipelines, and production deployments must run in containerized, reproducible environments (Docker / Compose).
-* Dependency versions are strictly locked to avoid "works on my machine" discrepancies.
+### 2.1 Deterministic & Stable Builds
+* Environments and dependency versions are strictly locked to avoid "works on my machine" discrepancies.
+* Packaging and release pipelines are fully automated and verified before publishing.
 
 ### 2.2 Continuous Verification Loop
 Every pull request or commit must pass an automated pipeline verifying:

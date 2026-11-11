@@ -28,7 +28,7 @@ Para proteger clientes (como Vitro) y tus propios productos comerciales:
 | :--- | :--- |
 | Código fuente de tus aplicaciones de negocio (`billet`, etc.). | Enlaces a tiendas oficiales (Microsoft Store, Google Play). |
 | Bases de datos, modelos de datos propietarios y esquemas internos. | Diagramas de arquitectura conceptuales y de alto nivel. |
-| Claves de API, credenciales y archivos `.env`. | Decisiones de ingeniería abstractas (Trade-offs, TDD, Docker). |
+| Claves de API, credenciales y archivos `.env`. | Decisiones de ingeniería abstractas (Trade-offs, TDD, Clean Architecture). |
 | Nombres de clientes corporativos protegidos por NDA. | Desafíos técnicos despersonalizados (Problema $\rightarrow$ Solución $\rightarrow$ Métricas). |
 
 ---

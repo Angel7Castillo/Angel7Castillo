@@ -22,7 +22,7 @@
 ---
 
 ## 🔵 Fase 3: Casos de Estudio Adicionales (Sin romper NDAs)
-- [ ] **Caso de Estudio 02:** *Orquestación de Entornos Reproducibles con Docker y Nginx Edge Proxy* (enfocado en seguridad, compresión brotli/gzip y despliegues deterministas).
+- [ ] **Caso de Estudio 02:** *Orquestación de Entornos Estables y Nginx Edge Proxy* (enfocado en seguridad, compresión brotli/gzip y despliegues deterministas).
 - [ ] **Caso de Estudio 03:** *Sincronización de Datos Offline-First y Cifrado Local* (patrones de persistencia en dispositivos móviles sin dependencia de red constante).
 
 ---
