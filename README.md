@@ -12,9 +12,9 @@
 
 ## Sobre mí
 
-Desarrollo aplicaciones de escritorio y móviles con foco en dos cosas: **que la interfaz responda rápido y que la arquitectura sea ordenada**. 
+Soy un desarrollador de software **autodidacta** como regla principal, enfocado en construir aplicaciones de escritorio y móviles con dos prioridades: **que la interfaz responda rápido y que la arquitectura sea ordenada**. 
 
-No me interesa coleccionar decenas de herramientas en el currículum. Prefiero dominar un núcleo sólido centrado en **TypeScript**, empaquetar aplicaciones que funcionen de forma consistente en distintos sistemas operativos y aplicar buenas prácticas de ingeniería: tipado estricto, empaquetado nativo y pruebas donde realmente importan.
+No me interesa coleccionar decenas de herramientas en el currículum. Prefiero dominar un núcleo sólido centrado en **TypeScript**, investigar la documentación oficial a fondo, empaquetar aplicaciones que funcionen de forma consistente en distintos sistemas operativos y aplicar buenas prácticas de ingeniería: tipado estricto, empaquetado nativo y pruebas donde realmente importan.
 
 Mis proyectos principales no son maquetas: están empaquetados, probados y distribuidos a través de **tiendas oficiales**.
 
@@ -101,9 +101,9 @@ Documentación técnica detallada sobre cómo diseño, estructuro y mantengo sis
 
 ## About Me
 
-I build desktop and mobile applications focused on two fundamentals: **responsive user interfaces and clean, maintainable architecture**.
+I am a **self-taught software developer** by core principle, focused on building desktop and mobile applications around two priorities: **responsive user interfaces and clean, maintainable architecture**.
 
-Rather than listing dozens of frameworks on a resume, I focus on a solid core built around **TypeScript**, packaging reliable applications across different operating systems, and adhering to sound engineering practices: strict static typing, native packaging, and automated tests where they truly matter.
+Rather than listing dozens of frameworks on a resume, I focus on mastering a solid core built around **TypeScript**, diving deep into official documentation, packaging reliable applications across different operating systems, and adhering to sound engineering practices: strict static typing, native packaging, and automated tests where they truly matter.
 
 My core projects are not just code samples—they are packaged, tested, and distributed through **official app stores**.
 
