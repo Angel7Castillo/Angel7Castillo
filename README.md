@@ -4,7 +4,7 @@
 **Software Developer · Desktop & Mobile Systems**  
 *Montevideo, Uruguay*
 
-[ Versión en Español ](#sobre-mí) &nbsp;|&nbsp; [ English Version ](#about-me)
+📖 [Principios de Ingeniería](./standards/engineering-principles.md) &nbsp;·&nbsp; 🏗️ [Caso de Estudio: Arquitectura Multiplataforma](./case-studies/01-multiplatform-architecture.md) &nbsp;·&nbsp; 📬 [Contacto](mailto:servicios.angelcastillo@gmail.com)
 
 ---
 
@@ -26,13 +26,13 @@ Mis proyectos principales no son maquetas: están empaquetados, probados y distr
 > Aplicación móvil orientada a la gestión clara de ingresos, gastos y presupuestos, pensada para funcionar rápido en el día a día.
 
 * **Plataforma:** Android
+* **Stack & Arquitectura:** TypeScript · Capacitor · Persistencia Local (Offline-First)
 * **Puntos clave de ingeniería:**
-  * Enfoque *offline-first*: funciona sin conexión y protege los datos localmente.
+  * Enfoque *offline-first*: funciona sin conexión y protege los datos localmente en el dispositivo.
   * Interfaz limpia con navegación táctil fluida y tiempos de carga mínimos.
-  * Código modular estructurado en TypeScript para facilitar mantenimiento y nuevas funciones.
-* **Descarga oficial:**
-  [![Google Play](https://img.shields.io/badge/Google_Play-Disponible-414141?style=flat-square&logo=googleplay&logoColor=white)](#)
-  *(Disponible en Android Store / Google Play)*
+  * Código modular estructurado en TypeScript para facilitar mantenimiento y evolución.
+* **Distribución oficial:**  
+  ![Google Play](https://img.shields.io/badge/Google_Play-Disponible-414141?style=flat-square&logo=googleplay&logoColor=white) *(Android Store / Google Play)*
 
 ---
 
@@ -40,13 +40,24 @@ Mis proyectos principales no son maquetas: están empaquetados, probados y distr
 > Herramienta de escritorio diseñada para redactar, estructurar, catalogar y consultar sermones y material de estudio bíblico.
 
 * **Plataforma:** Windows (10 y 11)
+* **Stack & Arquitectura:** TypeScript · Tauri · Almacenamiento Local Estructurado
 * **Puntos clave de ingeniería:**
-  * Empaquetado y certificado bajo los estándares de seguridad de Microsoft.
-  * Almacenamiento local estructurado: rápido, sin consumo innecesario de memoria y sin depender de la nube.
-  * Instalación y actualización limpia mediante la tienda del sistema.
-* **Descarga oficial:**
-  [![Microsoft Store](https://img.shields.io/badge/Microsoft_Store-Disponible-0078D4?style=flat-square&logo=microsoft&logoColor=white)](#)
-  *(Disponible en Microsoft Store para Windows)*
+  * Empaquetado y certificado bajo los estándares de seguridad de Microsoft Store.
+  * Almacenamiento local estructurado: rápido, bajo consumo de memoria (<60MB) y sin depender de la nube.
+  * Instalación y actualización limpia mediante la tienda oficial del sistema.
+* **Distribución oficial:**  
+  ![Microsoft Store](https://img.shields.io/badge/Microsoft_Store-Disponible-0078D4?style=flat-square&logo=microsoft&logoColor=white) *(Microsoft Store para Windows)*
+
+---
+
+## 📐 Casos de Estudio & Estándares de Ingeniería
+
+Documentación técnica detallada sobre cómo diseño, estructuro y mantengo sistemas de software:
+
+* 🛠️ **[Caso de Estudio 01: Arquitectura de Convergencia Multiplataforma](./case-studies/01-multiplatform-architecture.md)**  
+  Diseño de un núcleo de dominio 100% compartido en TypeScript para Web, Desktop (Tauri) y Mobile (Capacitor), reduciendo el consumo de memoria y evitando la duplicación de lógica de negocio.
+* 📖 **[Manifiesto de Principios y Estándares de Ingeniería](./standards/engineering-principles.md)**  
+  Estándares de calidad aplicados en mis proyectos: diseño de contratos previo a codificar, tipado estricto, ciclo TDD e inmutabilidad.
 
 ---
 
@@ -94,12 +105,13 @@ My core projects are not just code samples—they are packaged, tested, and dist
 > Mobile application designed for straightforward management of income, expenses, and personal budgets with immediate everyday responsiveness.
 
 * **Platform:** Android
+* **Stack & Architecture:** TypeScript · Capacitor · Local Persistence (Offline-First)
 * **Engineering Highlights:**
   * *Offline-first* design: fully functional without internet access, keeping data private on-device.
   * Clean UI with fluid touch navigation and minimal load times.
   * Modular codebase structured in TypeScript for long-term maintainability.
-* **Official Store:**
-  [![Google Play](https://img.shields.io/badge/Google_Play-Available-414141?style=flat-square&logo=googleplay&logoColor=white)](#)
+* **Official Distribution:**  
+  ![Google Play](https://img.shields.io/badge/Google_Play-Available-414141?style=flat-square&logo=googleplay&logoColor=white)
 
 ---
 
@@ -107,12 +119,24 @@ My core projects are not just code samples—they are packaged, tested, and dist
 > Desktop tool designed for pastors and study leaders to write, organize, tag, and search sermons and reference materials.
 
 * **Platform:** Windows (10 & 11)
+* **Stack & Architecture:** TypeScript · Tauri · Structured Local Storage
 * **Engineering Highlights:**
   * Packaged and certified following Microsoft Store security and sandbox policies.
-  * Structured local persistence: fast lookups, low memory footprint, and zero cloud lock-in.
+  * Structured local persistence: fast lookups, low memory footprint (<60MB), and zero cloud lock-in.
   * Clean installation and updates managed directly through the OS store.
-* **Official Store:**
-  [![Microsoft Store](https://img.shields.io/badge/Microsoft_Store-Available-0078D4?style=flat-square&logo=microsoft&logoColor=white)](#)
+* **Official Distribution:**  
+  ![Microsoft Store](https://img.shields.io/badge/Microsoft_Store-Available-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+
+---
+
+## 📐 Architecture Case Studies & Engineering Standards
+
+Technical documentation detailing how I design, structure, and maintain software systems:
+
+* 🛠️ **[Case Study 01: Multiplatform Convergence Architecture](./case-studies/01-multiplatform-architecture.md)**  
+  System design for a shared TypeScript domain core across Web, Desktop (Tauri), and Mobile (Capacitor), cutting desktop memory footprint to <60MB and eliminating duplicated business logic.
+* 📖 **[Engineering Principles & Quality Standards](./standards/engineering-principles.md)**  
+  Core tenets applied across projects: contract-first design, strict type safety, TDD verification loops, and immutability.
 
 ---
 

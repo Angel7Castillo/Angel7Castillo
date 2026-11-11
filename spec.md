@@ -50,8 +50,9 @@
 - [x] **Fase 1 — Perfil Base y Portada:** Inicializado, subido a GitHub y en vivo en `https://github.com/Angel7Castillo`.
 - [x] **Fase 2 — Corrección de Estilo & Cero Docker:** Título normalizado a `## Sobre mí` y todas las referencias a Docker eliminadas.
 - [x] **Fase 3 — Adopción y Gobernanza:** Archivos `AGENTS.md` y `spec.md` generados e integrados.
-- [ ] **Fase 4 — Enlaces de Tiendas:** Incorporar URLs definitivas de Google Play y Microsoft Store cuando estén disponibles.
-- [ ] **Fase 5 — Nuevos Casos de Estudio:** Optimización de rendimiento y persistencia offline-first.
+- [x] **Fase 4 — Auditoría Web & Optimización SEO:** Enlaces restaurados a casos de estudio y principios de ingeniería, eliminación de bucles `href="#"` y asociación semántica de stack (TypeScript, Capacitor, Tauri) en fichas de productos.
+- [ ] **Fase 5 — Enlaces de Tiendas:** Incorporar URLs definitivas de Google Play y Microsoft Store cuando estén disponibles.
+- [ ] **Fase 6 — Nuevos Casos de Estudio:** Optimización de rendimiento y persistencia offline-first.
 
 ---
 
