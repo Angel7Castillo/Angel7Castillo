@@ -27,6 +27,7 @@
 
 ---
 
-## 🟣 Fase 4: Portfolio Web Personal (A Futuro)
-- [ ] Evaluar si se desea una web personal interactiva (desplegable con Astro o Next.js en `angel7castillo.dev` o en `angel7castillo.github.io`).
-- [ ] Integrar formulario de contacto o enlace directo a LinkedIn / Correo.
+## 🟢 Fase 4: Portfolio Web Personal (Completada)
+- [x] Construir web personal interactiva bilingüe (`index.html`, `robots.txt`, `sitemap.xml`) con SEO Schema.org y accesibilidad WCAG 2.2 AA.
+- [x] Desplegar en vivo en [https://angel7castillo.github.io](https://angel7castillo.github.io) con sincronización dual desde este repositorio.
+- [x] Integrar sección de Formación (Autodidacta, Tester de Software en el CES y Máster en Desarrollo con IA en BIG school) y enlace directo a GitHub / Correo.
