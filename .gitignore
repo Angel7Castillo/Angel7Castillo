@@ -18,3 +18,6 @@ pnpm-debug.log*
 # IDE
 .vscode/
 .idea/
+
+# Estrategia privada de LinkedIn (solo local)
+linkedin/
