@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angel Castillo — Desarrollador de Software · Desktop &amp; Mobile Systems</title>
+  <meta name="description" content="Desarrollador de software autodidacta en Montevideo, Uruguay. Especializado en aplicaciones de escritorio (Tauri) y móviles (Capacitor) con TypeScript, base en QA/Testing (CES) y Máster en Desarrollo con IA." />
+  <meta name="author" content="Angel Castillo" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://angel7castillo.github.io/" />
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://angel7castillo.github.io/" />
+  <meta property="og:title" content="Angel Castillo — Desarrollador de Software · Desktop &amp; Mobile" />
+  <meta property="og:description" content="Desarrollador autodidacta especializado en TypeScript, Tauri (Windows) y Capacitor (Android). Tester de Software (CES) y cursando Máster en Desarrollo con IA." />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/116953135?v=4" />
+  <meta property="og:locale" content="es_UY" />
+  <meta property="og:locale:alternate" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Angel Castillo — Software Developer · Desktop &amp; Mobile" />
+  <meta name="twitter:description" content="Desarrollador autodidacta · TypeScript, Tauri &amp; Capacitor · Tester de Software (CES) · Máster en Desarrollo con IA." />
+  <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/116953135?v=4" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://angel7castillo.github.io/#angel-castillo",
+        "name": "Angel Castillo",
+        "jobTitle": "Software Developer · Desktop & Mobile Systems",
+        "description": "Desarrollador de software autodidacta especializado en sistemas de escritorio y móviles con TypeScript, Tauri y Capacitor. Tester de Software (CES) y cursando Máster en Desarrollo con IA.",
+        "url": "https://angel7castillo.github.io/",
+        "image": "https://avatars.githubusercontent.com/u/116953135?v=4",
+        "email": "mailto:servicios.angelcastillo@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Montevideo",
+          "addressCountry": "UY"
+        },
+        "alumniOf": [
+          {
+            "@type": "EducationalOrganization",
+            "name": "Centro de Ensayos de Software (CES) — Facultad de Ingeniería (UdelaR)"
+          },
+          {
+            "@type": "EducationalOrganization",
+            "name": "BIG school — Máster en Desarrollo con IA"
+          }
+        ],
+        "knowsAbout": [
+          "TypeScript",
+          "Tauri",
+          "Capacitor",
+          "React",
+          "Software Testing & QA",
+          "Offline-First Architecture",
+          "Clean Architecture"
+        ],
+        "sameAs": [
+          "https://github.com/Angel7Castillo"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Billet",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Android",
+        "author": { "@id": "https://angel7castillo.github.io/#angel-castillo" },
+        "description": "Aplicación móvil para gestión de finanzas personales y control de gastos con arquitectura offline-first construida en TypeScript y Capacitor."
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Biblioteca Pastoral",
+        "applicationCategory": "ProductivityApplication",
+        "operatingSystem": "Windows 10, Windows 11",
+        "author": { "@id": "https://angel7castillo.github.io/#angel-castillo" },
+        "description": "Software de escritorio nativo para redacción, organización y consulta de sermones certificado para Microsoft Store con TypeScript y Tauri."
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-primary: #090d16;
+      --bg-surface: #111827;
+      --bg-surface-elevated: #172033;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-hover: rgba(56, 189, 248, 0.35);
+      --text-primary: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
+      --accent-blue: #38bdf8;
+      --accent-emerald: #34d399;
+      --accent-indigo: #818cf8;
+      --radius-outer: 16px;
+      --radius-inner: 10px;
+      --max-w: 920px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      scroll-behavior: smooth;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.65;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(56, 189, 248, 0.08), transparent 40%),
+        radial-gradient(circle at 85% 10%, rgba(129, 140, 248, 0.07), transparent 35%),
+        var(--bg-primary);
+      padding-bottom: 4rem;
+    }
+
+    h1, h2, h3 {
+      text-wrap: balance;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+
+    p, li {
+      text-wrap: pretty;
+      color: var(--text-secondary);
+    }
+
+    a {
+      color: var(--accent-blue);
+      text-decoration: none;
+      transition-property: color, background-color, border-color, transform;
+      transition-duration: 150ms;
+      transition-timing-function: ease-out;
+    }
+
+    a:hover {
+      color: #7dd3fc;
+    }
+
+    .container {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Topbar */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      background: rgba(9, 13, 22, 0.82);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .topbar-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0.85rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .brand-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--accent-emerald);
+      box-shadow: 0 0 10px var(--accent-emerald);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 3px;
+    }
+
+    .lang-btn {
+      min-height: 36px;
+      padding: 0.3rem 0.75rem;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      border-radius: 7px;
+      cursor: pointer;
+      transition-property: background-color, color, transform;
+      transition-duration: 150ms;
+      transition-timing-function: ease-out;
+    }
+
+    .lang-btn[aria-pressed="true"] {
+      background: var(--bg-surface-elevated);
+      color: var(--text-primary);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .lang-btn:active {
+      transform: scale(0.96);
+    }
+
+    /* Hero */
+    .hero {
+      padding: 4rem 0 2.75rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .hero-header {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .avatar {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      object-fit: cover;
+      outline: 2px solid rgba(255, 255, 255, 0.14);
+      outline-offset: -2px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .hero-meta h1 {
+      font-size: clamp(1.85rem, 4vw, 2.5rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.35rem;
+    }
+
+    .location-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .headline-banner {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.22);
+      color: #e0f2fe;
+      font-size: 0.94rem;
+      font-weight: 500;
+      padding: 0.65rem 1rem;
+      border-radius: var(--radius-inner);
+      margin-bottom: 1.35rem;
+    }
+
+    .hero-bio {
+      font-size: 1.05rem;
+      max-width: 760px;
+      margin-bottom: 1rem;
+    }
+
+    .hero-bio strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.75rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      min-height: 44px;
+      padding: 0.6rem 1.15rem;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      transition-property: transform, background-color, border-color, box-shadow;
+      transition-duration: 150ms;
+      transition-timing-function: ease-out;
+    }
+
+    .btn:hover {
+      background: var(--bg-surface-elevated);
+      border-color: var(--border-hover);
+      color: var(--text-primary);
+      transform: translateY(-1px);
+    }
+
+    .btn:active {
+      transform: scale(0.97);
+    }
+
+    .btn-primary {
+      background: #0284c7;
+      border-color: #38bdf8;
+      color: #ffffff;
+    }
+
+    .btn-primary:hover {
+      background: #0369a1;
+      color: #ffffff;
+    }
+
+    /* Sections */
+    section {
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .section-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    /* Cards Grid */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-outer);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition-property: border-color, transform, box-shadow;
+      transition-duration: 150ms;
+      transition-timing-function: ease-out;
+    }
+
+    .card:hover {
+      border-color: var(--border-hover);
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    }
+
+    .card-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.76rem;
+      font-weight: 500;
+      color: var(--accent-blue);
+      background: rgba(56, 189, 248, 0.1);
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+      margin-bottom: 0.85rem;
+      width: fit-content;
+    }
+
+    .card h3 {
+      font-size: 1.18rem;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .card-desc {
+      font-size: 0.94rem;
+      margin-bottom: 1rem;
+    }
+
+    .card-list {
+      list-style: none;
+      margin-bottom: 1.25rem;
+    }
+
+    .card-list li {
+      font-size: 0.88rem;
+      padding-left: 1.15rem;
+      position: relative;
+      margin-bottom: 0.45rem;
+    }
+
+    .card-list li::before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      color: var(--accent-blue);
+    }
+
+    .store-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.45rem 0.85rem;
+      border-radius: var(--radius-inner);
+      background: var(--bg-surface-elevated);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: var(--text-primary);
+      width: fit-content;
+    }
+
+    /* Education & Path */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .timeline-item {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-outer);
+      padding: 1.25rem 1.5rem;
+    }
+
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .timeline-header h3 {
+      font-size: 1.05rem;
+      color: var(--text-primary);
+    }
+
+    .badge-period {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--accent-emerald);
+      background: rgba(52, 211, 153, 0.1);
+      padding: 0.2rem 0.55rem;
+      border-radius: 6px;
+    }
+
+    /* Stack Pills */
+    .stack-group {
+      margin-bottom: 1.15rem;
+    }
+
+    .stack-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .pill {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-primary);
+      padding: 0.35rem 0.8rem;
+      border-radius: 8px;
+      font-size: 0.86rem;
+      font-weight: 500;
+    }
+
+    .footer {
+      padding-top: 2.5rem;
+      text-align: center;
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    [data-lang="en"] {
+      display: none;
+    }
+
+    html[lang="en"] [data-lang="es"] {
+      display: none;
+    }
+
+    html[lang="en"] [data-lang="en"] {
+      display: block;
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding: 2.5rem 0 2rem;
+      }
+      .topbar-inner {
+        padding: 0.75rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Angel7Castillo</span>
+      </div>
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Selector de idioma / Language switcher">
+          <button type="button" class="lang-btn" id="btn-es" aria-pressed="true" onclick="setLanguage('es')">🇪🇸 ES</button>
+          <button type="button" class="lang-btn" id="btn-en" aria-pressed="false" onclick="setLanguage('en')">🇬🇧 EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== ESPAÑOL ==================== -->
+  <main class="container" data-lang="es">
+    <section class="hero">
+      <div class="hero-header">
+        <img src="https://avatars.githubusercontent.com/u/116953135?v=4" alt="Foto de perfil de Angel Castillo" class="avatar" width="84" height="84" />
+        <div class="hero-meta">
+          <h1>Angel Castillo</h1>
+          <span class="location-pill">📍 Montevideo, Uruguay · GMT-3 · Tech Service</span>
+        </div>
+      </div>
+
+      <div class="headline-banner">
+        Desarrollador Autodidacta · Desktop &amp; Mobile | Tester de Software (CES) | Cursando Máster en Desarrollo con IA
+      </div>
+
+      <p class="hero-bio">
+        Soy un desarrollador de software <strong>autodidacta como regla principal</strong>, enfocado en construir aplicaciones de escritorio y móviles con dos prioridades: <strong>que la interfaz responda rápido y que la arquitectura sea ordenada</strong>.
+      </p>
+      <p class="hero-bio">
+        Prefiero dominar un núcleo sólido centrado en <strong>TypeScript</strong>, investigar la documentación oficial a fondo y empaquetar aplicaciones que funcionen de forma consistente en distintos sistemas operativos. Mis proyectos principales están probados, empaquetados y distribuidos en <strong>tiendas oficiales</strong>.
+      </p>
+
+      <div class="cta-row">
+        <a href="https://github.com/Angel7Castillo" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          Ver Perfil en GitHub →
+        </a>
+        <a href="https://github.com/Angel7Castillo/Angel7Castillo/blob/main/case-studies/01-multiplatform-architecture.md" target="_blank" rel="noopener noreferrer" class="btn">
+          📐 Caso de Estudio Multiplataforma
+        </a>
+        <a href="mailto:servicios.angelcastillo@gmail.com" class="btn">
+          ✉️ servicios.angelcastillo@gmail.com
+        </a>
+      </div>
+    </section>
+
+    <!-- Formación & Aprendizaje Continuo -->
+    <section id="formacion">
+      <h2 class="section-title">🎓 Formación &amp; Aprendizaje Continuo</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3>Autodidacta como Regla Principal</h3>
+            <span class="badge-period">Permanente</span>
+          </div>
+          <p>
+            Mi motor principal es aprender construyendo: estudiar documentación técnica oficial, diseñar arquitecturas limpias y llevar productos reales desde cero hasta su certificación y publicación en tiendas oficiales.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3><a href="https://thebigschool.com/master-desarrollo-con-ia/" target="_blank" rel="noopener noreferrer">Máster en Desarrollo con IA con Doble Titulación — BIG school ↗</a></h3>
+            <span class="badge-period">En curso</span>
+          </div>
+          <p>
+            Especialización en desarrollo de software moderno, diseño de arquitecturas asistidas por IA y orquestación estructurada de flujos de ingeniería.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3>Tester de Software — Centro de Ensayos de Software (CES)</h3>
+            <span class="badge-period">Montevideo, 2023</span>
+          </div>
+          <p>
+            Carrera técnica con el respaldo de la <strong>Facultad de Ingeniería (UdelaR)</strong> y los programas de Educación Permanente. Esta base formal en QA y ensayo de software define mi forma de programar: validar entradas, diseñar casos de prueba y asegurar la estabilidad antes de publicar cada versión.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Proyectos en Producción -->
+    <section id="proyectos">
+      <h2 class="section-title">🚀 Proyectos en Producción (Tiendas Oficiales)</h2>
+      <div class="grid-2">
+        <article class="card">
+          <div>
+            <span class="card-tag">ANDROID · CAPACITOR · TYPESCRIPT</span>
+            <h3>Billet — Finanzas Personales &amp; Control de Gastos</h3>
+            <p class="card-desc">
+              Aplicación móvil orientada a la gestión clara de ingresos, gastos y presupuestos, pensada para funcionar rápido en el día a día.
+            </p>
+            <ul class="card-list">
+              <li>Enfoque <strong>offline-first</strong>: funciona sin conexión y protege los datos localmente en el dispositivo.</li>
+              <li>Interfaz limpia con navegación táctil fluida y tiempos de carga mínimos.</li>
+              <li>Código modular estructurado en TypeScript para facilitar mantenimiento y evolución.</li>
+            </ul>
+          </div>
+          <div class="store-badge">
+            ▶ Disponible en Google Play (Android Store)
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <span class="card-tag">WINDOWS 10/11 · TAURI · TYPESCRIPT</span>
+            <h3>Biblioteca Pastoral — Gestión de Sermones y Contenido</h3>
+            <p class="card-desc">
+              Herramienta de escritorio diseñada para redactar, estructurar, catalogar y consultar sermones y material de estudio bíblico.
+            </p>
+            <ul class="card-list">
+              <li>Empaquetado y certificado bajo los estándares de seguridad de Microsoft Store.</li>
+              <li>Almacenamiento local estructurado: rápido, bajo consumo de memoria (&lt;60MB) y sin depender de la nube.</li>
+              <li>Instalación y actualización limpia mediante la tienda oficial del sistema.</li>
+            </ul>
+          </div>
+          <div class="store-badge">
+            ⊞ Disponible en Microsoft Store (Windows)
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Arquitectura y Criterio -->
+    <section id="arquitectura">
+      <h2 class="section-title">📐 Casos de Estudio &amp; Criterio de Ingeniería</h2>
+      <div class="grid-2">
+        <article class="card">
+          <div>
+            <span class="card-tag">CASO DE ESTUDIO 01</span>
+            <h3>Arquitectura de Convergencia Multiplataforma</h3>
+            <p class="card-desc">
+              Diseño de un núcleo de lógica de dominio 100% compartido en TypeScript para Web, Desktop (Tauri) y Mobile (Capacitor), eliminando la duplicación de reglas de negocio.
+            </p>
+          </div>
+          <a href="https://github.com/Angel7Castillo/Angel7Castillo/blob/main/case-studies/01-multiplatform-architecture.md" target="_blank" rel="noopener noreferrer" class="btn">
+            Leer Caso de Estudio →
+          </a>
+        </article>
+
+        <article class="card">
+          <div>
+            <span class="card-tag">ESTÁNDARES DE CALIDAD</span>
+            <h3>Manifiesto de Principios de Ingeniería</h3>
+            <p class="card-desc">
+              Planificar contratos antes de codificar, tipado estricto de punta a punta, ciclo de verificación de calidad y cero código muerto.
+            </p>
+          </div>
+          <a href="https://github.com/Angel7Castillo/Angel7Castillo/blob/main/standards/engineering-principles.md" target="_blank" rel="noopener noreferrer" class="btn">
+            Ver Principios de Ingeniería →
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Stack Tecnológico -->
+    <section id="stack">
+      <h2 class="section-title">🧰 Tecnologías Principales</h2>
+      <div class="stack-group">
+        <div class="stack-label">LENGUAJES &amp; DATOS</div>
+        <div class="pills">
+          <span class="pill">TypeScript (Strict)</span>
+          <span class="pill">JavaScript (ESNext)</span>
+          <span class="pill">SQL / SQLite Local</span>
+          <span class="pill">HTML5 &amp; CSS3</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <div class="stack-label">FRONTEND &amp; MULTIPLATAFORMA</div>
+        <div class="pills">
+          <span class="pill">React</span>
+          <span class="pill">Vite</span>
+          <span class="pill">Tailwind CSS</span>
+          <span class="pill">Capacitor (Android)</span>
+          <span class="pill">Tauri (Windows Desktop)</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <div class="stack-label">CALIDAD, FLUJO &amp; ENTORNOS</div>
+        <div class="pills">
+          <span class="pill">Software Testing &amp; QA (CES)</span>
+          <span class="pill">Git &amp; GitHub Actions</span>
+          <span class="pill">Nginx</span>
+          <span class="pill">Linux</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== ENGLISH ==================== -->
+  <main class="container" data-lang="en">
+    <section class="hero">
+      <div class="hero-header">
+        <img src="https://avatars.githubusercontent.com/u/116953135?v=4" alt="Angel Castillo profile photo" class="avatar" width="84" height="84" />
+        <div class="hero-meta">
+          <h1>Angel Castillo</h1>
+          <span class="location-pill">📍 Montevideo, Uruguay · GMT-3 · Tech Service</span>
+        </div>
+      </div>
+
+      <div class="headline-banner">
+        Self-Taught Developer · Desktop &amp; Mobile | Software Tester (CES) | M.Sc. Candidate in AI Software Development
+      </div>
+
+      <p class="hero-bio">
+        I am a <strong>self-taught software developer by core principle</strong>, focused on building desktop and mobile applications around two priorities: <strong>responsive user interfaces and clean, maintainable architecture</strong>.
+      </p>
+      <p class="hero-bio">
+        I focus on mastering a solid core built around <strong>TypeScript</strong>, diving deep into official documentation, and packaging reliable applications across different operating systems. My core projects are tested, packaged, and distributed through <strong>official app stores</strong>.
+      </p>
+
+      <div class="cta-row">
+        <a href="https://github.com/Angel7Castillo" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          View GitHub Profile →
+        </a>
+        <a href="https://github.com/Angel7Castillo/Angel7Castillo/blob/main/case-studies/01-multiplatform-architecture.md" target="_blank" rel="noopener noreferrer" class="btn">
+          📐 Multiplatform Case Study
+        </a>
+        <a href="mailto:servicios.angelcastillo@gmail.com" class="btn">
+          ✉️ servicios.angelcastillo@gmail.com
+        </a>
+      </div>
+    </section>
+
+    <!-- Education & Continuous Learning -->
+    <section id="education">
+      <h2 class="section-title">🎓 Education &amp; Continuous Learning</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3>Self-Taught by Core Principle</h3>
+            <span class="badge-period">Ongoing</span>
+          </div>
+          <p>
+            My primary driver is learning by building—studying official technical documentation, designing modular architectures, and shipping complete products from scratch to official store certification.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3><a href="https://thebigschool.com/master-desarrollo-con-ia/" target="_blank" rel="noopener noreferrer">Master in AI-Driven Software Development (Dual Degree) — BIG school ↗</a></h3>
+            <span class="badge-period">In Progress</span>
+          </div>
+          <p>
+            Specialization in modern software engineering, AI-assisted systems orchestration, and structured engineering workflows.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3>Software Tester — Centro de Ensayos de Software (CES)</h3>
+            <span class="badge-period">Montevideo, 2023</span>
+          </div>
+          <p>
+            Technical program backed by the <strong>Faculty of Engineering (UdelaR)</strong>. This formal foundation in QA and software testing shapes how I write code: validating boundaries, designing test cases, and ensuring release stability.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Shipped Products -->
+    <section id="products">
+      <h2 class="section-title">🚀 Shipped Products (Official Stores)</h2>
+      <div class="grid-2">
+        <article class="card">
+          <div>
+            <span class="card-tag">ANDROID · CAPACITOR · TYPESCRIPT</span>
+            <h3>Billet — Personal Finance &amp; Expense Tracker</h3>
+            <p class="card-desc">
+              Mobile application designed for straightforward management of income, expenses, and personal budgets with immediate everyday responsiveness.
+            </p>
+            <ul class="card-list">
+              <li><strong>Offline-first</strong> design: fully functional without internet access, keeping data private on-device.</li>
+              <li>Clean UI with fluid touch navigation and minimal load times.</li>
+              <li>Modular codebase structured in TypeScript for long-term maintainability.</li>
+            </ul>
+          </div>
+          <div class="store-badge">
+            ▶ Available on Google Play (Android Store)
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <span class="card-tag">WINDOWS 10/11 · TAURI · TYPESCRIPT</span>
+            <h3>Biblioteca Pastoral — Desktop Sermon &amp; Content Management</h3>
+            <p class="card-desc">
+              Desktop tool designed for pastors and study leaders to write, organize, tag, and search sermons and reference materials.
+            </p>
+            <ul class="card-list">
+              <li>Packaged and certified following Microsoft Store security and sandbox policies.</li>
+              <li>Structured local persistence: fast lookups, low memory footprint (&lt;60MB), and zero cloud lock-in.</li>
+              <li>Clean installation and updates managed directly through the OS store.</li>
+            </ul>
+          </div>
+          <div class="store-badge">
+            ⊞ Available on Microsoft Store (Windows)
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Architecture & Engineering Standards -->
+    <section id="architecture-en">
+      <h2 class="section-title">📐 Architecture Case Studies &amp; Engineering Standards</h2>
+      <div class="grid-2">
+        <article class="card">
+          <div>
+            <span class="card-tag">CASE STUDY 01</span>
+            <h3>Multiplatform Convergence Architecture</h3>
+            <p class="card-desc">
+              System design for a shared TypeScript domain core across Web, Desktop (Tauri), and Mobile (Capacitor), cutting desktop memory footprint to &lt;60MB and eliminating duplicated business logic.
+            </p>
+          </div>
+          <a href="https://github.com/Angel7Castillo/Angel7Castillo/blob/main/case-studies/01-multiplatform-architecture.md" target="_blank" rel="noopener noreferrer" class="btn">
+            Read Case Study →
+          </a>
+        </article>
+
+        <article class="card">
+          <div>
+            <span class="card-tag">QUALITY STANDARDS</span>
+            <h3>Engineering Principles Manifesto</h3>
+            <p class="card-desc">
+              Contract-first design before coding, end-to-end strict type safety, continuous verification loops, and zero dead code.
+            </p>
+          </div>
+          <a href="https://github.com/Angel7Castillo/Angel7Castillo/blob/main/standards/engineering-principles.md" target="_blank" rel="noopener noreferrer" class="btn">
+            View Engineering Principles →
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Core Stack -->
+    <section id="stack-en">
+      <h2 class="section-title">🧰 Core Stack</h2>
+      <div class="stack-group">
+        <div class="stack-label">LANGUAGES &amp; DATA</div>
+        <div class="pills">
+          <span class="pill">TypeScript (Strict)</span>
+          <span class="pill">JavaScript (ESNext)</span>
+          <span class="pill">SQL / Local SQLite</span>
+          <span class="pill">HTML5 &amp; CSS3</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <div class="stack-label">FRONT-END &amp; CROSS-PLATFORM</div>
+        <div class="pills">
+          <span class="pill">React</span>
+          <span class="pill">Vite</span>
+          <span class="pill">Tailwind CSS</span>
+          <span class="pill">Capacitor (Android)</span>
+          <span class="pill">Tauri (Windows Desktop)</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <div class="stack-label">QUALITY, WORKFLOW &amp; ENVIRONMENTS</div>
+        <div class="pills">
+          <span class="pill">Software Testing &amp; QA (CES)</span>
+          <span class="pill">Git &amp; GitHub Actions</span>
+          <span class="pill">Nginx</span>
+          <span class="pill">Linux</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>Angel Castillo · Montevideo, Uruguay · <a href="https://github.com/Angel7Castillo">github.com/Angel7Castillo</a></p>
+  </footer>
+
+  <script>
+    function setLanguage(lang) {
+      document.documentElement.lang = lang;
+      const isEs = lang === 'es';
+      document.getElementById('btn-es').setAttribute('aria-pressed', isEs ? 'true' : 'false');
+      document.getElementById('btn-en').setAttribute('aria-pressed', !isEs ? 'true' : 'false');
+    }
+  </script>
+</body>
+</html>
