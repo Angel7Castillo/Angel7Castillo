@@ -1,7 +1,7 @@
 <div align="center">
 
 # Angel Castillo
-**Software Developer · Desktop & Mobile Systems**  
+**Desarrollador Autodidacta · Desktop & Mobile | Tester de Software (CES) | Cursando Máster en Desarrollo con IA**  
 *Montevideo, Uruguay*
 
 📖 [Principios de Ingeniería](./standards/engineering-principles.md) &nbsp;·&nbsp; 🏗️ [Caso de Estudio: Arquitectura Multiplataforma](./case-studies/01-multiplatform-architecture.md) &nbsp;·&nbsp; 📬 [Contacto](mailto:servicios.angelcastillo@gmail.com)
@@ -17,6 +17,16 @@ Desarrollo aplicaciones de escritorio y móviles con foco en dos cosas: **que la
 No me interesa coleccionar decenas de herramientas en el currículum. Prefiero dominar un núcleo sólido centrado en **TypeScript**, empaquetar aplicaciones que funcionen de forma consistente en distintos sistemas operativos y aplicar buenas prácticas de ingeniería: tipado estricto, empaquetado nativo y pruebas donde realmente importan.
 
 Mis proyectos principales no son maquetas: están empaquetados, probados y distribuidos a través de **tiendas oficiales**.
+
+---
+
+## 🎓 Formación & Aprendizaje Continuo
+
+* **Autodidacta como regla principal:** Mi motor principal es aprender construyendo. Investigo documentación oficial, diseño arquitecturas modulares y llevo proyectos completos desde cero hasta su certificación y publicación en tiendas.
+* **[Máster en Desarrollo con IA con Doble Titulación](https://thebigschool.com/master-desarrollo-con-ia/) — BIG school** *(En curso)*  
+  Especialización en desarrollo de software moderno, arquitectura asistida por IA y orquestación estructurada de flujos de ingeniería.
+* **Tester de Software — Centro de Ensayos de Software (CES)** *(Montevideo, Uruguay — 2023)*  
+  Carrera técnica con el respaldo de la Facultad de Ingeniería (UdelaR) y los programas de Educación Permanente. Esta base formal en QA y ensayo de software define mi forma de programar: validar entradas, diseñar casos de prueba y asegurar la estabilidad antes de publicar cada versión.
 
 ---
 
@@ -96,6 +106,16 @@ I build desktop and mobile applications focused on two fundamentals: **responsiv
 Rather than listing dozens of frameworks on a resume, I focus on a solid core built around **TypeScript**, packaging reliable applications across different operating systems, and adhering to sound engineering practices: strict static typing, native packaging, and automated tests where they truly matter.
 
 My core projects are not just code samples—they are packaged, tested, and distributed through **official app stores**.
+
+---
+
+## 🎓 Education & Continuous Learning
+
+* **Self-Taught by Core Principle:** My primary driver is learning by building—studying official technical documentation, designing modular architectures, and shipping complete products from scratch to official store certification.
+* **[Master in AI-Driven Software Development (Dual Degree)](https://thebigschool.com/master-desarrollo-con-ia/) — BIG school** *(In Progress)*  
+  Specialization in modern software engineering, systems orchestration, and AI-assisted development workflows.
+* **Software Tester — Centro de Ensayos de Software (CES)** *(Montevideo, Uruguay — 2023)*  
+  Technical program backed by the Faculty of Engineering (UdelaR). This formal foundation in QA and software testing shapes how I write code: validating boundaries, designing test cases, and ensuring release stability.
 
 ---
 

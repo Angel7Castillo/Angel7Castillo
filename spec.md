@@ -20,11 +20,12 @@
 ## 2. Componentes del Repositorio
 
 ### 2.1 Portada Pública (`README.md`)
-* **Encabezado:** Nombre, rol profesional, ubicación (Montevideo, Uruguay) y switch bilingüe rápido.
+* **Encabezado:** Nombre, bio principal (`Desarrollador Autodidacta · Desktop & Mobile | Tester de Software (CES) | Cursando Máster en Desarrollo con IA`), ubicación (Montevideo, Uruguay) y accesos rápidos.
 * **Sección "Sobre mí":** Tono directo, pragmático y humano (cero clichés de IA, cero Docker).
+* **Sección "Formación & Aprendizaje Continuo":** Regla principal como autodidacta, Máster en Desarrollo con IA (BIG school, en curso) y Tester de Software en el Centro de Ensayos de Software (CES, respaldo Facultad de Ingeniería UdelaR, 2023).
 * **Vitrina de Productos Terminados:**
-  * **Billet:** Finanzas personales, Android, offline-first, modularidad TypeScript.
-  * **Biblioteca Pastoral:** Gestión de sermones, Windows (10/11), almacenamiento local estructurado, empaquetado Microsoft Store.
+  * **Billet:** Finanzas personales, Android, offline-first, modularidad TypeScript y Capacitor.
+  * **Biblioteca Pastoral:** Gestión de sermones, Windows (10/11), almacenamiento local estructurado, empaquetado Tauri y Microsoft Store.
 * **Criterio de Ingeniería:** Planificación previa, tipado estricto, empaquetado consistente y código mantenible.
 * **Herramientas Principales:** TypeScript, JavaScript, SQL, React, Vite, Tailwind CSS, Capacitor, Tauri, Nginx, Linux, Git.
 * **Sección en Inglés:** Espejo 1:1 en inglés técnico natural.
