@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Política de Privacidad y Términos — Billet (app.billet) | Tech-Service</title>
+    <meta
+      name="description"
+      content="Política de Privacidad oficial y Términos de Uso de Billet (app.billet), aplicación de finanzas personales multimoneda 100% offline desarrollada por Tech-Service (Ángel Castillo)."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://angel7castillo.github.io/billet/privacy.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Billet" />
+    <meta property="og:url" content="https://angel7castillo.github.io/billet/privacy.html" />
+    <meta property="og:title" content="Política de Privacidad y Términos — Billet (app.billet)" />
+    <meta property="og:description" content="Arquitectura Local-First (Zero-Knowledge): tus registros contables viven 100% en tu dispositivo sin servidores externos." />
+    <meta property="og:image" content="https://angel7castillo.github.io/billet/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Política de Privacidad y Términos — Billet (app.billet)" />
+    <meta name="twitter:description" content="Arquitectura Local-First (Zero-Knowledge): tus registros contables viven 100% en tu dispositivo sin servidores externos." />
+    <meta name="twitter:image" content="https://angel7castillo.github.io/billet/og-image.png" />
+    <meta name="theme-color" content="#07070B" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./icon.svg" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <style>
+      :root {
+        --bg: #07070b;
+        --surface: #111118;
+        --border: rgba(255, 255, 255, 0.09);
+        --accent: #00F5A0;
+        --cyan: #00D9F5;
+        --warning: #fbbf24;
+        --text: #F8FAFC;
+        --muted: #94A3B8;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.68;
+      }
+      .wrap {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 20px 80px;
+      }
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 32px;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: var(--text);
+        font-weight: 800;
+        font-size: 1.25rem;
+      }
+      .pill {
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 999px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        background: rgba(0, 245, 160, 0.12);
+        color: var(--accent);
+        border: 1px solid rgba(0, 245, 160, 0.3);
+      }
+      .lang-nav {
+        display: flex;
+        gap: 10px;
+      }
+      .lang-nav a {
+        color: var(--text);
+        text-decoration: none;
+        font-size: 0.85rem;
+        font-weight: 600;
+        padding: 6px 14px;
+        border-radius: 8px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+      }
+      .lang-nav a:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+      h1 {
+        font-size: clamp(1.75rem, 3.5vw, 2.35rem);
+        line-height: 1.2;
+        margin: 0 0 12px;
+      }
+      h2 {
+        font-size: 1.3rem;
+        margin: 28px 0 10px;
+        color: #ffffff;
+      }
+      .meta {
+        color: var(--muted);
+        font-size: 0.92rem;
+        margin-bottom: 24px;
+      }
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 28px;
+        margin-bottom: 32px;
+      }
+      .highlight {
+        background: rgba(0, 245, 160, 0.07);
+        border: 1px solid rgba(0, 245, 160, 0.28);
+        border-radius: 12px;
+        padding: 16px 18px;
+        margin: 16px 0;
+      }
+      .disclaimer {
+        background: rgba(251, 191, 36, 0.08);
+        border: 1px solid rgba(251, 191, 36, 0.32);
+        border-radius: 12px;
+        padding: 16px 18px;
+        margin: 16px 0;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 8px;
+      }
+      code {
+        background: rgba(255, 255, 255, 0.08);
+        padding: 2px 6px;
+        border-radius: 5px;
+        font-size: 0.9em;
+      }
+      a {
+        color: var(--cyan);
+      }
+      footer {
+        margin-top: 48px;
+        padding-top: 24px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.88rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <a href="./index.html" class="brand">
+          <img src="./logo.svg" alt="Billet Logo" width="34" height="34" style="width: 34px; height: 34px; border-radius: 8px;" />
+          <span style="letter-spacing: 0.02em;">Billet</span>
+          <span class="pill">100% Offline · Zero-Knowledge</span>
+        </a>
+        <nav class="lang-nav" aria-label="Idioma / Language">
+          <a href="#es">Español</a>
+          <a href="#en">English</a>
+          <a href="./index.html">← Volver al inicio</a>
+        </nav>
+      </header>
+
+      <main>
+      <!-- ==================== ESPAÑOL ==================== -->
+      <article id="es" class="card">
+        <span class="pill">ESPAÑOL · VERSIÓN OFICIAL</span>
+        <h1>Política de Privacidad y Términos de Uso de Billet</h1>
+        <p class="meta">
+          <strong>Aplicaciones:</strong> Billet en Google Play (<code>app.billet</code>) y Billet Desktop Pro en Microsoft Store (<code>TechService.BilletDesktopPro</code> · Store ID: <code>9MXPKKD2F58R</code>)<br />
+          <strong>Desarrollador / Responsable:</strong> Tech-Service — Ángel Castillo<br />
+          <strong>Contacto oficial de privacidad y soporte:</strong>
+          <a href="mailto:servicios.angelcastillo@gmail.com">servicios.angelcastillo@gmail.com</a><br />
+          <strong>Última actualización y entrada en vigencia:</strong> 19 de noviembre de 2026
+        </p>
+
+        <div class="highlight">
+          <strong>Resumen ejecutivo (Privacidad Local y Cero Custodia):</strong> Billet funciona bajo una arquitectura <strong>Local-First (Zero-Knowledge)</strong> en Android y Windows 10/11 para todos tus registros contables. Tus cuentas, transacciones, tipos de cambio y saldos <strong>se almacenan 100% en tu dispositivo y nunca se transmiten ni se guardan en servidores externos</strong>. La conectividad a internet se utiliza exclusivamente en Android para la entrega de anuncios a través de <strong>Google AdMob</strong> (en la versión gratuita) y el procesamiento seguro de compras dentro de la app con <strong>Google Play Billing</strong>. La versión de escritorio para Windows 10/11 (Microsoft Store) opera 100% offline y cero telemetría.
+        </div>
+
+        <h2>1. Información financiera y registros contables</h2>
+        <p>
+          <strong>Cero recopilación de datos financieros:</strong> Billet no exige registro de cuenta, correo electrónico, número telefónico ni vinculación bancaria. No tenemos acceso a tus saldos ni a tus movimientos; toda tu información contable vive de forma privada en tu teléfono Android o en tu PC Windows.
+        </p>
+
+        <h2>2. Publicidad, Compras en la Aplicación y Vinculación Offline con PC Windows</h2>
+        <p>
+          Para mantener la aplicación accesible y gratuita, Billet integra servicios certificados de terceros provistos por Google LLC en Android y un puente criptográfico offline para Windows PC:
+        </p>
+        <ul>
+          <li>
+            <strong>Google AdMob (Publicidad en Android):</strong> En la versión gratuita de Android, se muestran anuncios provistos por Google AdMob. Este servicio puede recopilar y procesar identificadores del dispositivo (como el ID de publicidad de Google o AAID), datos de rendimiento y diagnóstico para la entrega de anuncios y prevención de fraudes, conforme a la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a>.
+          </li>
+          <li>
+            <strong>Billet Pro (Mensual y Licencia Pro · Pago Único) y Eliminación de Anuncios:</strong> Cualquier usuario puede desbloquear todas las funciones Pro y eliminar los anuncios mediante la suscripción Mensual o la <strong>Licencia Pro · Pago Único</strong> a través de <strong>Google Play Billing</strong>. Al realizar una compra, Google Play gestiona íntegramente la transacción de forma cifrada; Billet jamás tiene acceso a números de tarjetas de crédito ni datos bancarios.
+          </li>
+          <li>
+            <strong>Puente Criptográfico Offline Android ↔ PC Windows (Microsoft Store):</strong> Los usuarios con Billet Pro activo en Android pueden ingresar el código local de 4 caracteres de su PC Windows (<code>PC-XXXX</code>) en <em>Ajustes → Vincular con mi PC Windows</em> para generar una llave criptográfica determinística (<code>BILLET-L-...</code> o <code>BILLET-M-...</code>) que desbloquea Billet Desktop Pro en Windows 10/11 de forma 100% local y sin conexión a servidores externos.
+          </li>
+        </ul>
+
+        <h2>3. Almacenamiento local en tu dispositivo</h2>
+        <ul>
+          <li>
+            <strong>Cuentas, monedas, tipos de cambio y movimientos:</strong> Toda la información contable que registras manualmente se guarda de forma exclusiva dentro del almacenamiento interno privado de la aplicación en tu propio dispositivo mediante una base de datos local SQLite.
+          </li>
+          <li>
+            <strong>Código PIN de bloqueo:</strong> Si configuras un PIN opcional de 4 a 6 dígitos, Billet almacena únicamente un hash criptográfico derivado con sal aleatoria en el llavero seguro del sistema (<code>Android Keystore</code> / <code>expo-secure-store</code>), excluido explícitamente de las copias automáticas en la nube del sistema operativo.
+          </li>
+          <li>
+            <strong>Copias de seguridad manuales (<code>.billet</code>):</strong> Cuando decides exportar una copia de seguridad, Billet genera localmente un archivo cifrado con <strong>AES-256-GCM</strong> y derivación de clave <strong>scrypt</strong> protegida por la contraseña que tú defines. El archivo se guarda únicamente en la carpeta que tú elijas mediante el selector nativo del sistema (Storage Access Framework). Ni Tech-Service ni terceros tienen acceso a tus archivos ni a tu contraseña.
+          </li>
+        </ul>
+
+        <h2>4. Permisos del dispositivo en Android</h2>
+        <p>La aplicación Android (<code>app.billet</code>) declara los siguientes permisos necesarios:</p>
+        <ul>
+          <li>
+            <code>INTERNET</code> y <code>ACCESS_NETWORK_STATE</code>: Utilizados exclusivamente para solicitar anuncios a la red de Google AdMob y validar compras/restauraciones en Google Play Store.
+          </li>
+          <li>
+            <code>com.android.vending.BILLING</code>: Utilizado para procesar compras integradas mediante la pasarela oficial de Google Play Billing.
+          </li>
+          <li>
+            <code>USE_BIOMETRIC</code> / <code>USE_FINGERPRINT</code>: Se utilizan únicamente si activas voluntariamente el desbloqueo biométrico en Ajustes. La verificación se ejecuta de forma nativa dentro del hardware seguro del sistema operativo Android; Billet jamás accede, lee, guarda ni transmite imágenes faciales ni huellas dactilares.
+          </li>
+          <li>
+            <code>VIBRATE</code>: Se utiliza para brindar respuesta háptica sutil al confirmar operaciones en el teclado numérico.
+          </li>
+        </ul>
+
+        <h2>5. Retención y eliminación total de datos (Data Deletion)</h2>
+        <p>
+          Al no existir cuentas en servidores externos, tú tienes el control absoluto e inmediato sobre tus datos en todo momento:
+        </p>
+        <ul>
+          <li>Puedes editar o eliminar cualquier cuenta, categoría o movimiento individual directamente desde la aplicación.</li>
+          <li>Puedes borrar instantáneamente toda la base de datos local desde <strong>Ajustes → Seguridad → Restablecer y borrar datos</strong>.</li>
+          <li>Al desinstalar Billet o borrar los datos de la aplicación desde los ajustes de Android, toda la información local se elimina de manera definitiva e irreversible del dispositivo.</li>
+        </ul>
+
+        <h2>6. Público objetivo y privacidad de menores</h2>
+        <p>
+          Billet es una herramienta de organización contable personal orientada a mayores de 18 años. No está dirigida a menores de 13 años ni recopila información personal de ningún usuario, incluidos menores de edad.
+        </p>
+
+        <h2 id="disclaimer">7. Aviso legal financiero y Modalidad de Pago Único (Deslinde de responsabilidad)</h2>
+        <div class="disclaimer">
+          <strong>NO CONSTITUYE SERVICIO BANCARIO NI ASESORAMIENTO FINANCIERO:</strong> Billet es exclusivamente un cuaderno digital de registro contable manual y visualización personal. Billet <strong>no</strong> es un banco, entidad financiera, billetera virtual con custodia de fondos, procesador de pagos, transmisor de dinero, agencia de préstamos ni asesor de inversiones registrado. Todos los importes y tipos de cambio son ingresados manualmente por el usuario con fines informativos y organizativos. La modalidad comercial de <strong>Pago Único</strong> desbloquea las funciones Pro de la aplicación instalada sin cobros recurrentes en Android y Windows PC, entregándose «tal cual» (as-is) para ejecución local en el dispositivo compatible, sin implicar compromisos de mantenimiento perpetuo ni servicios en la nube.
+        </div>
+
+        <h2>8. Cambios a esta política y contacto</h2>
+        <p>
+          Cualquier actualización futura de esta Política de Privacidad se publicará en esta misma URL (<code>https://angel7castillo.github.io/billet/privacy.html</code>) indicando la fecha de vigencia actualizada. Para consultas de soporte o privacidad puedes escribir directamente a:
+          <a href="mailto:servicios.angelcastillo@gmail.com">servicios.angelcastillo@gmail.com</a>.
+        </p>
+      </article>
+
+      <!-- ==================== ENGLISH ==================== -->
+      <article id="en" class="card" lang="en">
+        <span class="pill">ENGLISH · OFFICIAL VERSION</span>
+        <h2 style="font-size: clamp(1.75rem, 3.5vw, 2.35rem); line-height: 1.2; margin: 0 0 12px;">Billet Privacy Policy &amp; Terms of Use</h2>
+        <p class="meta">
+          <strong>Applications:</strong> Billet on Google Play (<code>app.billet</code>) &amp; Billet Desktop Pro on Microsoft Store (<code>TechService.BilletDesktopPro</code> · Store ID: <code>9MXPKKD2F58R</code>)<br />
+          <strong>Developer / Controller:</strong> Tech-Service — Ángel Castillo<br />
+          <strong>Official Privacy &amp; Support Contact:</strong>
+          <a href="mailto:servicios.angelcastillo@gmail.com">servicios.angelcastillo@gmail.com</a><br />
+          <strong>Effective &amp; Last Updated Date:</strong> November 19, 2026
+        </p>
+
+        <div class="highlight">
+          <strong>Executive Summary (Local Privacy &amp; Zero Custody):</strong> Billet operates under a <strong>Local-First (Zero-Knowledge)</strong> architecture across Android and Windows 10/11 for all your financial bookkeeping. Your accounts, transactions, custom exchange rates, and balances <strong>are stored 100% locally on your device and are never transmitted to or stored on external servers</strong>. Network connectivity is used strictly on Android for serving non-intrusive ads via <strong>Google AdMob</strong> (in the free tier) and processing secure in-app purchases via <strong>Google Play Billing</strong>. The Windows 10/11 desktop app (Microsoft Store) operates 100% offline with zero telemetry.
+        </div>
+
+        <h2>1. Financial Data and Bookkeeping Entries</h2>
+        <p>
+          <strong>Zero financial data collection:</strong> Billet requires no account sign-up, email, phone number, or bank link. We have zero access to your account balances or financial entries; all your data remains private and local to your Android phone or Windows PC.
+        </p>
+
+        <h2>2. Advertisements, In-App Purchases &amp; Offline Windows PC Pairing</h2>
+        <p>
+          To maintain the app accessible and free of charge, Billet integrates certified third-party services provided by Google LLC on Android and an offline cryptographic pairing bridge for Windows PC:
+        </p>
+        <ul>
+          <li>
+            <strong>Google AdMob (Advertising on Android):</strong> In the free Android version, non-intrusive ads are delivered via Google AdMob. This service may collect and process device identifiers (such as Google Advertising ID / AAID), performance, and crash diagnostics to deliver ads and prevent fraud, in accordance with the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.
+          </li>
+          <li>
+            <strong>Billet Pro (Monthly &amp; Pro License · One-Time Payment) &amp; Ad Removal:</strong> Any user can unlock all Pro features and remove all advertisements by purchasing the Monthly plan or the <strong>Pro License · One-Time Payment</strong> via <strong>Google Play Billing</strong>. Payment card and banking data are processed entirely and securely by Google Play; Billet never receives or stores payment card numbers.
+          </li>
+          <li>
+            <strong>Offline Cryptographic Bridge Android ↔ Windows PC (Microsoft Store):</strong> Users with an active Billet Pro plan on Android can enter their Windows PC's 4-character local installation code (<code>PC-XXXX</code>) in <em>Settings → Link with my Windows PC</em> to generate a deterministic cryptographic key (<code>BILLET-L-...</code> or <code>BILLET-M-...</code>) that unlocks Billet Desktop Pro on Windows 10/11 100% offline with zero server communication.
+          </li>
+        </ul>
+
+        <h2>3. Local On-Device Storage &amp; Security</h2>
+        <ul>
+          <li>
+            <strong>Accounts, currencies, exchange rates, and transactions:</strong> All bookkeeping entries manually recorded by you are stored exclusively inside the app's private internal storage on your device using a local SQLite database.
+          </li>
+          <li>
+            <strong>Security PIN:</strong> If you enable an optional 4–6 digit PIN, Billet stores only a salted cryptographic hash inside the OS secure enclave (<code>Android Keystore</code> / <code>expo-secure-store</code>), explicitly excluded from automatic OS cloud backups.
+          </li>
+          <li>
+            <strong>Encrypted Manual Backups (<code>.billet</code>):</strong> When you export a backup, Billet locally generates an <strong>AES-256-GCM</strong> encrypted archive using <strong>scrypt</strong> key derivation protected by your chosen passphrase, saved strictly to the folder you pick via Android's Storage Access Framework (SAF). Neither Tech-Service nor any third party can access your files or passphrase.
+          </li>
+        </ul>
+
+        <h2>4. Android Device Permissions</h2>
+        <p>The Android application (<code>app.billet</code>) requests only necessary permissions:</p>
+        <ul>
+          <li>
+            <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code>: Used solely to fetch ads from Google AdMob and to validate in-app purchases with Google Play Store.
+          </li>
+          <li>
+            <code>com.android.vending.BILLING</code>: Used to process in-app purchases via Google Play Billing.
+          </li>
+          <li>
+            <code>USE_BIOMETRIC</code> / <code>USE_FINGERPRINT</code>: Used strictly when you opt in to biometric unlock in Settings. Authentication is handled entirely by Android's hardware-backed OS APIs; Billet never accesses, reads, stores, or transmits fingerprint or facial biometric data.
+          </li>
+          <li>
+            <code>VIBRATE</code>: Used solely for subtle haptic feedback on keypad actions.
+          </li>
+        </ul>
+
+        <h2>5. Data Retention and Deletion Policy</h2>
+        <p>
+          Because no cloud accounts or remote servers exist, you retain full, immediate control over your data:
+        </p>
+        <ul>
+          <li>Delete or edit individual transactions, categories, or accounts anytime inside the app.</li>
+          <li>Wipe all local data immediately via <strong>Settings → Security → Reset and erase data</strong>.</li>
+          <li>Uninstalling Billet or clearing app storage in Android system settings permanently and irreversibly removes all local data from your device.</li>
+        </ul>
+
+        <h2>6. Target Audience &amp; Children's Privacy</h2>
+        <p>
+          Billet is intended for users aged 18 and older and is not directed to children under 13. We do not knowingly collect any data from anyone, including children.
+        </p>
+
+        <h2>7. Financial Legal Disclaimer &amp; One-Time Payment Terms</h2>
+        <div class="disclaimer">
+          <strong>NOT A BANKING SERVICE OR FINANCIAL ADVICE:</strong> Billet is strictly a manual personal bookkeeping and organization ledger. Billet is <strong>not</strong> a bank, financial institution, custodial wallet, payment processor, money transmitter, lender, or registered investment advisor. All amounts and exchange rates are manually entered by the user strictly for informational and organizational purposes. The <strong>One-Time Payment</strong> commercial option unlocks Pro features for the installed application with zero recurring charges on Android and Windows PC, delivered "as-is" for local execution on compatible devices without implying perpetual maintenance obligations or cloud services.
+        </div>
+
+        <h2>8. Contact Information</h2>
+        <p>
+          Questions regarding this Privacy Policy or technical support may be directed to Ángel Castillo (Tech-Service) at
+          <a href="mailto:servicios.angelcastillo@gmail.com">servicios.angelcastillo@gmail.com</a>.
+        </p>
+      </article>
+      </main>
+
+      <footer>
+        <div>© 2026 Billet · Tech-Service (Ángel Castillo). Todos los derechos reservados.</div>
+        <div>
+          <a href="./index.html">Inicio</a> ·
+          <a href="mailto:servicios.angelcastillo@gmail.com">servicios.angelcastillo@gmail.com</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

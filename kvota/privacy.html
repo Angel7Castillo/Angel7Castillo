@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Política de Privacidad y Términos — Kvota (com.techservice.kvota) | Tech Service Apps</title>
+    <meta
+      name="description"
+      content="Política de Privacidad oficial y Términos de Uso de Kvota (com.techservice.kvota), aplicación de presupuestos de obra en PDF A4 100% offline desarrollada por Tech Service Apps (Ángel Castillo)."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://angel7castillo.github.io/kvota/privacy.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Kvota" />
+    <meta property="og:url" content="https://angel7castillo.github.io/kvota/privacy.html" />
+    <meta property="og:title" content="Política de Privacidad y Términos — Kvota (com.techservice.kvota)" />
+    <meta property="og:description" content="Arquitectura Local-First (Zero-Knowledge): tus presupuestos, clientes, materiales y logos viven 100% en tu dispositivo sin servidores externos." />
+    <meta property="og:image" content="https://angel7castillo.github.io/kvota/og-image.png" />
+    <meta name="theme-color" content="#070B14" />
+    <link rel="icon" type="image/svg+xml" href="./logo.svg" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <style>
+      :root {
+        --bg: #070b14;
+        --surface: #0f172a;
+        --border: rgba(255, 255, 255, 0.1);
+        --accent: #10b981;
+        --blue: #3b82f6;
+        --warning: #fbbf24;
+        --text: #f8fafc;
+        --muted: #94a3b8;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.68;
+      }
+      .wrap {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 40px 20px 80px;
+      }
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 32px;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: var(--text);
+        font-weight: 800;
+        font-size: 1.25rem;
+      }
+      .pill {
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 999px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        background: rgba(16, 185, 129, 0.14);
+        color: #34d399;
+        border: 1px solid rgba(16, 185, 129, 0.32);
+      }
+      .lang-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .lang-nav a {
+        color: var(--text);
+        text-decoration: none;
+        font-size: 0.85rem;
+        font-weight: 600;
+        padding: 6px 14px;
+        border-radius: 8px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+      }
+      .lang-nav a:hover {
+        border-color: var(--accent);
+        color: #34d399;
+      }
+      h1 {
+        font-size: clamp(1.75rem, 3.5vw, 2.35rem);
+        line-height: 1.2;
+        margin: 0 0 12px;
+      }
+      h2 {
+        font-size: 1.3rem;
+        margin: 28px 0 10px;
+        color: #ffffff;
+      }
+      .meta {
+        color: var(--muted);
+        font-size: 0.92rem;
+        margin-bottom: 24px;
+      }
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 28px;
+        margin-bottom: 32px;
+      }
+      .highlight {
+        background: rgba(16, 185, 129, 0.08);
+        border: 1px solid rgba(16, 185, 129, 0.3);
+        border-radius: 12px;
+        padding: 16px 18px;
+        margin: 16px 0;
+      }
+      .disclaimer {
+        background: rgba(251, 191, 36, 0.08);
+        border: 1px solid rgba(251, 191, 36, 0.32);
+        border-radius: 12px;
+        padding: 16px 18px;
+        margin: 16px 0;
+      }
+      ul { padding-left: 20px; }
+      li { margin-bottom: 8px; }
+      code {
+        background: rgba(255, 255, 255, 0.08);
+        padding: 2px 6px;
+        border-radius: 5px;
+        font-size: 0.9em;
+      }
+      a { color: #60a5fa; }
+      footer {
+        margin-top: 48px;
+        padding-top: 24px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.88rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <a href="https://angel7castillo.github.io/kvota/" class="brand">
+          <img src="https://angel7castillo.github.io/kvota/logo.svg" alt="Kvota Logo" width="34" height="34" style="width: 34px; height: 34px; border-radius: 8px;" />
+          <span>Kvota</span>
+          <span class="pill">100% Offline-First · Zero-Knowledge</span>
+        </a>
+        <nav class="lang-nav" aria-label="Idioma / Language">
+          <a href="#es">Español</a>
+          <a href="#en">English</a>
+          <a href="https://angel7castillo.github.io/kvota/">← Web del Producto</a>
+        </nav>
+      </header>
+
+      <main>
+        <!-- ==================== ESPAÑOL ==================== -->
+        <article id="es" class="card">
+          <span class="pill">ESPAÑOL · VERSIÓN OFICIAL</span>
+          <h1>Política de Privacidad y Términos de Uso de Kvota</h1>
+          <p class="meta">
+            <strong>Aplicación:</strong> Kvota: Presupuestos PDF A4 en Google Play (<code>com.techservice.kvota</code>) y Kvota Desktop para Windows PC<br />
+            <strong>Desarrollador / Editor Oficial:</strong> Tech Service Apps (Tech-Service — Ángel Castillo)<br />
+            <strong>Contacto oficial de privacidad y soporte:</strong>
+            <a href="mailto:servicios.angelcastillo@gmail.com">servicios.angelcastillo@gmail.com</a><br />
+            <strong>Sitio web del producto:</strong>
+            <a href="https://angel7castillo.github.io/kvota/">https://angel7castillo.github.io/kvota/</a><br />
+            <strong>Última actualización y entrada en vigencia:</strong> 25 de noviembre de 2026
+          </p>
+
+          <div class="highlight">
+            <strong>Resumen ejecutivo (Privacidad Local y Cero Custodia):</strong> Kvota funciona bajo una arquitectura <strong>Local-First (Zero-Knowledge)</strong> en Android y Windows PC para todos tus presupuestos de obra y oficios. Los datos de tus clientes, presupuestos, catálogo de materiales, tarifas de mano de obra, márgenes de ganancia y el logotipo de tu empresa <strong>se almacenan 100% en la memoria interna privada de tu dispositivo y nunca se transmiten ni se guardan en servidores de Tech Service Apps</strong>. La conexión a internet se utiliza exclusivamente en Android para mostrar el banner inferior de anuncios mediante <strong>Google AdMob</strong> (en la versión gratuita) y procesar compras integradas seguras mediante <strong>Google Play Billing</strong>.
+          </div>
+
+          <h2>1. Datos de Presupuestos, Clientes, Materiales y Membrete</h2>
+          <p>
+            <strong>Cero recopilación de datos comerciales o de clientes:</strong> Kvota no exige creación de cuenta, inicio de sesión, correo electrónico ni registro en la nube. Tech Service Apps no tiene acceso a tus presupuestos, precios de materiales, costos de mano de obra, ganancias netas ni a los nombres o teléfonos de tus clientes.
+          </p>
+
+          <h2>2. Publicidad (Google AdMob) y Compras en la Aplicación (Google Play Billing)</h2>
+          <p>
+            Para ofrecer un tramo gratuito funcional con los primeros 10 presupuestos 100% completos, Kvota integra servicios oficiales certificados por Google LLC en Android:
+          </p>
+          <ul>
+            <li>
+              <strong>Google AdMob (Banner inferior en versión gratuita):</strong> En la versión gratuita (<code>FREE</code>), se muestra un banner inferior de 50dp provisto por Google AdMob (App ID: <code>ca-app-pub-8971534701728062~9631574209</code>). El SDK de Google Mobile Ads puede recopilar y procesar identificadores del dispositivo (como el ID de publicidad de Google / AAID), ubicación aproximada derivada de IP, interacciones con anuncios y registros de diagnóstico/fallas para la entrega de anuncios, análisis y prevención de fraudes, conforme a la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a>. El banner se oculta automáticamente al abrir el teclado y jamás aparece en los archivos PDF A4 generados para tus clientes.
+            </li>
+            <li>
+              <strong>Kvota Pro (Plan Mensual y Pago Único — 100% Sin Publicidad):</strong> El usuario puede desbloquear presupuestos ilimitados y eliminar el 100% de los anuncios adquiriendo el <strong>Plan Mensual</strong> (<code>kvota_monthly_pro</code>) o la modalidad de <strong>Pago Único</strong> (<code>kvota_onetime_pro</code>) a través de <strong>Google Play Billing</strong>. Google Play procesa la transacción de forma cifrada; Tech Service Apps jamás accede ni almacena datos de tarjetas de crédito o medios de pago.
+            </li>
+          </ul>
+
+          <h2>3. Almacenamiento Local, Selección de Logo y Copias de Seguridad (<code>.kvota</code>)</h2>
+          <ul>
+            <li>
+              <strong>Selector seguro de imagen para tu Logo:</strong> Cuando seleccionas el logotipo de tu empresa para el membrete del PDF A4, Kvota utiliza el selector nativo del sistema Android (<code>ActivityResultContracts.GetContent</code> / Photo Picker), que entrega únicamente la imagen seleccionada sin solicitar permisos masivos de lectura sobre tu galería. La imagen se normaliza localmente en tu dispositivo y se incrusta directamente en el PDF A4 generado.
+            </li>
+            <li>
+              <strong>Exportación y envío de PDF A4:</strong> Los documentos PDF A4 (<code>210 × 297 mm</code>) se generan 100% en tu teléfono mediante un motor vectorial local y solo se comparten por WhatsApp o correo cuando tú presionas explícitamente el botón de exportar/enviar (a través de <code>androidx.core.content.FileProvider</code>).
+            </li>
+            <li>
+              <strong>Copias de seguridad verificadas (<code>.kvota</code> con <code>SHA-256</code>):</strong> Cuando exportas un respaldo desde Ajustes, Kvota genera un archivo local <code>.kvota</code> firmado con suma de verificación criptográfica <code>SHA-256</code> que tú guardas en la carpeta que elijas mediante el Storage Access Framework (SAF) de Android.
+            </li>
+          </ul>
+
+          <h2>4. Permisos del Dispositivo en Android</h2>
+          <p>La aplicación Android (<code>com.techservice.kvota</code>) declara únicamente los permisos mínimos indispensables:</p>
+          <ul>
+            <li><code>INTERNET</code> y <code>ACCESS_NETWORK_STATE</code>: Utilizados exclusivamente por el SDK de Google AdMob (en la versión gratuita) y por Google Play Billing para validar o restaurar compras.</li>
+            <li><code>com.android.vending.BILLING</code>: Utilizado para procesar los planes <code>kvota_onetime_pro</code> (Pago Único) y <code>kvota_monthly_pro</code> (Plan Mensual) en Google Play Store.</li>
+          </ul>
+
+          <h2>5. Control del Usuario, Retención y Eliminación Total de Datos (Data Deletion)</h2>
+          <p>
+            Al no existir cuentas ni bases de datos en servidores externos, tú tienes control total e inmediato sobre toda tu información:
+          </p>
+          <ul>
+            <li>Puedes editar o eliminar cualquier presupuesto, material, tarea de mano de obra o logotipo directamente desde la interfaz de Kvota.</li>
+            <li>Al desinstalar Kvota o borrar los datos de almacenamiento de la aplicación desde los Ajustes de Android, toda la información local se elimina de forma inmediata, definitiva e irreversible de tu dispositivo.</li>
+          </ul>
+
+          <h2>6. Público Objetivo y Privacidad de Menores</h2>
+          <p>
+            Kvota es una herramienta comercial y profesional para técnicos, contratistas y trabajadores de oficios mayores de 18 años. No está dirigida a menores de 13 años ni recopila datos personales de menores.
+          </p>
+
+          <h2 id="disclaimer">7. Deslinde de Responsabilidad Comercial y Modalidad de Pago Único</h2>
+          <div class="disclaimer">
+            <strong>HERRAMIENTA DE CÁLCULO Y EDICIÓN DE PRESUPUESTOS:</strong> Kvota es una herramienta de software de cálculo y generación de presupuestos en PDF A4. Todos los precios de materiales, márgenes, mano de obra, impuestos/IVA, descuentos y condiciones de garantía son definidos y verificados bajo exclusiva responsabilidad del técnico o profesional emisor. La modalidad comercial de <strong>Pago Único</strong> (<code>kvota_onetime_pro</code>) desbloquea presupuestos ilimitados y elimina los anuncios en la aplicación instalada sin cobros recurrentes, entregándose «tal cual» (as-is) para ejecución local en dispositivos compatibles.
+          </div>
+
+          <h2>8. Contacto</h2>
+          <p>
+            Para consultas sobre esta Política de Privacidad o soporte técnico de <strong>Kvota</strong>, escribe a Ángel Castillo (Tech Service Apps) en:
+            <a href="mailto:servicios.angelcastillo@gmail.com">servicios.angelcastillo@gmail.com</a>.
+          </p>
+        </article>
+
+        <!-- ==================== ENGLISH ==================== -->
+        <article id="en" class="card" lang="en">
+          <span class="pill">ENGLISH · OFFICIAL VERSION</span>
+          <h2 style="font-size: clamp(1.75rem, 3.5vw, 2.35rem); line-height: 1.2; margin: 0 0 12px;">Kvota Privacy Policy &amp; Terms of Use</h2>
+          <p class="meta">
+            <strong>Application:</strong> Kvota: A4 PDF Work Quotes on Google Play (<code>com.techservice.kvota</code>) &amp; Kvota Desktop for Windows PC<br />
+            <strong>Developer / Publisher:</strong> Tech Service Apps (Tech-Service — Ángel Castillo)<br />
+            <strong>Official Privacy &amp; Support Contact:</strong>
+            <a href="mailto:servicios.angelcastillo@gmail.com">servicios.angelcastillo@gmail.com</a><br />
+            <strong>Product Website:</strong>
+            <a href="https://angel7castillo.github.io/kvota/">https://angel7castillo.github.io/kvota/</a><br />
+            <strong>Effective &amp; Last Updated Date:</strong> November 25, 2026
+          </p>
+
+          <div class="highlight">
+            <strong>Executive Summary (Local Privacy &amp; Zero Custody):</strong> Kvota operates under a <strong>Local-First (Zero-Knowledge)</strong> architecture on Android and Windows PC. All your client details, work quotes, material catalogs, labor rates, profit margins, and company logo <strong>are stored 100% locally in your device's private internal storage and are never transmitted to or stored on Tech Service Apps servers</strong>. Internet connectivity on Android is used strictly to serve the bottom banner ad via <strong>Google AdMob</strong> (in the free tier) and to process secure in-app purchases via <strong>Google Play Billing</strong>.
+          </div>
+
+          <h2>1. Quotes, Client Details, Materials &amp; Company Logo</h2>
+          <p>
+            <strong>Zero commercial or client data collection:</strong> Kvota requires no user account, login, email registration, or cloud sync. Tech Service Apps has zero access to your quotes, material costs, labor rates, net profit calculations, or client contact information.
+          </p>
+
+          <h2>2. Advertising (Google AdMob) &amp; In-App Purchases (Google Play Billing)</h2>
+          <ul>
+            <li>
+              <strong>Google AdMob (Bottom Banner in Free Tier):</strong> The free tier includes your first 10 complete work quotes and displays a 50dp bottom banner powered by Google AdMob (App ID: <code>ca-app-pub-8971534701728062~9631574209</code>). The Google Mobile Ads SDK may collect and process device identifiers (such as Google Advertising ID / AAID), coarse IP-based location, ad interaction metrics, and crash/diagnostic logs for ad delivery, analytics, and fraud prevention in accordance with the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>. The banner automatically hides when the keyboard opens and never appears on client A4 PDF documents.
+            </li>
+            <li>
+              <strong>Kvota Pro (Monthly Plan &amp; One-Time Payment — 100% Ad-Free):</strong> Users can unlock unlimited quotes and permanently remove all ads by purchasing the <strong>Monthly Plan</strong> (<code>kvota_monthly_pro</code>) or the <strong>One-Time Payment</strong> license (<code>kvota_onetime_pro</code>) via <strong>Google Play Billing</strong>. Payment details are processed exclusively by Google Play; Tech Service Apps never receives or stores payment card information.
+            </li>
+          </ul>
+
+          <h2>3. On-Device Storage, Logo Selection &amp; <code>.kvota</code> Backups</h2>
+          <ul>
+            <li>
+              <strong>Scoped Logo Image Selection:</strong> When you choose a company logo for your A4 PDF letterhead, Kvota uses the native Android system picker (<code>ActivityResultContracts.GetContent</code>), granting access strictly to the single image you pick without requesting broad gallery read permissions.
+            </li>
+            <li>
+              <strong>Local Vector A4 PDF Generation &amp; Sharing:</strong> ISO 216 A4 PDF documents (<code>210 × 297 mm</code>) are rendered 100% locally on your device and are shared via WhatsApp or email only when you explicitly trigger the export action.
+            </li>
+            <li>
+              <strong>Verified Local Backups (<code>.kvota</code> with <code>SHA-256</code>):</strong> Manual backups are exported as local <code>.kvota</code> archives verified with a cryptographic <code>SHA-256</code> checksum to the folder you select via Android's Storage Access Framework (SAF).
+            </li>
+          </ul>
+
+          <h2>4. Data Retention &amp; Total Deletion Policy</h2>
+          <p>
+            Because no remote accounts or cloud servers exist, you retain complete control over your data at all times. You can edit or delete any quote, catalog item, or logo inside the app, and uninstalling Kvota or clearing app storage in Android settings permanently deletes all local data from your device.
+          </p>
+
+          <h2>5. Target Audience &amp; Legal Disclaimer</h2>
+          <div class="disclaimer">
+            <strong>COMMERCIAL ESTIMATION TOOL &amp; ONE-TIME PAYMENT TERMS:</strong> Kvota is designed for adult trade professionals and contractors aged 18 and older. All material prices, markups, labor rates, taxes, discounts, and warranty terms entered into quotes are the sole responsibility of the issuing technician. The <strong>One-Time Payment</strong> option (<code>kvota_onetime_pro</code>) unlocks unlimited quotes and removes ads on the installed application with zero recurring charges, provided "as-is" for local execution on compatible devices.
+          </div>
+
+          <h2>6. Contact</h2>
+          <p>
+            For privacy or support inquiries regarding <strong>Kvota</strong>, contact Ángel Castillo (Tech Service Apps) at
+            <a href="mailto:servicios.angelcastillo@gmail.com">servicios.angelcastillo@gmail.com</a>.
+          </p>
+        </article>
+      </main>
+
+      <footer>
+        <div>© 2026 Kvota · Tech Service Apps (Ángel Castillo). Todos los derechos reservados.</div>
+        <div>
+          <a href="https://angel7castillo.github.io/kvota/">Web de Kvota</a> ·
+          <a href="https://angel7castillo.github.io/apps/">Catálogo Tech Service Apps</a> ·
+          <a href="mailto:servicios.angelcastillo@gmail.com">servicios.angelcastillo@gmail.com</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

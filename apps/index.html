@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Service Apps — Aplicaciones Oficiales para Android y Windows PC</title>
+  <meta name="description" content="Catálogo oficial de aplicaciones publicadas por Tech Service Apps (Ángel Castillo) en Google Play Store y Microsoft Store: Billet, Kvota, Biblioteca Pastoral y NexoTerapia." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#070b14" />
+  <link rel="canonical" href="https://angel7castillo.github.io/apps/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Tech Service Apps" />
+  <meta property="og:url" content="https://angel7castillo.github.io/apps/" />
+  <meta property="og:title" content="Tech Service Apps — Aplicaciones Privadas y Rápidas para Android &amp; Windows" />
+  <meta property="og:description" content="Herramientas que funcionan sin depender de la nube y protegen tu privacidad: Billet (Finanzas), Kvota (Presupuestos PDF A4), Biblioteca Pastoral y NexoTerapia." />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/116953135?v=4" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://angel7castillo.github.io/apps/#catalog",
+    "url": "https://angel7castillo.github.io/apps/",
+    "name": "Tech Service Apps — Catálogo Oficial de Aplicaciones",
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://angel7castillo.github.io/#tech-service-apps",
+      "name": "Tech Service Apps",
+      "url": "https://angel7castillo.github.io/apps/",
+      "email": "servicios.angelcastillo@gmail.com",
+      "founder": {
+        "@type": "Person",
+        "name": "Angel Castillo",
+        "url": "https://angel7castillo.github.io/"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #070b14;
+      --surface: #0f172a;
+      --surface-2: #17223b;
+      --border: rgba(255, 255, 255, 0.1);
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --blue: #38bdf8;
+      --emerald: #10b981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(56, 189, 248, 0.09), transparent 40%),
+        radial-gradient(circle at 85% 10%, rgba(16, 185, 129, 0.08), transparent 35%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      backdrop-filter: blur(14px);
+      background: rgba(7, 11, 20, 0.85);
+      border-bottom: 1px solid var(--border);
+    }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1.15rem;
+    }
+    .brand-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--emerald);
+      box-shadow: 0 0 12px var(--emerald);
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      background: rgba(16, 185, 129, 0.14);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.32);
+    }
+    .hero {
+      padding: 56px 0 36px;
+      text-align: center;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+      margin: 14px 0 14px;
+      letter-spacing: -0.02em;
+    }
+    .hero p {
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 22px;
+      padding: 20px 0 56px;
+    }
+    .app-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 150ms ease, border-color 150ms ease;
+    }
+    .app-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(56, 189, 248, 0.4);
+    }
+    .app-head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .app-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.35rem;
+      flex-shrink: 0;
+    }
+    .app-category {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--blue);
+    }
+    .app-card h2 {
+      font-size: 1.25rem;
+      margin-top: 2px;
+    }
+    .app-desc {
+      color: var(--muted);
+      font-size: 0.94rem;
+      margin-bottom: 14px;
+    }
+    .benefits {
+      list-style: none;
+      margin-bottom: 18px;
+    }
+    .benefits li {
+      font-size: 0.88rem;
+      color: #cbd5e1;
+      margin-bottom: 6px;
+      padding-left: 18px;
+      position: relative;
+    }
+    .benefits li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #34d399;
+      font-weight: 800;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      min-height: 42px;
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      background: var(--surface-2);
+      color: var(--text);
+    }
+    .btn:hover {
+      border-color: var(--blue);
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #0284c7, #2563eb);
+      border-color: rgba(255, 255, 255, 0.18);
+      color: #ffffff;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 0 48px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    footer a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <a href="./" class="brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Tech Service Apps</span>
+        <span class="pill">Google Play &amp; Microsoft Store</span>
+      </a>
+      <div style="display:flex; gap:12px; align-items:center;">
+        <a href="../" class="btn" style="min-height:36px; padding:6px 12px; font-size:0.8rem;">👨‍💻 Sobre el Desarrollador (Angel Castillo)</a>
+        <a href="mailto:servicios.angelcastillo@gmail.com" class="btn" style="min-height:36px; padding:6px 12px; font-size:0.8rem;">✉️ Soporte</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <span class="pill">✓ PRIVACIDAD LOCAL · FUNCIONAN SIN CONEXIÓN · OPCIONES DE PAGO ÚNICO</span>
+      <h1>Aplicaciones pensadas para resolver tu día a día sin complicaciones.</h1>
+      <p>
+        Construimos herramientas rápidas para tu teléfono Android y tu computadora Windows que guardan tu información de forma privada en tu propio dispositivo, sin obligarte a crear cuentas en la nube.
+      </p>
+    </section>
+
+    <section class="apps-grid" aria-label="Catálogo de aplicaciones">
+      <!-- 1. BILLET -->
+      <article class="app-card">
+        <div>
+          <div class="app-head">
+            <img src="../billet/logo.svg" alt="Billet Logo" class="app-icon" width="52" height="52" />
+            <div>
+              <div class="app-category">Finanzas Personales · Android &amp; Windows</div>
+              <h2>Billet</h2>
+            </div>
+          </div>
+          <p class="app-desc">
+            Controla tu efectivo, cuentas bancarias y ahorros en 40 monedas usando tus propios tipos de cambio. 100% sin conexión y sin vincular bancos.
+          </p>
+          <ul class="benefits">
+            <li>Patrimonio consolidado al instante en la moneda que elijas.</li>
+            <li>Una sola licencia de Pago Único activa tu celular Android y tu PC Windows.</li>
+            <li>Bloqueo con huella/PIN y copias de seguridad privadas (<code>.billet</code>).</li>
+          </ul>
+        </div>
+        <div class="actions">
+          <a href="../billet/" class="btn btn-primary">🌐 Ver Web de Billet →</a>
+          <a href="https://play.google.com/store/apps/details?id=app.billet" target="_blank" rel="noopener noreferrer" class="btn">Google Play ↗</a>
+          <a href="https://apps.microsoft.com/detail/9MXPKKD2F58R" target="_blank" rel="noopener noreferrer" class="btn">Microsoft Store ↗</a>
+        </div>
+      </article>
+
+      <!-- 2. KVOTA -->
+      <article class="app-card">
+        <div>
+          <div class="app-head">
+            <img src="../kvota/logo.svg" alt="Kvota Logo" class="app-icon" width="52" height="52" />
+            <div>
+              <div class="app-category">Oficios y Contratistas · Android &amp; Windows</div>
+              <h2>Kvota: Presupuestos PDF A4</h2>
+            </div>
+          </div>
+          <p class="app-desc">
+            Crea presupuestos profesionales en hoja A4 con el logo de tu negocio en menos de 1 minuto y envíalos por WhatsApp sabiendo de antemano tu ganancia neta real.
+          </p>
+          <ul class="benefits">
+            <li>Doble vista en 1 toque: «Solo Totales» o «Detallado por Ítem» ocultando tu margen.</li>
+            <li>Incluye tus primeros 10 presupuestos 100% completos gratis con tu logo.</li>
+            <li>Opción de desbloqueo ilimitado con un solo Pago Único sin mensualidades.</li>
+          </ul>
+        </div>
+        <div class="actions">
+          <a href="../kvota/" class="btn btn-primary">🌐 Ver Web de Kvota →</a>
+          <a href="https://play.google.com/store/apps/details?id=com.techservice.kvota" target="_blank" rel="noopener noreferrer" class="btn">Google Play ↗</a>
+        </div>
+      </article>
+
+      <!-- 3. BIBLIOTECA PASTORAL -->
+      <article class="app-card">
+        <div>
+          <div class="app-head">
+            <div class="app-icon" style="background:linear-gradient(135deg,#13233a,#1e3a5f); color:#e6c57b; border:1px solid rgba(184,145,70,0.4);">📖</div>
+            <div>
+              <div class="app-category">Estudio Bíblico y Ministerio · Windows, Android &amp; Web</div>
+              <h2>Biblioteca Pastoral v2</h2>
+            </div>
+          </div>
+          <p class="app-desc">
+            Herramienta 100% libre y gratuita para pastores, predicadores y maestros bíblicos. Prepara bosquejos, consulta el Léxico Strong Hebreo/Griego y predica en Modo Púlpito.
+          </p>
+          <ul class="benefits">
+            <li>18 versiones bíblicas y diccionario Strong que funciona sin internet.</li>
+            <li>Modo Púlpito a pantalla completa con letra grande y reloj pastoral.</li>
+            <li>100% gratuita, sin anuncios ni solicitud de dinero para la obra cristiana.</li>
+          </ul>
+        </div>
+        <div class="actions">
+          <a href="https://bibliotecapastoral.org" target="_blank" rel="noopener noreferrer" class="btn btn-primary">🌐 Ir a bibliotecapastoral.org ↗</a>
+          <a href="https://apps.microsoft.com/detail/9N04WK1JQ3L1" target="_blank" rel="noopener noreferrer" class="btn">Microsoft Store ↗</a>
+        </div>
+      </article>
+
+      <!-- 4. NEXOTERAPIA PROFESIONAL -->
+      <article class="app-card">
+        <div>
+          <div class="app-head">
+            <div class="app-icon" style="background:linear-gradient(135deg,#0f766e,#115e59); color:#5eead4; border:1px solid rgba(94,234,212,0.35);">🩺</div>
+            <div>
+              <div class="app-category">Salud Mental y Consultorio · Windows &amp; Android</div>
+              <h2>NexoTerapia Profesional</h2>
+            </div>
+          </div>
+          <p class="app-desc">
+            Consultorio digital con cifrado de extremo a extremo para psicólogos, psicoterapeutas y psiquiatras. Expedientes privados, evolución clínica y sincronización segura entre PC y celular.
+          </p>
+          <ul class="benefits">
+            <li>Bóveda clínica privada: solo el profesional posee la llave de sus expedientes.</li>
+            <li>Informes clínicos en PDF, recibos y Certificado de Derecho al Olvido.</li>
+            <li>Plan inicial gratuito hasta 3 pacientes activos y opción PRO de Pago Único.</li>
+          </ul>
+        </div>
+        <div class="actions">
+          <a href="https://nexoterapia.info" target="_blank" rel="noopener noreferrer" class="btn btn-primary">🌐 Ir a nexoterapia.info ↗</a>
+          <a href="https://apps.microsoft.com/detail/9NB3Q5474Z37" target="_blank" rel="noopener noreferrer" class="btn">Microsoft Store ↗</a>
+          <a href="https://play.google.com/store/apps/details?id=info.nexoterapia.terapeuta" target="_blank" rel="noopener noreferrer" class="btn">Google Play ↗</a>
+        </div>
+      </article>
+
+      <!-- 5. NEXOTERAPIA PERSONAL -->
+      <article class="app-card">
+        <div>
+          <div class="app-head">
+            <div class="app-icon" style="background:linear-gradient(135deg,#065f46,#047857); color:#a7f3d0; border:1px solid rgba(167,243,208,0.35);">🌱</div>
+            <div>
+              <div class="app-category">Bienestar y Diario Emocional · Android &amp; iOS Web</div>
+              <h2>NexoTerapia Personal</h2>
+            </div>
+          </div>
+          <p class="app-desc">
+            Tu espacio seguro de registro emocional diario. Úsala por tu cuenta como Diario Emocional 100% privado o vincúlala gratis mediante código QR con tu psicólogo.
+          </p>
+          <ul class="benefits">
+            <li>Termómetro emocional de los 4 momentos del día, reflexiones y micro-hábitos.</li>
+            <li>100% gratuita para pacientes vinculados por QR con su terapeuta.</li>
+            <li>Protección con huella digital / PIN local y exportación de reportes en PDF.</li>
+          </ul>
+        </div>
+        <div class="actions">
+          <a href="https://nexoterapia.info" target="_blank" rel="noopener noreferrer" class="btn btn-primary">🌐 Ir a nexoterapia.info ↗</a>
+          <a href="https://play.google.com/store/apps/details?id=info.nexoterapia.paciente" target="_blank" rel="noopener noreferrer" class="btn">Google Play ↗</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div>
+      © 2026 <strong>Tech Service Apps</strong> · Desarrollado por <a href="../">Angel Castillo</a> (Montevideo, Uruguay).
+    </div>
+    <div style="display:flex; gap:16px; flex-wrap:wrap;">
+      <a href="../billet/privacy.html">Privacidad Billet</a>
+      <a href="../kvota/privacy.html">Privacidad Kvota</a>
+      <a href="https://angel7castillo.github.io/app-ads.txt">app-ads.txt</a>
+      <a href="mailto:servicios.angelcastillo@gmail.com">servicios.angelcastillo@gmail.com</a>
+    </div>
+  </footer>
+</body>
+</html>

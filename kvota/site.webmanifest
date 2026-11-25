@@ -1,0 +1,16 @@
+{
+  "name": "Kvota: Presupuestos de Obra en PDF A4",
+  "short_name": "Kvota",
+  "description": "Presupuestos de obra en PDF A4 con tu logo, materiales, mano de obra y ganancia neta real. 100% Offline-First por Tech Service Apps.",
+  "start_url": "/kvota/",
+  "display": "standalone",
+  "background_color": "#070B14",
+  "theme_color": "#0051D5",
+  "icons": [
+    {
+      "src": "./logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

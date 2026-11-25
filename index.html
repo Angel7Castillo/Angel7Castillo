@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angel Castillo — Desarrollador de Software · Desktop &amp; Mobile Systems</title>
+  <meta name="description" content="Desarrollador de software autodidacta en Montevideo, Uruguay. Especializado en sistemas de escritorio y móviles bajo Clean Architecture, SDD, Local-First y QA (CES)." />
+  <meta name="author" content="Angel Castillo" />
+  <meta name="theme-color" content="#090d16" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://angel7castillo.github.io/" />
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="https://avatars.githubusercontent.com/u/116953135?v=4&s=32" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://avatars.githubusercontent.com/u/116953135?v=4&s=16" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://avatars.githubusercontent.com/u/116953135?v=4&s=180" />
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://angel7castillo.github.io/" />
+  <meta property="og:title" content="Angel Castillo — Desarrollador de Software · Desktop &amp; Mobile" />
+  <meta property="og:description" content="Desarrollador autodidacta especializado en arquitectura limpia, sistemas Local-First para Windows y Android, Tester de Software (CES) y Máster en Desarrollo con IA." />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/116953135?v=4" />
+  <meta property="og:image:alt" content="Foto de perfil de Angel Castillo" />
+  <meta property="og:locale" content="es_UY" />
+  <meta property="og:locale:alternate" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Angel Castillo — Software Developer · Desktop &amp; Mobile" />
+  <meta name="twitter:description" content="Desarrollador autodidacta · Clean Architecture, SDD &amp; Local-First · Tester de Software (CES) · Máster en Desarrollo con IA." />
+  <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/116953135?v=4" />
+  <meta name="twitter:image:alt" content="Foto de perfil de Angel Castillo" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfilePage",
+        "@id": "https://angel7castillo.github.io/#webpage",
+        "url": "https://angel7castillo.github.io/",
+        "name": "Angel Castillo — Desarrollador de Software · Desktop & Mobile Systems",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://angel7castillo.github.io/#website",
+          "url": "https://angel7castillo.github.io/",
+          "name": "Angel Castillo Portfolio"
+        },
+        "mainEntity": {
+          "@id": "https://angel7castillo.github.io/#angel-castillo"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://angel7castillo.github.io/#angel-castillo",
+        "name": "Angel Castillo",
+        "jobTitle": "Software Developer · Desktop & Mobile Systems",
+        "description": "Desarrollador de software autodidacta especializado en sistemas de escritorio y móviles bajo Clean Architecture, Spec-Driven Development y enfoque Local-First. Tester de Software (CES) y cursando Máster en Desarrollo con IA.",
+        "url": "https://angel7castillo.github.io/",
+        "image": "https://avatars.githubusercontent.com/u/116953135?v=4",
+        "email": "servicios.angelcastillo@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Montevideo",
+          "addressCountry": "UY"
+        },
+        "alumniOf": [
+          {
+            "@type": "EducationalOrganization",
+            "name": "Centro de Ensayos de Software (CES) — Facultad de Ingeniería (UdelaR)"
+          },
+          {
+            "@type": "EducationalOrganization",
+            "name": "BIG school — Máster en Desarrollo con IA"
+          }
+        ],
+        "knowsAbout": [
+          "Spec-Driven Development (SDD)",
+          "Clean Architecture",
+          "Local-First Architecture",
+          "Zero-Knowledge Privacy & End-to-End Encryption",
+          "Test-Driven Development (TDD)",
+          "Software Testing & Physical Hardware QA",
+          "Multiplatform Desktop & Mobile Systems"
+        ],
+        "sameAs": [
+          "https://github.com/Angel7Castillo",
+          "https://angel7castillo.github.io/apps/",
+          "https://bibliotecapastoral.org",
+          "https://nexoterapia.info"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://angel7castillo.github.io/#tech-service-apps",
+        "name": "Tech Service Apps",
+        "url": "https://angel7castillo.github.io/apps/",
+        "email": "servicios.angelcastillo@gmail.com",
+        "founder": { "@id": "https://angel7castillo.github.io/#angel-castillo" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Billet — Finanzas Personales Multimoneda",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Android, Windows 10, Windows 11",
+        "url": "https://angel7castillo.github.io/billet/",
+        "installUrl": [
+          "https://play.google.com/store/apps/details?id=app.billet",
+          "https://apps.microsoft.com/detail/9MXPKKD2F58R"
+        ],
+        "author": { "@id": "https://angel7castillo.github.io/#angel-castillo" },
+        "publisher": { "@id": "https://angel7castillo.github.io/#tech-service-apps" },
+        "description": "Aplicación de finanzas personales multimoneda 100% offline-first para Android y Windows PC con 40 divisas, tipos de cambio manuales y cifrado local AES-256-GCM.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Kvota — Presupuestos de Obra y Oficios en PDF A4",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Android, Windows 10, Windows 11",
+        "url": "https://angel7castillo.github.io/kvota/",
+        "installUrl": "https://play.google.com/store/apps/details?id=com.techservice.kvota",
+        "author": { "@id": "https://angel7castillo.github.io/#angel-castillo" },
+        "publisher": { "@id": "https://angel7castillo.github.io/#tech-service-apps" },
+        "description": "Aplicación offline-first para generar presupuestos de obra en PDF ISO 216 A4 con membrete, logo, doble vista inteligente y cálculo privado de ganancia neta.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Biblioteca Pastoral v2",
+        "applicationCategory": "ProductivityApplication",
+        "operatingSystem": "Windows 10, Windows 11, Android, Web PWA",
+        "url": "https://bibliotecapastoral.org",
+        "installUrl": [
+          "https://apps.microsoft.com/detail/9N04WK1JQ3L1",
+          "https://play.google.com/store/apps/details?id=com.techservice.bibliotecapastoral"
+        ],
+        "author": { "@id": "https://angel7castillo.github.io/#angel-castillo" },
+        "publisher": { "@id": "https://angel7castillo.github.io/#tech-service-apps" },
+        "description": "Software gratuito de estudio bíblico, exégesis léxica Strong Hebreo/Griego, redacción de bosquejos y Modo Púlpito para Windows (Microsoft Store), Android y Web.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "NexoTerapia Profesional",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "Windows 10, Windows 11, Android",
+        "url": "https://nexoterapia.info",
+        "installUrl": [
+          "https://apps.microsoft.com/detail/9NB3Q5474Z37",
+          "https://play.google.com/store/apps/details?id=info.nexoterapia.terapeuta"
+        ],
+        "author": { "@id": "https://angel7castillo.github.io/#angel-castillo" },
+        "publisher": { "@id": "https://angel7castillo.github.io/#tech-service-apps" },
+        "description": "Suite clínica Local-First con cifrado de extremo a extremo (AES-256-GCM + ECDH P-256) y sincronización Zero-Knowledge entre Windows y Android para profesionales de salud mental.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "NexoTerapia Personal",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "Android, iOS Web PWA",
+        "url": "https://nexoterapia.info",
+        "installUrl": "https://play.google.com/store/apps/details?id=info.nexoterapia.paciente",
+        "author": { "@id": "https://angel7castillo.github.io/#angel-castillo" },
+        "publisher": { "@id": "https://angel7castillo.github.io/#tech-service-apps" },
+        "description": "Aplicación de acompañamiento emocional con doble modalidad: Diario Emocional Personal 100% offline y canal clínico vinculado por QR E2EE con el terapeuta.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-primary: #090d16;
+      --bg-surface: #111827;
+      --bg-surface-elevated: #172033;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-hover: rgba(56, 189, 248, 0.35);
+      --text-primary: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
+      --accent-blue: #38bdf8;
+      --accent-emerald: #34d399;
+      --accent-indigo: #818cf8;
+      --radius-outer: 16px;
+      --radius-inner: 10px;
+      --max-w: 920px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      scroll-behavior: smooth;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.65;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(56, 189, 248, 0.08), transparent 40%),
+        radial-gradient(circle at 85% 10%, rgba(129, 140, 248, 0.07), transparent 35%),
+        var(--bg-primary);
+      padding-bottom: 4rem;
+    }
+
+    h1, h2, h3 {
+      text-wrap: balance;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+
+    p, li {
+      text-wrap: pretty;
+      color: var(--text-secondary);
+    }
+
+    a {
+      color: var(--accent-blue);
+      text-decoration: none;
+      transition-property: color, background-color, border-color, transform;
+      transition-duration: 150ms;
+      transition-timing-function: ease-out;
+    }
+
+    a:hover {
+      color: #7dd3fc;
+    }
+
+    .container {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Topbar */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      background: rgba(9, 13, 22, 0.82);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .topbar-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0.85rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .brand-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--accent-emerald);
+      box-shadow: 0 0 10px var(--accent-emerald);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 3px;
+    }
+
+    .lang-btn {
+      min-height: 40px;
+      padding: 0.4rem 0.85rem;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      border-radius: 7px;
+      cursor: pointer;
+      transition-property: background-color, color, transform;
+      transition-duration: 150ms;
+      transition-timing-function: ease-out;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent-blue);
+      outline-offset: 3px;
+    }
+
+    .btn:focus-visible,
+    .lang-btn:focus-visible {
+      outline: 2px solid var(--accent-blue);
+      outline-offset: 2px;
+      box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.25);
+    }
+
+    .lang-btn[aria-pressed="true"] {
+      background: var(--bg-surface-elevated);
+      color: var(--text-primary);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .lang-btn:active {
+      transform: scale(0.96);
+    }
+
+    /* Hero */
+    .hero {
+      padding: 4rem 0 2.75rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .hero-header {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .avatar {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      object-fit: cover;
+      outline: 2px solid rgba(255, 255, 255, 0.14);
+      outline-offset: -2px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .hero-meta h1 {
+      font-size: clamp(1.85rem, 4vw, 2.5rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.35rem;
+    }
+
+    .location-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .headline-banner {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.22);
+      color: #e0f2fe;
+      font-size: 0.94rem;
+      font-weight: 500;
+      padding: 0.65rem 1rem;
+      border-radius: var(--radius-inner);
+      margin-bottom: 1.35rem;
+    }
+
+    .hero-bio {
+      font-size: 1.05rem;
+      max-width: 760px;
+      margin-bottom: 1rem;
+    }
+
+    .hero-bio strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.75rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      min-height: 44px;
+      padding: 0.6rem 1.15rem;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      transition-property: transform, background-color, border-color, box-shadow;
+      transition-duration: 150ms;
+      transition-timing-function: ease-out;
+    }
+
+    .btn:hover {
+      background: var(--bg-surface-elevated);
+      border-color: var(--border-hover);
+      color: var(--text-primary);
+      transform: translateY(-1px);
+    }
+
+    .btn:active {
+      transform: scale(0.97);
+    }
+
+    .btn-primary {
+      background: #0274b3;
+      border-color: #38bdf8;
+      color: #ffffff;
+    }
+
+    .btn-primary:hover {
+      background: #0369a1;
+      color: #ffffff;
+    }
+
+    /* Sections */
+    section {
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .section-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    /* Cards Grid */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-outer);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition-property: border-color, transform, box-shadow;
+      transition-duration: 150ms;
+      transition-timing-function: ease-out;
+    }
+
+    .card:hover {
+      border-color: var(--border-hover);
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    }
+
+    .card-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.76rem;
+      font-weight: 500;
+      color: var(--accent-blue);
+      background: rgba(56, 189, 248, 0.1);
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+      margin-bottom: 0.85rem;
+      width: fit-content;
+    }
+
+    .card h3 {
+      font-size: 1.18rem;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .card-desc {
+      font-size: 0.94rem;
+      margin-bottom: 1rem;
+    }
+
+    .card-list {
+      list-style: none;
+      margin-bottom: 1.25rem;
+    }
+
+    .card-list li {
+      font-size: 0.88rem;
+      padding-left: 1.15rem;
+      position: relative;
+      margin-bottom: 0.45rem;
+    }
+
+    .card-list li::before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      color: var(--accent-blue);
+    }
+
+    .store-badge {
+      display: inline-flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.5rem 0.85rem;
+      border-radius: var(--radius-inner);
+      background: var(--bg-surface-elevated);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: var(--text-primary);
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .app-window-preview {
+      background: #0b111e;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 10px;
+      padding: 0.75rem 0.9rem;
+      margin-bottom: 1rem;
+      font-size: 0.82rem;
+    }
+
+    .app-window-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.73rem;
+      color: var(--text-muted);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+      padding-bottom: 0.45rem;
+      margin-bottom: 0.55rem;
+    }
+
+    .app-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+
+    .btn-sm {
+      min-height: 38px;
+      padding: 0.4rem 0.85rem;
+      font-size: 0.82rem;
+      border-radius: 8px;
+    }
+
+    /* Education & Path */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .timeline-item {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-outer);
+      padding: 1.25rem 1.5rem;
+    }
+
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .timeline-header h3 {
+      font-size: 1.05rem;
+      color: var(--text-primary);
+    }
+
+    .badge-period {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--accent-emerald);
+      background: rgba(52, 211, 153, 0.1);
+      padding: 0.2rem 0.55rem;
+      border-radius: 6px;
+    }
+
+    /* Stack Pills */
+    .stack-group {
+      margin-bottom: 1.15rem;
+    }
+
+    .stack-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .pill {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-primary);
+      padding: 0.35rem 0.8rem;
+      border-radius: 8px;
+      font-size: 0.86rem;
+      font-weight: 500;
+    }
+
+    .footer {
+      padding-top: 2.5rem;
+      text-align: center;
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    [data-lang="en"] {
+      display: none;
+    }
+
+    html[lang="en"] [data-lang="es"] {
+      display: none;
+    }
+
+    html[lang="en"] [data-lang="en"] {
+      display: block;
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding: 2.5rem 0 2rem;
+      }
+      .topbar-inner {
+        padding: 0.75rem 1rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#top" class="brand" style="color: var(--text-primary);">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Angel7Castillo</span>
+      </a>
+      <div class="nav-actions">
+        <a href="./apps/" class="btn btn-sm" style="min-height: 40px; border-color: rgba(52, 211, 153, 0.35); color: #34d399;">
+          📱 Tech Service Apps
+        </a>
+        <div class="lang-switch" role="group" aria-label="Selector de idioma / Language switcher">
+          <button type="button" class="lang-btn" id="btn-es" aria-label="Cambiar idioma a Español" aria-pressed="true" onclick="setLanguage('es')">Español</button>
+          <button type="button" class="lang-btn" id="btn-en" aria-label="Switch language to English" aria-pressed="false" onclick="setLanguage('en')">English</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== ESPAÑOL ==================== -->
+  <main class="container" data-lang="es" id="top">
+    <section class="hero">
+      <div class="hero-header">
+        <img src="https://avatars.githubusercontent.com/u/116953135?v=4&s=168" alt="Foto de perfil de Angel Castillo" class="avatar" width="84" height="84" fetchpriority="high" decoding="async" />
+        <div class="hero-meta">
+          <h1>Angel Castillo</h1>
+          <span class="location-pill">📍 Montevideo, Uruguay · GMT-3</span>
+        </div>
+      </div>
+
+      <div class="headline-banner">
+        Desarrollador Autodidacta · Desktop &amp; Mobile | Tester de Software (CES) | Cursando Máster en Desarrollo con IA
+      </div>
+
+      <p class="hero-bio">
+        Soy un desarrollador de software <strong>autodidacta como regla principal</strong>, enfocado en construir aplicaciones de escritorio y móviles con dos prioridades: <strong>que la interfaz responda rápido y que la arquitectura sea ordenada</strong>.
+      </p>
+      <p class="hero-bio">
+        Más allá de las herramientas puntuales del momento, mi trabajo se apoya en <strong>metodologías sólidas de ingeniería</strong>: especificar el problema y los contratos antes de construir, separar con claridad la lógica del negocio de la interfaz visual, diseñar sistemas que funcionen sin depender de conexión permanente a internet (<em>Local-First</em>) y verificar cada entrega mediante pruebas estructuradas. Mis proyectos principales están probados, certificados y distribuidos en <strong>tiendas oficiales</strong> bajo el sello <strong>Tech Service Apps</strong>.
+      </p>
+
+      <div class="cta-row">
+        <a href="#proyectos" class="btn btn-primary">
+          🚀 Ver 5 Apps en Producción ↓
+        </a>
+        <a href="#metodologia" class="btn">
+          🛠️ Metodología de Ingeniería ↓
+        </a>
+        <a href="./apps/" class="btn">
+          📱 Catálogo Tech Service Apps →
+        </a>
+        <a href="https://github.com/Angel7Castillo" target="_blank" rel="noopener noreferrer" class="btn">
+          GitHub ↗
+        </a>
+        <a href="mailto:servicios.angelcastillo@gmail.com" class="btn">
+          ✉️ Contacto
+        </a>
+      </div>
+    </section>
+
+    <!-- Metodología de Ingeniería y Ciclo de Producto -->
+    <section id="metodologia">
+      <h2 class="section-title">🛠️ Metodología de Ingeniería y Ciclo de Producto</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3>1. Desarrollo Guiado por Especificaciones (Spec-Driven Development — SDD)</h3>
+            <span class="badge-period">Pilar 01</span>
+          </div>
+          <p>
+            Ningún sistema se construye a ciegas. Antes de implementar una funcionalidad se documentan formalmente el alcance, las reglas de negocio, los contratos de datos, las fronteras del sistema y los criterios de aceptación verificables.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3>2. Arquitectura Limpia y Diseño Modular (Clean Architecture)</h3>
+            <span class="badge-period">Pilar 02</span>
+          </div>
+          <p>
+            Separación estricta por capas entre las reglas del dominio y la interfaz de usuario. Este aislamiento permite que un mismo núcleo lógico evolucione de forma mantenible y opere con consistencia tanto en computadoras de escritorio (Windows) como en dispositivos móviles (Android).
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3>3. Arquitectura Local-First y Privacidad por Diseño (Zero-Knowledge)</h3>
+            <span class="badge-period">Pilar 03</span>
+          </div>
+          <p>
+            Prioridad absoluta a la velocidad de respuesta y a la soberanía de los datos del usuario. Las aplicaciones funcionan al 100% sin conexión obligatoria a la nube, resguardando la información sensible en el propio dispositivo y aplicando cifrado de extremo a extremo cuando se requiere sincronización.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3>4. Desarrollo Guiado por Pruebas (TDD) y Ensayo Manual en Hardware Físico (QA — CES)</h3>
+            <span class="badge-period">Pilar 04</span>
+          </div>
+          <p>
+            Combinación de pruebas automatizadas sobre las reglas críticas de negocio con <strong>ensayos de calidad 100% manuales en dispositivos físicos reales</strong>, aplicando metodología formal de Testing (Centro de Ensayos de Software — CES / UdelaR) para validar flujos, casos borde y usabilidad antes de cada lanzamiento.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3>5. Orquestación de Ingeniería Asistida por IA y Entrega Certificada en Tiendas</h3>
+            <span class="badge-period">Pilar 05</span>
+          </div>
+          <p>
+            Integración estructurada de flujos de desarrollo asistidos por inteligencia artificial bajo auditoría humana estricta, llevando cada producto hasta superar los estándares de seguridad, privacidad y certificación de <strong>Google Play Store</strong> y <strong>Microsoft Store</strong>.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Proyectos en Producción -->
+    <section id="proyectos">
+      <h2 class="section-title">🚀 Proyectos en Producción (Tiendas Oficiales · Tech Service Apps)</h2>
+      <div class="grid-2">
+        <!-- 1. BILLET -->
+        <article class="card">
+          <div>
+            <span class="card-tag">ANDROID &amp; WINDOWS · LOCAL-FIRST · ZERO-KNOWLEDGE</span>
+            <h3>Billet — Finanzas Personales Multimoneda</h3>
+            <p class="card-desc">
+              Aplicación 100% offline-first para gestionar cuentas en 40 divisas con tipos de cambio personalizados, privacidad local y puente criptográfico entre Android y Windows PC.
+            </p>
+            <div class="app-window-preview">
+              <div class="app-window-bar">
+                <span>🟢 100% OFFLINE · 40 DIVISAS</span>
+                <span>CIFRADO LOCAL</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="color:#f8fafc; font-weight:600;">Patrimonio Multimoneda (USD/EUR/UYU/ARS)</span>
+                <span style="color:#34d399; font-family:'JetBrains Mono',monospace; font-weight:700;">1 Licencia = Móvil + PC</span>
+              </div>
+            </div>
+            <ul class="card-list">
+              <li><strong>Zero-Knowledge local:</strong> persistencia privada en el dispositivo, bloqueo biométrico/PIN y copias de seguridad <code>.billet</code> cifradas localmente.</li>
+              <li><strong>Puente Criptográfico Android ↔ PC:</strong> código local <code>PC-XXXX</code> que activa Windows 10/11 con la misma licencia de Pago Único sin servidores.</li>
+              <li><strong>Internacionalización:</strong> interfaz y fichas de tienda en 6 idiomas (<code>ES · EN · PT · DE · FR · HI</code>).</li>
+            </ul>
+          </div>
+          <div>
+            <div class="store-badge">
+              <span>▶ Google Play &amp; ⊞ Microsoft Store</span>
+              <a href="./billet/privacy.html" style="color: var(--text-muted); font-size: 0.75rem;">Privacidad</a>
+            </div>
+            <div class="app-actions">
+              <a href="./billet/" class="btn btn-primary btn-sm">🌐 Abrir Web de Billet →</a>
+              <a href="https://play.google.com/store/apps/details?id=app.billet" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Google Play ↗</a>
+              <a href="https://apps.microsoft.com/detail/9MXPKKD2F58R" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Microsoft Store ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. KVOTA -->
+        <article class="card">
+          <div>
+            <span class="card-tag">ANDROID &amp; WINDOWS · CLEAN ARCHITECTURE · ARITMÉTICA EXACTA</span>
+            <h3>Kvota — Presupuestos de Obra y Oficios en PDF A4</h3>
+            <p class="card-desc">
+              Aplicación 100% offline-first para técnicos, electricistas, instaladores y contratistas que genera presupuestos en hoja oficial ISO 216 A4 con membrete, logo y cálculo privado de ganancia neta.
+            </p>
+            <div class="app-window-preview">
+              <div class="app-window-bar">
+                <span>📄 ISO 216 A4 (210×297 mm)</span>
+                <span>DOBLE VISTA PDF</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="color:#f8fafc; font-weight:600;">Vista Cliente vs. Ganancia Privada</span>
+                <span style="color:#38bdf8; font-family:'JetBrains Mono',monospace; font-weight:700;">Respaldo .kvota</span>
+              </div>
+            </div>
+            <ul class="card-list">
+              <li><strong>Doble Vista Inteligente en A4:</strong> alterna en 1 toque entre «Solo Totales» o «Detallado por Ítem» manteniendo 100% privada la ganancia del técnico.</li>
+              <li><strong>Aritmética financiera exacta:</strong> cálculos enteros en centavos sin errores de redondeo y respaldos locales <code>.kvota</code> verificados criptográficamente.</li>
+              <li><strong>Flujo guiado Paso 0 a 4:</strong> membrete con logo desde galería, plantillas de oficios e historial con filtros de estado.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="store-badge">
+              <span>▶ Google Play (<code>com.techservice.kvota</code>)</span>
+              <a href="./kvota/privacy.html" style="color: var(--text-muted); font-size: 0.75rem;">Privacidad</a>
+            </div>
+            <div class="app-actions">
+              <a href="./kvota/" class="btn btn-primary btn-sm">🌐 Abrir Web de Kvota →</a>
+              <a href="https://play.google.com/store/apps/details?id=com.techservice.kvota" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Google Play ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. BIBLIOTECA PASTORAL -->
+        <article class="card">
+          <div>
+            <span class="card-tag">WINDOWS · ANDROID · WEB · MULTI-PERFIL LOCAL</span>
+            <h3>Biblioteca Pastoral v2 — Estudio Bíblico, Strong &amp; Modo Púlpito</h3>
+            <p class="card-desc">
+              Software 100% libre y gratuito para pastores, predicadores y maestros bíblicos con editor de bosquejos homiléticos, Biblia multiversión, Concordancia Strong y Modo Púlpito.
+            </p>
+            <div class="app-window-preview">
+              <div class="app-window-bar">
+                <span>📖 RVR1909 + STRONG HEBREO/GRIEGO</span>
+                <span>&lt; 60 MB RAM</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="color:#f8fafc; font-weight:600;">18 Versiones · Léxico H1–H8674 / G1–G5624</span>
+                <span style="color:#34d399; font-family:'JetBrains Mono',monospace; font-weight:700;">100% Gratuito</span>
+              </div>
+            </div>
+            <ul class="card-list">
+              <li><strong>Motor bíblico 100% offline:</strong> lectura sin conexión, diccionario Strong Hebreo/Griego y aislamiento multi-perfil local por predicador.</li>
+              <li><strong>Modo Púlpito dedicado:</strong> vista de predicación a pantalla completa con alto contraste, control tipográfico y cronómetro pastoral.</li>
+              <li><strong>Certificación multiplataforma:</strong> distribuido en Microsoft Store, Google Play y Demo Web interactiva en 6 idiomas.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="store-badge">
+              <span>⊞ Microsoft Store &amp; ▶ Google Play</span>
+              <span style="color: var(--accent-emerald); font-size: 0.75rem;">bibliotecapastoral.org</span>
+            </div>
+            <div class="app-actions">
+              <a href="https://bibliotecapastoral.org" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">🌐 Abrir bibliotecapastoral.org ↗</a>
+              <a href="https://apps.microsoft.com/detail/9N04WK1JQ3L1" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Microsoft Store ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. NEXOTERAPIA PROFESIONAL -->
+        <article class="card">
+          <div>
+            <span class="card-tag">WINDOWS &amp; ANDROID · BÓVEDA ZERO-KNOWLEDGE · E2EE</span>
+            <h3>NexoTerapia Profesional — Consultorio Clínico Local-First &amp; E2EE</h3>
+            <p class="card-desc">
+              Suite clínica para psicólogos, psicoterapeutas y psiquiatras con expedientes cifrados en el dispositivo, sincronización Zero-Knowledge entre PC Windows y móvil Android, y vinculación QR con pacientes.
+            </p>
+            <div class="app-window-preview">
+              <div class="app-window-bar">
+                <span>🔐 BÓVEDA CLÍNICA ZERO-KNOWLEDGE</span>
+                <span>CIFRADO EXTREMO A EXTREMO</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="color:#f8fafc; font-weight:600;">Sync PC ↔ Android · Derecho al Olvido Verificable</span>
+                <span style="color:#38bdf8; font-family:'JetBrains Mono',monospace; font-weight:700;">Kit .nexokey</span>
+              </div>
+            </div>
+            <ul class="card-list">
+              <li><strong>Privacidad clínica por diseño:</strong> expedientes y notas de sesión cifrados localmente en el dispositivo del profesional con kit de recuperación <code>.nexokey</code>.</li>
+              <li><strong>Cumplimiento normativo y Derecho al Olvido:</strong> destrucción irreversible de expedientes con certificado legal criptográfico (Ley 18.331 Uruguay / RGPD Art. 17).</li>
+              <li><strong>Sincronización multi-dispositivo:</strong> bóveda cifrada sincronizada entre el consultorio de escritorio en Windows y la aplicación móvil en Android.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="store-badge">
+              <span>⊞ Microsoft Store (<code>9NB3Q5474Z37</code>) &amp; ▶ Google Play</span>
+              <span style="color: var(--accent-blue); font-size: 0.75rem;">nexoterapia.info</span>
+            </div>
+            <div class="app-actions">
+              <a href="https://nexoterapia.info" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">🌐 Abrir nexoterapia.info ↗</a>
+              <a href="https://apps.microsoft.com/detail/9NB3Q5474Z37" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Microsoft Store ↗</a>
+              <a href="https://play.google.com/store/apps/details?id=info.nexoterapia.terapeuta" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Google Play ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. NEXOTERAPIA PERSONAL -->
+        <article class="card">
+          <div>
+            <span class="card-tag">ANDROID &amp; iOS WEB · DISEÑO ADAPTATIVO · E2EE</span>
+            <h3>NexoTerapia Personal — Paciente &amp; Diario Emocional</h3>
+            <p class="card-desc">
+              Aplicación de acompañamiento y bienestar emocional con doble modalidad adaptativa: Diario Emocional Personal 100% offline y canal clínico gratuito vinculado por QR con el terapeuta.
+            </p>
+            <div class="app-window-preview">
+              <div class="app-window-bar">
+                <span>🌱 DIARIO PERSONAL + VÍNCULO CLÍNICO QR</span>
+                <span>SOBRES CIFRADOS E2EE</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="color:#f8fafc; font-weight:600;">Termómetro 4 Momentos · Hábitos · Biometría</span>
+                <span style="color:#34d399; font-family:'JetBrains Mono',monospace; font-weight:700;">Zero-Knowledge</span>
+              </div>
+            </div>
+            <ul class="card-list">
+              <li><strong>Doble modalidad adaptativa:</strong> uso independiente como Diario Emocional privado (4 momentos del día, micro-hábitos y reportes PDF) o vinculado por QR con el psicólogo.</li>
+              <li><strong>Sobres cifrados de extremo a extremo:</strong> cada registro compartido con el profesional se sella en el teléfono para que solo la bóveda del terapeuta pueda abrirlo.</li>
+              <li><strong>Protección local:</strong> almacenamiento privado en el dispositivo protegido con desbloqueo biométrico nativo y PIN.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="store-badge">
+              <span>▶ Google Play (<code>info.nexoterapia.paciente</code>) &amp; Web iOS</span>
+              <span style="color: var(--accent-blue); font-size: 0.75rem;">nexoterapia.info</span>
+            </div>
+            <div class="app-actions">
+              <a href="https://nexoterapia.info" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">🌐 Abrir nexoterapia.info ↗</a>
+              <a href="https://play.google.com/store/apps/details?id=info.nexoterapia.paciente" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Google Play ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Formación & Aprendizaje Continuo -->
+    <section id="formacion">
+      <h2 class="section-title">🎓 Formación &amp; Aprendizaje Continuo</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3>Autodidacta como Regla Principal</h3>
+            <span class="badge-period">Permanente</span>
+          </div>
+          <p>
+            Mi motor principal es aprender construyendo: estudiar documentación técnica oficial, diseñar arquitecturas limpias y llevar productos reales desde cero hasta su certificación y publicación en tiendas oficiales.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3><a href="https://thebigschool.com/master-desarrollo-con-ia/" target="_blank" rel="noopener noreferrer">Máster en Desarrollo con IA con Doble Titulación — BIG school ↗</a></h3>
+            <span class="badge-period">En curso</span>
+          </div>
+          <p>
+            Especialización en desarrollo de software moderno, diseño de arquitecturas asistidas por IA y orquestación estructurada de flujos de ingeniería.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3>Tester de Software — Centro de Ensayos de Software (CES)</h3>
+            <span class="badge-period">Montevideo, 2023</span>
+          </div>
+          <p>
+            Carrera técnica con el respaldo de la <strong>Facultad de Ingeniería (UdelaR)</strong> y los programas de Educación Permanente. Esta base formal en QA y ensayo de software define mi forma de programar: validar entradas, diseñar casos de prueba y asegurar la estabilidad antes de publicar cada versión.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Arquitectura y Criterio -->
+    <section id="arquitectura">
+      <h2 class="section-title">📐 Casos de Estudio &amp; Criterio de Ingeniería</h2>
+      <div class="grid-2">
+        <article class="card">
+          <div>
+            <span class="card-tag">CASO DE ESTUDIO 01</span>
+            <h3>Arquitectura de Convergencia Multiplataforma</h3>
+            <p class="card-desc">
+              Diseño de un núcleo de lógica de dominio 100% compartido para Web, Escritorio y Móvil, reduciendo el consumo de memoria a &lt;60 MB y eliminando la duplicación de reglas de negocio.
+            </p>
+          </div>
+          <a href="https://github.com/Angel7Castillo/Angel7Castillo/blob/main/case-studies/01-multiplatform-architecture.md" target="_blank" rel="noopener noreferrer" class="btn">
+            Leer Caso de Estudio →
+          </a>
+        </article>
+
+        <article class="card">
+          <div>
+            <span class="card-tag">CASO DE ESTUDIO 02 · QA &amp; ANDROID</span>
+            <h3>Orquestación de QA Manual y Pruebas Cerradas en Google Play</h3>
+            <p class="card-desc">
+              Metodología de ensayo 100% manual en dispositivo físico combinada con un organizador local para gestionar el ciclo de 12 testers durante 14 días sin perder trazabilidad.
+            </p>
+          </div>
+          <a href="https://github.com/Angel7Castillo/Angel7Castillo/blob/main/case-studies/02-google-play-closed-testing-workflow.md" target="_blank" rel="noopener noreferrer" class="btn">
+            Leer Caso de Estudio →
+          </a>
+        </article>
+
+        <article class="card">
+          <div>
+            <span class="card-tag">ESTÁNDARES DE CALIDAD</span>
+            <h3>Manifiesto de Principios de Ingeniería</h3>
+            <p class="card-desc">
+              Planificar contratos antes de construir, validación estricta en las fronteras de entrada, ciclo de verificación de calidad y cero código muerto.
+            </p>
+          </div>
+          <a href="https://github.com/Angel7Castillo/Angel7Castillo/blob/main/standards/engineering-principles.md" target="_blank" rel="noopener noreferrer" class="btn">
+            Ver Principios de Ingeniería →
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== ENGLISH ==================== -->
+  <main class="container" data-lang="en" hidden>
+    <section class="hero">
+      <div class="hero-header">
+        <img src="https://avatars.githubusercontent.com/u/116953135?v=4&s=168" alt="Angel Castillo profile photo" class="avatar" width="84" height="84" decoding="async" />
+        <div class="hero-meta">
+          <h1>Angel Castillo</h1>
+          <span class="location-pill">📍 Montevideo, Uruguay · GMT-3</span>
+        </div>
+      </div>
+
+      <div class="headline-banner">
+        Self-Taught Developer · Desktop &amp; Mobile | Software Tester (CES) | M.Sc. Candidate in AI Software Development
+      </div>
+
+      <p class="hero-bio">
+        I am a <strong>self-taught software developer by core principle</strong>, focused on building desktop and mobile applications around two priorities: <strong>responsive user interfaces and clean, maintainable architecture</strong>.
+      </p>
+      <p class="hero-bio">
+        Beyond specific tools, my work is grounded in <strong>disciplined engineering methodologies</strong>: defining formal specifications and data contracts before building, strictly separating domain logic from the visual interface, engineering <em>Local-First</em> systems that work reliably offline, and verifying every release through structured quality assurance. My core projects are tested, certified, and distributed through <strong>official app stores</strong> under the <strong>Tech Service Apps</strong> seal.
+      </p>
+
+      <div class="cta-row">
+        <a href="#products" class="btn btn-primary">
+          🚀 View 5 Shipped Apps ↓
+        </a>
+        <a href="#methodology-en" class="btn">
+          🛠️ Engineering Methodology ↓
+        </a>
+        <a href="./apps/" class="btn">
+          📱 Tech Service Apps Catalog →
+        </a>
+        <a href="https://github.com/Angel7Castillo" target="_blank" rel="noopener noreferrer" class="btn">
+          GitHub ↗
+        </a>
+        <a href="mailto:servicios.angelcastillo@gmail.com" class="btn">
+          ✉️ Contact
+        </a>
+      </div>
+    </section>
+
+    <!-- Engineering Methodology & Product Lifecycle -->
+    <section id="methodology-en">
+      <h2 class="section-title">🛠️ Engineering Methodology &amp; Product Lifecycle</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3>1. Spec-Driven Development (SDD)</h3>
+            <span class="badge-period">Pillar 01</span>
+          </div>
+          <p>
+            No system is built blindly. Scope, business rules, data contracts, system boundaries, and verifiable acceptance criteria are formally specified before implementation begins.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3>2. Clean Architecture &amp; Modular Design</h3>
+            <span class="badge-period">Pillar 02</span>
+          </div>
+          <p>
+            Strict layered separation between core domain logic and user interface adapters. This isolation enables a shared business core to evolve cleanly and run consistently across desktop computers (Windows) and mobile devices (Android).
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3>3. Local-First Architecture &amp; Privacy by Design (Zero-Knowledge)</h3>
+            <span class="badge-period">Pillar 03</span>
+          </div>
+          <p>
+            Absolute priority on responsiveness and user data sovereignty. Applications operate 100% offline without mandatory cloud accounts, keeping sensitive records on the user's device and applying end-to-end encryption whenever synchronization is required.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3>4. Test-Driven Development (TDD) &amp; Hands-On Physical Hardware QA (CES)</h3>
+            <span class="badge-period">Pillar 04</span>
+          </div>
+          <p>
+            Combining automated unit and integration tests on critical domain invariants with <strong>100% manual QA testing on physical hardware</strong>, applying formal software testing methodology (Centro de Ensayos de Software — CES / UdelaR) to validate user flows, edge cases, and release stability.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3>5. AI-Assisted Engineering Orchestration &amp; Official Store Certification</h3>
+            <span class="badge-period">Pillar 05</span>
+          </div>
+          <p>
+            Structured integration of AI-assisted engineering workflows under strict human architectural review, taking each product all the way through <strong>Google Play Store</strong> and <strong>Microsoft Store</strong> security, privacy, and certification gates.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Shipped Products -->
+    <section id="products">
+      <h2 class="section-title">🚀 Shipped Products (Official Stores · Tech Service Apps)</h2>
+      <div class="grid-2">
+        <!-- 1. BILLET -->
+        <article class="card">
+          <div>
+            <span class="card-tag">ANDROID &amp; WINDOWS · LOCAL-FIRST · ZERO-KNOWLEDGE</span>
+            <h3>Billet — Multi-Currency Personal Finance</h3>
+            <p class="card-desc">
+              100% offline-first application for managing accounts across 40 currencies with custom exchange rates, local privacy, and an offline cryptographic pairing bridge between Android and Windows PC.
+            </p>
+            <div class="app-window-preview">
+              <div class="app-window-bar">
+                <span>🟢 100% OFFLINE · 40 CURRENCIES</span>
+                <span>LOCAL ENCRYPTION</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="color:#f8fafc; font-weight:600;">Multi-Currency Net Worth (USD/EUR/UYU/ARS)</span>
+                <span style="color:#34d399; font-family:'JetBrains Mono',monospace; font-weight:700;">1 License = Mobile + PC</span>
+              </div>
+            </div>
+            <ul class="card-list">
+              <li><strong>Local Zero-Knowledge:</strong> on-device private persistence, PIN/biometric lock, and locally encrypted <code>.billet</code> backups.</li>
+              <li><strong>Offline Cryptographic Bridge:</strong> local <code>PC-XXXX</code> pairing code unlocking Windows 10/11 under a single One-Time Payment license.</li>
+              <li><strong>Full Localization:</strong> available across 6 languages (<code>ES · EN · PT · DE · FR · HI</code>).</li>
+            </ul>
+          </div>
+          <div>
+            <div class="store-badge">
+              <span>▶ Google Play &amp; ⊞ Microsoft Store</span>
+              <a href="./billet/privacy.html" style="color: var(--text-muted); font-size: 0.75rem;">Privacy</a>
+            </div>
+            <div class="app-actions">
+              <a href="./billet/" class="btn btn-primary btn-sm">🌐 Open Billet Website →</a>
+              <a href="https://play.google.com/store/apps/details?id=app.billet" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Google Play ↗</a>
+              <a href="https://apps.microsoft.com/detail/9MXPKKD2F58R" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Microsoft Store ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. KVOTA -->
+        <article class="card">
+          <div>
+            <span class="card-tag">ANDROID &amp; WINDOWS · CLEAN ARCHITECTURE · EXACT ARITHMETIC</span>
+            <h3>Kvota — Trade &amp; Contractor A4 PDF Work Quotes</h3>
+            <p class="card-desc">
+              100% offline-first quoting application for electricians, technicians, installers, and contractors with ISO 216 A4 PDF generation, custom logo letterhead, and private net profit calculation.
+            </p>
+            <div class="app-window-preview">
+              <div class="app-window-bar">
+                <span>📄 ISO 216 A4 (210×297 mm)</span>
+                <span>DUAL-VIEW PDF</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="color:#f8fafc; font-weight:600;">Client View vs. Private Net Profit</span>
+                <span style="color:#38bdf8; font-family:'JetBrains Mono',monospace; font-weight:700;">Verified .kvota</span>
+              </div>
+            </div>
+            <ul class="card-list">
+              <li><strong>Smart Dual-View A4 PDF:</strong> switch between "Summary Only" and "Itemized Breakdown" while keeping technician markup 100% private.</li>
+              <li><strong>Exact integer cents arithmetic:</strong> zero floating-point drift plus local <code>.kvota</code> backups verified with a cryptographic checksum.</li>
+              <li><strong>Guided Step 0–4 Workflow:</strong> company logo letterhead, trade templates, and status/date history filters.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="store-badge">
+              <span>▶ Google Play (<code>com.techservice.kvota</code>)</span>
+              <a href="./kvota/privacy.html" style="color: var(--text-muted); font-size: 0.75rem;">Privacy</a>
+            </div>
+            <div class="app-actions">
+              <a href="./kvota/" class="btn btn-primary btn-sm">🌐 Open Kvota Website →</a>
+              <a href="https://play.google.com/store/apps/details?id=com.techservice.kvota" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Google Play ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. BIBLIOTECA PASTORAL -->
+        <article class="card">
+          <div>
+            <span class="card-tag">WINDOWS · ANDROID · WEB · MULTI-PROFILE ISOLATION</span>
+            <h3>Biblioteca Pastoral v2 — Biblical Study, Strong's &amp; Pulpit Mode</h3>
+            <p class="card-desc">
+              100% free and ad-free tool for pastors, preachers, and Bible teachers featuring homiletic outline editing, multi-version Bible comparison, Hebrew/Greek Strong's Concordance, and Pulpit Mode.
+            </p>
+            <div class="app-window-preview">
+              <div class="app-window-bar">
+                <span>📖 RVR1909 + HEBREW/GREEK STRONG'S</span>
+                <span>&lt; 60 MB RAM</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="color:#f8fafc; font-weight:600;">18 Bible Versions · Lexicon H1–H8674 / G1–G5624</span>
+                <span style="color:#34d399; font-family:'JetBrains Mono',monospace; font-weight:700;">100% Free</span>
+              </div>
+            </div>
+            <ul class="card-list">
+              <li><strong>100% offline biblical engine:</strong> offline Scripture reading, Strong's lexicon, and local multi-profile isolation.</li>
+              <li><strong>Dedicated Pulpit Mode:</strong> full-screen high-contrast preaching view with typography controls and pastoral timer.</li>
+              <li><strong>Cross-platform distribution:</strong> certified on Microsoft Store, Google Play, and live Web PWA in 6 languages.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="store-badge">
+              <span>⊞ Microsoft Store &amp; ▶ Google Play</span>
+              <span style="color: var(--accent-emerald); font-size: 0.75rem;">bibliotecapastoral.org</span>
+            </div>
+            <div class="app-actions">
+              <a href="https://bibliotecapastoral.org" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">🌐 Open bibliotecapastoral.org ↗</a>
+              <a href="https://apps.microsoft.com/detail/9N04WK1JQ3L1" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Microsoft Store ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. NEXOTERAPIA PROFESIONAL -->
+        <article class="card">
+          <div>
+            <span class="card-tag">WINDOWS &amp; ANDROID · ZERO-KNOWLEDGE VAULT · E2EE</span>
+            <h3>NexoTerapia Profesional — Local-First E2EE Clinical Practice Suite</h3>
+            <p class="card-desc">
+              Clinical management suite for psychologists, psychotherapists, and mental health professionals with on-device encrypted records, Zero-Knowledge Windows-to-Android vault sync, and QR patient pairing.
+            </p>
+            <div class="app-window-preview">
+              <div class="app-window-bar">
+                <span>🔐 ZERO-KNOWLEDGE CLINICAL VAULT</span>
+                <span>END-TO-END ENCRYPTION</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="color:#f8fafc; font-weight:600;">PC ↔ Android Sync · Verifiable Right to Erasure</span>
+                <span style="color:#38bdf8; font-family:'JetBrains Mono',monospace; font-weight:700;">.nexokey Kit</span>
+              </div>
+            </div>
+            <ul class="card-list">
+              <li><strong>Clinical privacy by design:</strong> records and session notes encrypted locally on the clinician's device with a <code>.nexokey</code> recovery kit.</li>
+              <li><strong>Verifiable Right to Erasure:</strong> irreversible record destruction issuing a cryptographic legal certificate (GDPR Art. 17 / Law 18.331).</li>
+              <li><strong>Multi-device synchronization:</strong> encrypted vault synchronized between the Windows desktop practice and the Android mobile companion.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="store-badge">
+              <span>⊞ Microsoft Store (<code>9NB3Q5474Z37</code>) &amp; ▶ Google Play</span>
+              <span style="color: var(--accent-blue); font-size: 0.75rem;">nexoterapia.info</span>
+            </div>
+            <div class="app-actions">
+              <a href="https://nexoterapia.info" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">🌐 Open nexoterapia.info ↗</a>
+              <a href="https://apps.microsoft.com/detail/9NB3Q5474Z37" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Microsoft Store ↗</a>
+              <a href="https://play.google.com/store/apps/details?id=info.nexoterapia.terapeuta" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Google Play ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. NEXOTERAPIA PERSONAL -->
+        <article class="card">
+          <div>
+            <span class="card-tag">ANDROID &amp; iOS WEB · ADAPTIVE DESIGN · E2EE</span>
+            <h3>NexoTerapia Personal — Patient Companion &amp; Emotional Journal</h3>
+            <p class="card-desc">
+              Emotional well-being application with adaptive dual mode: a 100% offline Personal Emotional Journal and a free QR-linked E2EE clinical companion paired with the therapist.
+            </p>
+            <div class="app-window-preview">
+              <div class="app-window-bar">
+                <span>🌱 PERSONAL JOURNAL + E2EE QR CLINICAL LINK</span>
+                <span>ENCRYPTED ENVELOPES</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="color:#f8fafc; font-weight:600;">4-Moment Thermometer · Habits · Biometrics</span>
+                <span style="color:#34d399; font-family:'JetBrains Mono',monospace; font-weight:700;">Zero-Knowledge</span>
+              </div>
+            </div>
+            <ul class="card-list">
+              <li><strong>Adaptive Dual Mode:</strong> works standalone as a private 4-moment daily emotional thermometer and habit tracker with PDF reports, or pairs via QR with a psychologist.</li>
+              <li><strong>End-to-End Encrypted Envelopes:</strong> shared entries are sealed on-device so only the therapist's vault can decrypt them.</li>
+              <li><strong>On-device protection:</strong> private local storage protected by native biometric unlock and PIN.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="store-badge">
+              <span>▶ Google Play (<code>info.nexoterapia.paciente</code>) &amp; iOS Web</span>
+              <span style="color: var(--accent-blue); font-size: 0.75rem;">nexoterapia.info</span>
+            </div>
+            <div class="app-actions">
+              <a href="https://nexoterapia.info" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">🌐 Open nexoterapia.info ↗</a>
+              <a href="https://play.google.com/store/apps/details?id=info.nexoterapia.paciente" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Google Play ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education & Continuous Learning -->
+    <section id="education">
+      <h2 class="section-title">🎓 Education &amp; Continuous Learning</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3>Self-Taught by Core Principle</h3>
+            <span class="badge-period">Ongoing</span>
+          </div>
+          <p>
+            My primary driver is learning by building—studying official technical documentation, designing modular architectures, and shipping complete products from scratch to official store certification.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3><a href="https://thebigschool.com/master-desarrollo-con-ia/" target="_blank" rel="noopener noreferrer">Master in AI-Driven Software Development (Dual Degree) — BIG school ↗</a></h3>
+            <span class="badge-period">In Progress</span>
+          </div>
+          <p>
+            Specialization in modern software engineering, AI-assisted systems orchestration, and structured engineering workflows.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3>Software Tester — Centro de Ensayos de Software (CES)</h3>
+            <span class="badge-period">Montevideo, 2023</span>
+          </div>
+          <p>
+            Technical program backed by the <strong>Faculty of Engineering (UdelaR)</strong>. This formal foundation in QA and software testing shapes how I build software: validating boundaries, designing test cases, and ensuring release stability.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Architecture & Engineering Standards -->
+    <section id="architecture-en">
+      <h2 class="section-title">📐 Architecture Case Studies &amp; Engineering Standards</h2>
+      <div class="grid-2">
+        <article class="card">
+          <div>
+            <span class="card-tag">CASE STUDY 01</span>
+            <h3>Multiplatform Convergence Architecture</h3>
+            <p class="card-desc">
+              System design for a shared domain core across Web, Desktop, and Mobile, cutting desktop memory footprint to &lt;60 MB and eliminating duplicated business logic.
+            </p>
+          </div>
+          <a href="https://github.com/Angel7Castillo/Angel7Castillo/blob/main/case-studies/01-multiplatform-architecture.md" target="_blank" rel="noopener noreferrer" class="btn">
+            Read Case Study →
+          </a>
+        </article>
+
+        <article class="card">
+          <div>
+            <span class="card-tag">CASE STUDY 02 · QA &amp; ANDROID</span>
+            <h3>Systematic Manual QA &amp; Google Play Closed Testing</h3>
+            <p class="card-desc">
+              Hands-on manual testing workflow on a physical Android device assisted by a local 14-day queue tracker to achieve reliable peer testing retention.
+            </p>
+          </div>
+          <a href="https://github.com/Angel7Castillo/Angel7Castillo/blob/main/case-studies/02-google-play-closed-testing-workflow.md" target="_blank" rel="noopener noreferrer" class="btn">
+            Read Case Study →
+          </a>
+        </article>
+
+        <article class="card">
+          <div>
+            <span class="card-tag">QUALITY STANDARDS</span>
+            <h3>Engineering Principles Manifesto</h3>
+            <p class="card-desc">
+              Contract-first design before building, strict boundary validation, continuous verification loops, and zero dead code.
+            </p>
+          </div>
+          <a href="https://github.com/Angel7Castillo/Angel7Castillo/blob/main/standards/engineering-principles.md" target="_blank" rel="noopener noreferrer" class="btn">
+            View Engineering Principles →
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>Angel Castillo · Montevideo, Uruguay · <a href="https://github.com/Angel7Castillo">github.com/Angel7Castillo</a></p>
+  </footer>
+
+  <script>
+    function setLanguage(lang) {
+      document.documentElement.lang = lang;
+      const isEs = lang === 'es';
+      document.getElementById('btn-es').setAttribute('aria-pressed', isEs ? 'true' : 'false');
+      document.getElementById('btn-en').setAttribute('aria-pressed', !isEs ? 'true' : 'false');
+      document.querySelector('main[data-lang="es"]').hidden = !isEs;
+      document.querySelector('main[data-lang="en"]').hidden = isEs;
+    }
+  </script>
+</body>
+</html>

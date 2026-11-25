@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- SEO Primary Meta Tags -->
+    <title>Billet — Finanzas Personales Multimoneda en Android y Windows PC (100% Offline)</title>
+    <meta name="description" content="Controla tus cuentas en 40 divisas con tus propios tipos de cambio en Android (Google Play) y Windows 10/11 (Microsoft Store). Cero nube, 100% privado con cifrado AES-256." />
+    <meta name="keywords" content="finanzas personales, multimoneda, offline, privacidad, tipo de cambio manual, app sin nube, google play, microsoft store, windows 11, android, pago unico" />
+    <meta name="author" content="Tech Service — Ángel Castillo" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#07070B" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://angel7castillo.github.io/billet/" />
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Billet" />
+    <meta property="og:url" content="https://angel7castillo.github.io/billet/" />
+    <meta property="og:title" content="Billet — Finanzas Personales Multimoneda en Android y Windows PC (100% Offline)" />
+    <meta property="og:description" content="Calcula tu patrimonio total en 40 monedas en tu móvil Android y tu PC Windows. Sin bancos, sin nube y con modalidad de Pago Único." />
+    <meta property="og:image" content="https://angel7castillo.github.io/billet/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Billet — Finanzas Personales Multimoneda 100% Offline en Android y Windows PC" />
+    <meta property="og:locale" content="es_UY" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="pt_BR" />
+    <meta property="og:locale:alternate" content="de_DE" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="hi_IN" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Billet — Finanzas Personales Multimoneda en Android y Windows PC (100% Offline)" />
+    <meta name="twitter:description" content="Controla tus cuentas en 40 divisas con tus propios tipos de cambio en Android (Google Play) y Windows 10/11 (Microsoft Store). Cero nube, 100% privado con cifrado AES-256." />
+    <meta name="twitter:image" content="https://angel7castillo.github.io/billet/og-image.png" />
+
+    <!-- Non-blocking Google Fonts (Core Web Vitals FCP/LCP optimization) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" />
+    </noscript>
+
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./icon.svg" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://angel7castillo.github.io/billet/#app",
+            "name": "Billet — Finanzas Multimoneda",
+            "url": "https://angel7castillo.github.io/billet/",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Android 10+, Windows 10, Windows 11",
+            "inLanguage": ["es", "en", "pt", "de", "fr", "hi"],
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "description": "App de finanzas personales multimoneda 100% offline y privada para Android (Google Play) y Windows 10/11 (Microsoft Store) con tipos de cambio manuales en 40 divisas y cifrado local AES-256.",
+            "installUrl": [
+              "https://play.google.com/store/apps/details?id=app.billet",
+              "https://apps.microsoft.com/detail/9MXPKKD2F58R"
+            ],
+            "downloadUrl": "https://github.com/Angel7Castillo/billet/releases/download/v0.1.0/billet-v0.1.0.apk",
+            "softwareVersion": "1.2.12"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://angel7castillo.github.io/#tech-service-apps",
+            "name": "Tech Service Apps",
+            "url": "https://angel7castillo.github.io/apps/",
+            "logo": "https://angel7castillo.github.io/billet/logo.svg",
+            "founder": {
+              "@type": "Person",
+              "@id": "https://angel7castillo.github.io/#angel-castillo",
+              "name": "Ángel Castillo"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://angel7castillo.github.io/billet/#website",
+            "url": "https://angel7castillo.github.io/billet/",
+            "name": "Billet",
+            "publisher": {
+              "@id": "https://angel7castillo.github.io/#tech-service-apps"
+            },
+            "inLanguage": ["es", "en", "pt", "de", "fr", "hi"]
+          }
+        ]
+      }
+    </script>
+    <script type="module" crossorigin src="./assets/main-BtiKJMmD.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/main-Cbz83mAb.js">
+    <link rel="stylesheet" crossorigin href="./assets/main-nEEb9IzY.css">
+  </head>
+  <body>
+    <div class="bg-grid-pattern"></div>
+
+    <!-- Navegación Superior -->
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="#hero" class="brand" id="nav-brand">
+          <div class="brand-icon">
+            <img src="./logo.svg" alt="Billet Logo" class="brand-logo-img" width="38" height="38" />
+          </div>
+          <span class="brand-title">Billet</span>
+          <span class="brand-badge">v1.2 · Android &amp; PC</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#features" class="nav-link" id="link-features" data-i18n="nav.features">Pilares</a></li>
+          <li><a href="#ecosystem" class="nav-link" id="link-ecosystem" data-i18n="nav.ecosystem">Móvil + PC</a></li>
+          <li><a href="#pricing" class="nav-link" id="link-pricing" data-i18n="nav.pricing">Planes</a></li>
+          <li><a href="#analytics" class="nav-link" id="link-analytics" data-i18n="nav.analytics">Analítica</a></li>
+          <li><a href="#simulator" class="nav-link" id="link-simulator" data-i18n="nav.simulator">Simulador</a></li>
+          <li><a href="#download" class="nav-link" id="link-download" data-i18n="nav.download">Descarga</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="lang-switcher" id="lang-switcher" role="group" aria-label="Selector de idioma (6 idiomas)">
+            <button type="button" class="lang-btn active" data-lang="es" id="btn-lang-es" title="Español">ES</button>
+            <button type="button" class="lang-btn" data-lang="en" id="btn-lang-en" title="English">EN</button>
+            <button type="button" class="lang-btn" data-lang="pt" id="btn-lang-pt" title="Português">PT</button>
+            <button type="button" class="lang-btn" data-lang="de" id="btn-lang-de" title="Deutsch">DE</button>
+            <button type="button" class="lang-btn" data-lang="fr" id="btn-lang-fr" title="Français">FR</button>
+            <button type="button" class="lang-btn" data-lang="hi" id="btn-lang-hi" title="हिन्दी (Hindi)">HI</button>
+          </div>
+          <a href="#download" class="btn btn-primary" id="btn-open-webapp">
+            <span data-i18n="nav.download">Descarga</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="container hero" id="hero">
+        <div class="hero-content">
+          <div class="badge-kinetic">
+            <span class="badge-dot"></span>
+            <span data-i18n="hero.badge">DISPONIBLE EN GOOGLE PLAY &amp; MICROSOFT STORE · 6 IDIOMAS</span>
+          </div>
+
+          <h1 data-i18n="hero.title" data-i18n-html="true">
+            Tu Patrimonio Global.<br />
+            <span class="gradient-text">En Android y Windows PC.</span>
+          </h1>
+
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
+            La aplicación de finanzas personales multimoneda 100% offline con estética Obsidian Kinetic. 
+            Carga tus propios tipos de cambio en 40 divisas, protege tus cuentas con PIN y desbloquea tu PC Windows con la misma licencia de tu móvil.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="https://apps.microsoft.com/detail/9MXPKKD2F58R" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" id="hero-btn-msstore">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <rect x="2" y="2" width="9" height="9" rx="1"></rect>
+                <rect x="13" y="2" width="9" height="9" rx="1"></rect>
+                <rect x="2" y="13" width="9" height="9" rx="1"></rect>
+                <rect x="13" y="13" width="9" height="9" rx="1"></rect>
+              </svg>
+              <span data-i18n="hero.btnMsStore">Microsoft Store (Windows 10/11)</span>
+            </a>
+
+            <a href="https://play.google.com/store/apps/details?id=app.billet" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg" id="hero-btn-playstore">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M3.6 1.4A2 2 0 0 0 3 2.8v18.4a2 2 0 0 0 .6 1.4l10-10.3L3.6 1.4z" fill="#00D9F5"/>
+                <path d="M17.6 9.7l-4 2.6 4 2.6 3.1-1.8a1.5 1.5 0 0 0 0-2.6l-3.1-1.8z" fill="#F5A623"/>
+                <path d="M3.6 22.6l10-10.3 4 2.6-11.3 6.6a1.6 1.6 0 0 1-2.7-1.1v2.2z" fill="#FF5C7A"/>
+                <path d="M3.6 1.4a1.6 1.6 0 0 1 2.7-1.1l11.3 6.6-4 2.6-10-8.1z" fill="#00F5A0"/>
+              </svg>
+              <span data-i18n="hero.btnPlayStore">Google Play (Android)</span>
+            </a>
+
+            <a href="#simulator" class="btn btn-secondary" id="hero-btn-webapp">
+              <span>Probar Simulador Interactivo ↓</span>
+            </a>
+
+            <a href="#download" class="btn btn-secondary" id="hero-btn-apk">
+              <span data-i18n="hero.btnApk">Descargar APK Android</span>
+            </a>
+          </div>
+
+          <div class="hero-trust-list">
+            <div class="hero-trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="hero.trustOffline">100% Offline-First</span>
+            </div>
+            <div class="hero-trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="hero.trustDualDevice">1 Licencia = Android + PC</span>
+            </div>
+            <div class="hero-trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="hero.trustEncryption">Cifrado AES-256 Local</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mockup Visual Dinámico del Dispositivo -->
+        <div class="mockup-wrapper">
+          <div class="mockup-glow"></div>
+          <div class="device-frame" id="device-preview">
+            <div class="device-notch"></div>
+            <div class="device-screen">
+              <div class="screen-header">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <img src="./logo.svg" alt="Billet Logo" width="22" height="22" style="width: 22px; height: 22px; border-radius: 5px;" />
+                  <span style="font-size: 0.85rem; font-weight: 700; color: #F8FAFC;">Billet</span>
+                  <span style="font-size: 0.68rem; color: #00F5A0; font-weight: 600;" data-i18n="mockup.offline">● OFFLINE</span>
+                </div>
+                <button type="button" class="stealth-toggle" id="hero-stealth-toggle" aria-label="Alternar modo sigiloso" title="Alternar Modo Sigiloso">
+                  <span id="stealth-glyph" style="font-size: 1.1rem; line-height: 1; color: var(--accent-kinetic);">◌</span>
+                </button>
+              </div>
+
+              <!-- Tarjeta de Patrimonio Neto -->
+              <div class="screen-networth-card">
+                <div class="screen-card-label" data-i18n="mockup.networthLabel">Patrimonio Total</div>
+                <div class="screen-card-amount" id="mock-networth" data-amount="$ 14,250.00">$ 14,250.00</div>
+                <div class="screen-pill-currencies" id="mock-currency-pills">
+                  <span class="screen-pill active" id="pill-usd" data-currency="USD" data-val="$ 14,250.00">USD</span>
+                  <span class="screen-pill" id="pill-eur" data-currency="EUR" data-val="€ 13,110.00">EUR</span>
+                  <span class="screen-pill" id="pill-ars" data-currency="ARS" data-val="$ 17,812,500">ARS</span>
+                  <span class="screen-pill" id="pill-brl" data-currency="BRL" data-val="R$ 76,950.00">BRL</span>
+                </div>
+              </div>
+
+              <!-- Pulso de Flujo de Fondos (Cash Flow) -->
+              <div class="screen-pulse-card">
+                <div class="pulse-flow-item">
+                  <span class="pulse-flow-label" data-i18n="mockup.inflow">Ingresos</span>
+                  <span class="pulse-flow-val in" data-amount="+$4,200">+$4,200</span>
+                </div>
+                <div class="pulse-flow-item">
+                  <span class="pulse-flow-label" data-i18n="mockup.outflow">Gastos</span>
+                  <span class="pulse-flow-val out" data-amount="-$1,650">-$1,650</span>
+                </div>
+                <span class="pulse-badge">+60.7%</span>
+              </div>
+
+              <!-- Lista de Cuentas Reales -->
+              <div class="screen-list">
+                <div class="screen-item">
+                  <div class="screen-item-info">
+                    <div class="screen-item-icon" style="background: rgba(167, 139, 250, 0.15); color: #A78BFA;">💵</div>
+                    <div>
+                      <div style="font-size: 0.82rem; font-weight: 600;" data-i18n="mockup.cashWallet">Efectivo Billetera</div>
+                      <div style="font-size: 0.7rem; color: #64748B;">USD Dólares</div>
+                    </div>
+                  </div>
+                  <div class="screen-item-val" data-amount="$ 1,450.00">$ 1,450.00</div>
+                </div>
+
+                <div class="screen-item">
+                  <div class="screen-item-info">
+                    <div class="screen-item-icon" style="background: rgba(96, 165, 250, 0.15); color: #60A5FA;">🏦</div>
+                    <div>
+                      <div style="font-size: 0.82rem; font-weight: 600;" data-i18n="mockup.bankAccount">Cuenta Bancaria</div>
+                      <div style="font-size: 0.7rem; color: #64748B;">EUR Euros</div>
+                    </div>
+                  </div>
+                  <div class="screen-item-val" data-amount="€ 3,800.00">€ 3,800.00</div>
+                </div>
+
+                <div class="screen-item">
+                  <div class="screen-item-info">
+                    <div class="screen-item-icon" style="background: rgba(251, 191, 36, 0.15); color: #FBBF24;">💳</div>
+                    <div>
+                      <div style="font-size: 0.82rem; font-weight: 600;" data-i18n="mockup.localWallet">MercadoPago / Local</div>
+                      <div style="font-size: 0.7rem; color: #64748B;">ARS Pesos</div>
+                    </div>
+                  </div>
+                  <div class="screen-item-val" data-amount="$ 11,250,000">$ 11,250,000</div>
+                </div>
+              </div>
+
+              <!-- BottomNav ergonómica de Billet -->
+              <nav class="screen-bottom-nav" aria-label="Navegación de prueba">
+                <div class="screen-nav-item active">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                  <span data-i18n="mockup.navHome">Inicio</span>
+                </div>
+                <div class="screen-nav-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="5" rx="2"></rect><line x1="2" x2="22" y1="10" y2="10"></line></svg>
+                  <span data-i18n="mockup.navTransactions">Movs</span>
+                </div>
+                <div class="screen-nav-fab" aria-hidden="true">+</div>
+                <div class="screen-nav-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"></path><path d="m19 9-5 5-4-4-3 3"></path></svg>
+                  <span data-i18n="mockup.navAnalytics">Analítica</span>
+                </div>
+                <div class="screen-nav-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                  <span data-i18n="mockup.navSettings">Ajustes</span>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Video Showcase Adaptativo: Horizontal 16:9 en PC / Vertical 9:16 en Celular -->
+      <section class="section" id="promo-video">
+        <div class="container">
+          <div class="section-header">
+            <div class="badge-kinetic">
+              <span class="badge-dot"></span>
+              <span data-i18n="video.badge">TOUR OFICIAL EN VIDEO · AUDIO HD</span>
+            </div>
+            <h2 data-i18n="video.title" data-i18n-html="true">
+              Mira <span class="gradient-text">Billet en Acción</span>
+            </h2>
+            <p data-i18n="video.subtitle">
+              Recorrido real de 20 segundos mostrando tus cuentas multimoneda 100% offline, analítica de flujo y el puente con tu PC Windows.
+            </p>
+          </div>
+
+          <div class="promo-video-showcase" id="promo-video-container">
+            <!-- Reproductor Horizontal 16:9 (Se muestra automáticamente si abren desde PC / Escritorio) -->
+            <div class="video-card-desktop" id="video-wrapper-desktop">
+              <div class="video-format-pill">
+                <span>🖥️</span>
+                <span data-i18n="video.desktopLabel">Formato Panorámico PC (16:9 Full HD)</span>
+              </div>
+              <video
+                id="billet-video-desktop"
+                class="promo-video-player"
+                controls
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="./videos/billet-thumb-16x9.jpg"
+              >
+                <source src="./videos/billet-promo-16x9.mp4" type="video/mp4" />
+              </video>
+            </div>
+
+            <!-- Reproductor Vertical 9:16 (Se muestra automáticamente si abren desde un Celular) -->
+            <div class="video-card-mobile" id="video-wrapper-mobile">
+              <div class="video-format-pill">
+                <span>📱</span>
+                <span data-i18n="video.mobileLabel">Formato Móvil Vertical (9:16 Full HD)</span>
+              </div>
+              <video
+                id="billet-video-mobile"
+                class="promo-video-player vertical"
+                controls
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="./videos/billet-thumb-9x16.jpg"
+              >
+                <source src="./videos/billet-promo-9x16.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ecosistema: 1 Licencia = Móvil Android + PC Windows (Puente Criptográfico Offline) -->
+      <section class="section" id="ecosystem">
+        <div class="container">
+          <div class="section-header">
+            <div class="badge-kinetic">
+              <span class="badge-dot"></span>
+              <span data-i18n="ecosystem.badge">PUENTE CRIPTOGRÁFICO OFFLINE · SIN PAGAR DOBLE</span>
+            </div>
+            <h2 data-i18n="ecosystem.title" data-i18n-html="true">
+              Activa Billet Pro en tu Móvil.<br /><span class="gradient-text">Úsalo también en tu PC Windows.</span>
+            </h2>
+            <p data-i18n="ecosystem.subtitle">
+              No necesitas crear cuentas en la nube ni pagar dos veces. Si adquieres Billet Pro en Google Play (Mensual o Pago Único), desbloqueas Billet Desktop Pro en Windows 10/11 en 10 segundos y 100% sin internet.
+            </p>
+          </div>
+
+          <div class="ecosystem-grid">
+            <div class="ecosystem-card">
+              <div class="analytics-card-header">
+                <span class="analytics-pill" data-i18n="ecosystem.step1Pill">PASO 1 · DESCARGA GRATUITA</span>
+                <span style="font-size: 1.35rem;">📲</span>
+              </div>
+              <h3 data-i18n="ecosystem.step1Title">Instala en Android y Windows</h3>
+              <p style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.5;" data-i18n="ecosystem.step1Desc">
+                Descarga gratis Billet en tu teléfono Android desde Google Play y Billet Desktop Pro en tu computadora desde la Microsoft Store oficial.
+              </p>
+              <div class="ecosystem-code-preview">Google Play + Microsoft Store ($0)</div>
+            </div>
+
+            <div class="ecosystem-card">
+              <div class="analytics-card-header">
+                <span class="analytics-pill" data-i18n="ecosystem.step2Pill">PASO 2 · CÓDIGO DE TU PC</span>
+                <span style="font-size: 1.35rem;">💻</span>
+              </div>
+              <h3 data-i18n="ecosystem.step2Title">Mira tu código PC-XXXX</h3>
+              <p style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.5;" data-i18n="ecosystem.step2Desc">
+                En tu PC Windows, haz clic en "Desbloquear Billet Pro". Verás el código único de 4 caracteres de tu equipo (por ejemplo: PC-8F4A).
+              </p>
+              <div class="ecosystem-code-preview">Código de PC: PC-8F4A</div>
+            </div>
+
+            <div class="ecosystem-card">
+              <div class="analytics-card-header">
+                <span class="analytics-pill" data-i18n="ecosystem.step3Pill">PASO 3 · LLAVE FIRMADA OFFLINE</span>
+                <span style="font-size: 1.35rem;">🔑</span>
+              </div>
+              <h3 data-i18n="ecosystem.step3Title">Genera tu llave en Android</h3>
+              <p style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.5;" data-i18n="ecosystem.step3Desc">
+                En tu móvil Android (Ajustes → Vincular con mi PC Windows), escribe ese código y obtén al instante tu llave (BILLET-L-...) para activar tu PC.
+              </p>
+              <div class="ecosystem-code-preview">BILLET-L-8F4A-CAEAC56D ✓</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Planes Transparentes: Gratis, Mensual y Pago Único -->
+      <section class="section" id="pricing">
+        <div class="container">
+          <div class="section-header">
+            <div class="badge-kinetic">
+              <span class="badge-dot"></span>
+              <span data-i18n="pricing.badge">MODELO JUSTO · SIN SUSCRIPCIONES FORZOSAS</span>
+            </div>
+            <h2 data-i18n="pricing.title" data-i18n-html="true">
+              Elige tu Plan: Gratis, Mensual o <span class="gradient-text">Pago Único</span>
+            </h2>
+            <p data-i18n="pricing.subtitle">
+              Empieza gratis todo el tiempo que quieras en Android y Windows PC, o desbloquea todo el poder multimoneda en ambos dispositivos con una sola compra.
+            </p>
+          </div>
+
+          <div class="pricing-grid">
+            <!-- Plan Gratis -->
+            <div class="pricing-card">
+              <h3 class="pricing-tier-name" data-i18n="pricing.freeTier">Plan Gratis</h3>
+              <div class="pricing-price" data-i18n="pricing.freePrice">$0</div>
+              <div class="pricing-period" data-i18n="pricing.freePeriod">Gratis en Android y Windows PC</div>
+              <p class="pricing-desc" data-i18n="pricing.freeDesc">
+                Ideal para llevar tu efectivo y cuenta principal sin conexión.
+              </p>
+              <ul class="pricing-features">
+                <li data-i18n="pricing.freeF1">✓ 2 cuentas precargadas (Efectivo y Banco)</li>
+                <li data-i18n="pricing.freeF2">✓ Hasta 2 monedas activas con tasa manual</li>
+                <li data-i18n="pricing.freeF3">✓ Registro con comprobante y 1 categoría propia</li>
+                <li data-i18n="pricing.freeF4">✓ Bloqueo con PIN y Modo Sigiloso (••••)</li>
+              </ul>
+            </div>
+
+            <!-- Plan Pro Mensual -->
+            <div class="pricing-card">
+              <h3 class="pricing-tier-name" data-i18n="pricing.monthlyTier">Billet Pro · Mensual</h3>
+              <div class="pricing-price" data-i18n="pricing.monthlyPrice">$2.49</div>
+              <div class="pricing-period" data-i18n="pricing.monthlyPeriod">USD / mes · Cancela cuando quieras</div>
+              <p class="pricing-desc" data-i18n="pricing.monthlyDesc">
+                Flexibilidad total para viajeros y freelancers multimoneda.
+              </p>
+              <ul class="pricing-features">
+                <li data-i18n="pricing.monthlyF1">✓ Cuentas y categorías personalizadas ilimitadas</li>
+                <li data-i18n="pricing.monthlyF2">✓ Las 40 divisas mundiales ISO 4217 activas</li>
+                <li data-i18n="pricing.monthlyF3">✓ Analítica con Gráfico de Dona, CSV y Backups .billet</li>
+                <li data-i18n="pricing.monthlyF4">✓ Incluye llave para activar tu PC Windows</li>
+              </ul>
+            </div>
+
+            <!-- Licencia Pro Pago Único (Destacado) -->
+            <div class="pricing-card featured">
+              <span class="pricing-badge-top" data-i18n="pricing.oneTimeBadge">MÁS ELEGIDO · PAGO ÚNICO</span>
+              <h3 class="pricing-tier-name" data-i18n="pricing.oneTimeTier">Licencia Pro · Pago Único</h3>
+              <div class="pricing-price" data-i18n="pricing.oneTimePrice">$12.99</div>
+              <div class="pricing-period" data-i18n="pricing.oneTimePeriod">USD · Un solo pago · Sin suscripción mensual</div>
+              <p class="pricing-desc" data-i18n="pricing.oneTimeDesc">
+                Paga una sola vez en Google Play y úsalo en tu Android + PC Windows sin cargos recurrentes.
+              </p>
+              <ul class="pricing-features">
+                <li data-i18n="pricing.oneTimeF1">✓ Todo lo incluido en Billet Pro sin pagos mensuales</li>
+                <li data-i18n="pricing.oneTimeF2">✓ Cuentas, categorías y 40 monedas ilimitadas</li>
+                <li data-i18n="pricing.oneTimeF3">✓ Respaldos cifrados AES-256-GCM (.billet) y CSV</li>
+                <li data-i18n="pricing.oneTimeF4">✓ Desbloquea tu Android + tu PC Windows (Microsoft Store)</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="pricing-legal-note" data-i18n="pricing.legalNote">
+            Modalidad de Pago Único: desbloquea las funciones Pro de la aplicación instalada sin cobros recurrentes en Android y Windows PC.
+          </p>
+        </div>
+      </section>
+
+      <!-- Analítica Visual Sin Servidores -->
+      <section class="section" id="analytics">
+        <div class="container">
+          <div class="section-header">
+            <h2 data-i18n="analytics.title" data-i18n-html="true">Analítica Visual <span class="gradient-text">Sin Servidores</span></h2>
+            <p data-i18n="analytics.subtitle">
+              Estadísticas en tiempo real calculadas de forma privada dentro de tu propio teléfono y PC mediante motor local. 
+              Cero analíticas externas, cero telemetría y privacidad total.
+            </p>
+          </div>
+
+          <div class="analytics-grid">
+            <!-- Card 1: Pulso de Flujo de Fondos -->
+            <div class="analytics-card">
+              <div class="analytics-card-header">
+                <span class="analytics-pill" data-i18n="analytics.pulsePill">TIEMPO REAL</span>
+                <span style="font-size: 1.25rem;">⚡</span>
+              </div>
+              <h3 data-i18n="analytics.pulseTitle">Pulso de Flujo de Caja</h3>
+              <p data-i18n="analytics.pulseDesc">
+                Visualiza de inmediato si tu mes es superavitario. Billet computa en vivo tus ingresos, egresos y tasa de ahorro convertidos a tu moneda preferida.
+              </p>
+              <div class="analytics-widget">
+                <div class="pulse-widget-bars">
+                  <div>
+                    <div class="pulse-row">
+                      <span style="color: var(--text-muted); font-size: 0.78rem;" data-i18n="analytics.pulseInflow">Ingresos del Período</span>
+                      <span style="color: var(--accent-kinetic);">+$ 4,200.00</span>
+                    </div>
+                    <div class="pulse-bar-track">
+                      <div class="pulse-bar-fill-in"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="pulse-row">
+                      <span style="color: var(--text-muted); font-size: 0.78rem;" data-i18n="analytics.pulseOutflow">Gastos del Período</span>
+                      <span style="color: #FF5C7A;">-$ 1,650.00</span>
+                    </div>
+                    <div class="pulse-bar-track">
+                      <div class="pulse-bar-fill-out"></div>
+                    </div>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 6px; padding-top: 8px; border-top: 1px solid var(--border-subtle);">
+                    <span style="font-size: 0.78rem; font-weight: 700; color: var(--text-primary);" data-i18n="analytics.pulseNet">Ahorro Neto</span>
+                    <span class="pulse-badge">+ $2,550.00 (60.7%)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Tendencias Semanales y Mensuales -->
+            <div class="analytics-card">
+              <div class="analytics-card-header">
+                <span class="analytics-pill" data-i18n="analytics.trendPill">HISTORIAL LOCAL</span>
+                <span style="font-size: 1.25rem;">📊</span>
+              </div>
+              <h3 data-i18n="analytics.trendTitle">Tendencia Semanal y Mensual</h3>
+              <p data-i18n="analytics.trendDesc">
+                Barras comparativas que exponen el ritmo de tus finanzas para detectar desviaciones a tiempo sin depender de hojas de cálculo complejas.
+              </p>
+              <div class="analytics-widget">
+                <svg class="trend-bars-svg" viewBox="0 0 240 85" fill="none" preserveAspectRatio="none">
+                  <!-- Eje base -->
+                  <line x1="10" y1="75" x2="230" y2="75" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+                  <!-- Semana 1 -->
+                  <rect x="25" y="30" width="16" height="45" rx="3" fill="#A78BFA" opacity="0.95" />
+                  <rect x="45" y="45" width="16" height="30" rx="3" fill="#FF6B6B" opacity="0.85" />
+                  <!-- Semana 2 -->
+                  <rect x="75" y="20" width="16" height="55" rx="3" fill="#A78BFA" opacity="0.95" />
+                  <rect x="95" y="52" width="16" height="23" rx="3" fill="#FF6B6B" opacity="0.85" />
+                  <!-- Semana 3 -->
+                  <rect x="125" y="15" width="16" height="60" rx="3" fill="#A78BFA" opacity="0.95" />
+                  <rect x="145" y="40" width="16" height="35" rx="3" fill="#FF6B6B" opacity="0.85" />
+                  <!-- Semana 4 -->
+                  <rect x="175" y="25" width="16" height="50" rx="3" fill="#A78BFA" opacity="0.95" />
+                  <rect x="195" y="58" width="16" height="17" rx="3" fill="#FF6B6B" opacity="0.85" />
+                </svg>
+                <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: var(--text-muted); margin-top: 4px; padding: 0 10px;">
+                  <span>Sem 1</span>
+                  <span>Sem 2</span>
+                  <span>Sem 3</span>
+                  <span>Sem 4</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Dona de Categorías -->
+            <div class="analytics-card">
+              <div class="analytics-card-header">
+                <span class="analytics-pill" data-i18n="analytics.donutPill">CATEGORIZACIÓN</span>
+                <span style="font-size: 1.25rem;">🍩</span>
+              </div>
+              <h3 data-i18n="analytics.donutTitle">Gráfico de Dona por Rubro</h3>
+              <p data-i18n="analytics.donutDesc">
+                Distribución porcentual de cada gasto e ingreso con iconografía visual y paleta cromática ergonómica para tomar decisiones informadas.
+              </p>
+              <div class="analytics-widget">
+                <div class="donut-widget">
+                  <svg class="donut-svg" viewBox="0 0 42 42">
+                    <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#1F1F2E" stroke-width="4.5" />
+                    <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#8B5CF6" stroke-width="4.5" stroke-dasharray="38 62" stroke-dashoffset="25" />
+                    <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#F97316" stroke-width="4.5" stroke-dasharray="28 72" stroke-dashoffset="87" />
+                    <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#0EA5E9" stroke-width="4.5" stroke-dasharray="20 80" stroke-dashoffset="59" />
+                    <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#EC4899" stroke-width="4.5" stroke-dasharray="14 86" stroke-dashoffset="39" />
+                  </svg>
+                  <div class="donut-legend">
+                    <div class="legend-item"><span class="legend-dot" style="background:#8B5CF6;"></span><span data-i18n="analytics.catHousing">🏠 Vivienda (28%)</span></div>
+                    <div class="legend-item"><span class="legend-dot" style="background:#F97316;"></span><span data-i18n="analytics.catFood">🍔 Comida (38%)</span></div>
+                    <div class="legend-item"><span class="legend-dot" style="background:#0EA5E9;"></span><span data-i18n="analytics.catServices">💡 Servicios (20%)</span></div>
+                    <div class="legend-item"><span class="legend-dot" style="background:#EC4899;"></span><span data-i18n="analytics.catLeisure">🎉 Ocio (14%)</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Simulador Interactivo Multimoneda -->
+      <section class="section" id="simulator">
+        <div class="container">
+          <div class="section-header">
+            <h2 data-i18n="simulator.title" data-i18n-html="true">Calcula con <span class="gradient-text-alt">Tus Propios Tipos de Cambio</span></h2>
+            <p data-i18n="simulator.subtitle">
+              Prueba en vivo la matemática de conversión de Billet. Sin APIs bancarias que impongan una tasa irreal: 
+              tú decides el valor exacto de tus divisas.
+            </p>
+          </div>
+
+          <div class="simulator-box">
+            <div class="simulator-grid">
+              <div class="sim-input-group">
+                <div>
+                  <label for="sim-amount" class="form-label" data-i18n="simulator.amountLabel">Monto a Convertir</label>
+                  <div class="sim-input-wrapper">
+                    <input type="number" id="sim-amount" class="sim-input" value="1000" min="1" step="any" />
+                    <select id="sim-source" class="sim-currency-select" aria-label="Moneda origen">
+                      <option value="USD" selected>USD</option>
+                      <option value="EUR">EUR</option>
+                      <option value="ARS">ARS</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="sim-rate" class="form-label" data-i18n="simulator.rateLabel">Tu Tipo de Cambio Manual</label>
+                  <div class="sim-input-wrapper">
+                    <input type="number" id="sim-rate" class="sim-input" value="1250" min="0.000001" step="any" />
+                    <select id="sim-target" class="sim-currency-select" aria-label="Moneda destino">
+                      <option value="ARS" selected>ARS</option>
+                      <option value="EUR">EUR</option>
+                      <option value="USD">USD</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sim-result-card">
+                <div class="sim-result-label" data-i18n="simulator.resultLabel">Equivalencia Patrimonial en Vivo</div>
+                <div class="sim-result-value" id="sim-result-value">1,250,000.00 ARS</div>
+                <div class="sim-result-note" id="sim-result-note">1 USD = 1250 ARS (Tipo de cambio manual editable)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pilares de Propuesta de Valor -->
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section-header">
+            <h2 data-i18n="features.title" data-i18n-html="true">Ingeniería Diseñada para tu <span class="gradient-text">Libertad Financiera</span></h2>
+            <p data-i18n="features.subtitle">Creado bajo los principios de Clean Architecture y Privacidad por Diseño en 6 idiomas.</p>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 data-i18n="features.offlineTitle">100% Offline-First</h3>
+              <p data-i18n="features.offlineDesc">
+                Tus datos nunca viajan por internet. Motor nativo en Android (Kotlin) y Windows 10/11 (Tauri). Funciona en aviones, montañas y sin señal.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
+                  <line x1="12" y1="6" x2="12" y2="8"></line>
+                  <line x1="12" y1="16" x2="12" y2="18"></line>
+                </svg>
+              </div>
+              <h3 data-i18n="features.multicurrencyTitle">40 Divisas ISO 4217</h3>
+              <p data-i18n="features.multicurrencyDesc">
+                Gasta en euros, cobra en dólares y lleva tu día a día en tu moneda local. Billet unifica tu balance global usando el tipo de cambio exacto que tú decides.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </div>
+              <h3 data-i18n="features.securityTitle">Cifrado AES-256 + Scrypt</h3>
+              <p data-i18n="features.securityDesc">
+                Bloqueo con PIN y biometría. Copias de seguridad exportables en formato cifrado (.billet) compatibles entre tu móvil Android y tu PC Windows.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tabla Comparativa -->
+      <section class="section" id="comparison">
+        <div class="container">
+          <div class="section-header">
+            <h2 data-i18n="comparison.title" data-i18n-html="true">Billet vs <span class="gradient-text">Apps Tradicionales</span></h2>
+            <p data-i18n="comparison.subtitle">Compara qué cambia cuando tus datos financieros viven solo en tu teléfono y PC bajo modalidad de Pago Único.</p>
+          </div>
+
+          <div class="comparison-wrapper">
+            <table class="comparison-table" aria-label="Comparativa de características de Billet frente a aplicaciones tradicionales">
+              <thead>
+                <tr>
+                  <th data-i18n="comparison.thFeature">Característica</th>
+                  <th data-i18n="comparison.thBillet">Billet (Android + Windows PC)</th>
+                  <th data-i18n="comparison.thTraditional">Apps Tradicionales / Bancarias</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-i18n="comparison.r1Feature">Almacenamiento de datos</td>
+                  <td><strong data-i18n="comparison.r1Billet">100% Local en tu móvil y tu PC</strong></td>
+                  <td data-i18n="comparison.r1Trad">Servidores en la nube de terceros</td>
+                </tr>
+                <tr>
+                  <td data-i18n="comparison.r2Feature">Tipos de cambio</td>
+                  <td><strong data-i18n="comparison.r2Billet">Personalizados y editables (40 monedas)</strong></td>
+                  <td data-i18n="comparison.r2Trad">Tasas bancarias fijas o confusas</td>
+                </tr>
+                <tr>
+                  <td data-i18n="comparison.r3Feature">Modelo de Privacidad</td>
+                  <td><strong data-i18n="comparison.r3Billet">Zero-Knowledge sin telemetría</strong></td>
+                  <td data-i18n="comparison.r3Trad">Monetización con datos de consumo</td>
+                </tr>
+                <tr>
+                  <td data-i18n="comparison.r4Feature">Disponibilidad sin conexión</td>
+                  <td><strong data-i18n="comparison.r4Billet">100% Funcional sin internet</strong></td>
+                  <td data-i18n="comparison.r4Trad">Requiere conexión permanente</td>
+                </tr>
+                <tr>
+                  <td data-i18n="comparison.r5Feature">Copia de seguridad</td>
+                  <td><strong data-i18n="comparison.r5Billet">Archivo .billet cifrado (AES-256-GCM)</strong></td>
+                  <td data-i18n="comparison.r5Trad">Bloqueada en el ecosistema del proveedor</td>
+                </tr>
+                <tr>
+                  <td data-i18n="comparison.r6Feature">Licencia Multi-Dispositivo</td>
+                  <td><strong data-i18n="comparison.r6Billet">1 Pago Único activa Android + PC Windows</strong></td>
+                  <td data-i18n="comparison.r6Trad">Suscripciones separadas por plataforma</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Descarga Oficial: Google Play + Microsoft Store + APK Verificado -->
+      <section class="section" id="download">
+        <div class="container">
+          <div class="download-card">
+            <div class="download-info">
+              <span class="brand-badge" style="margin-bottom: 8px;" data-i18n="download.badge">DISTRIBUCIÓN OFICIAL · GOOGLE PLAY &amp; MICROSOFT STORE</span>
+              <h2 data-i18n="download.title">Descarga Billet en Android y Windows 10/11</h2>
+              <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 12px;" data-i18n="download.desc">
+                Disponible oficialmente en los 241 mercados mundiales en 6 idiomas (Español, Inglés, Portugués, Alemán, Francés e Hindi). Descárgalo desde Microsoft Store, Google Play o APK directo verificado con SHA-256.
+              </p>
+              <div>
+                <span class="download-hash" id="apk-checksum" data-hash="392c263991af438d6165eefd492c71553f9440924147edba7262ab46c15ff8f9" data-i18n="download.hashCopy">
+                  SHA256: 392c2639...15ff8f9 (Clic para copiar)
+                </span>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <!-- Botón Oficial Microsoft Store -->
+              <a href="https://apps.microsoft.com/detail/9MXPKKD2F58R" target="_blank" rel="noopener noreferrer" class="ms-badge-btn" id="btn-ms-store">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <rect x="2" y="2" width="9" height="9" fill="#F25022"/>
+                  <rect x="13" y="2" width="9" height="9" fill="#7FBA00"/>
+                  <rect x="2" y="13" width="9" height="9" fill="#00A4EF"/>
+                  <rect x="13" y="13" width="9" height="9" fill="#FFB900"/>
+                </svg>
+                <div class="play-badge-text">
+                  <span class="play-badge-sub" data-i18n="download.msStoreSub">OBTENER EN</span>
+                  <span class="play-badge-title">Microsoft Store</span>
+                </div>
+              </a>
+
+              <!-- Botón Oficial Google Play -->
+              <a href="https://play.google.com/store/apps/details?id=app.billet" target="_blank" rel="noopener noreferrer" class="play-badge-btn" id="btn-play-store">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M3.6 1.4A2 2 0 0 0 3 2.8v18.4a2 2 0 0 0 .6 1.4l10-10.3L3.6 1.4z" fill="#00D9F5"/>
+                  <path d="M17.6 9.7l-4 2.6 4 2.6 3.1-1.8a1.5 1.5 0 0 0 0-2.6l-3.1-1.8z" fill="#F5A623"/>
+                  <path d="M3.6 22.6l10-10.3 4 2.6-11.3 6.6a1.6 1.6 0 0 1-2.7-1.1v2.2z" fill="#FF5C7A"/>
+                  <path d="M3.6 1.4a1.6 1.6 0 0 1 2.7-1.1l11.3 6.6-4 2.6-10-8.1z" fill="#00F5A0"/>
+                </svg>
+                <div class="play-badge-text">
+                  <span class="play-badge-sub" data-i18n="download.playStoreSub">DISPONIBLE EN</span>
+                  <span class="play-badge-title">Google Play</span>
+                </div>
+              </a>
+
+              <!-- Botón APK Directo -->
+              <a href="https://github.com/Angel7Castillo/billet/releases/download/v0.1.0/billet-v0.1.0.apk" download="billet-v0.2.12.apk" class="btn btn-secondary btn-lg" id="btn-download-apk">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span data-i18n="download.btnApk">Descargar APK Nativo (3.4 MB)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formulario de Boletín de Actualizaciones -->
+      <section class="section" id="waitlist">
+        <div class="container">
+          <div class="waitlist-card">
+            <div class="badge-kinetic">
+              <span class="badge-dot"></span>
+              <span data-i18n="waitlist.badge">BOLETÍN OFICIAL DE LANZAMIENTOS</span>
+            </div>
+
+            <h2 data-i18n="waitlist.title">Recibe Novedades del Ecosistema Billet</h2>
+            <p style="color: var(--text-secondary); margin-top: 12px; font-size: 1.05rem;" data-i18n="waitlist.subtitle">
+              Entérate de nuevas herramientas contables offline y futuras actualizaciones para tu móvil y PC. 
+              Cero spam, lo prometemos.
+            </p>
+
+            <form id="waitlist-form" class="waitlist-form" novalidate>
+              <!-- Campo Honeypot Oculto (Anti-Spam) -->
+              <input type="text" name="website_hp" id="waitlist-hp" class="honeypot-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+              <label for="waitlist-email" class="sr-only" data-i18n="waitlist.emailLabel">Correo electrónico para lista de novedades</label>
+              <input 
+                type="email" 
+                id="waitlist-email" 
+                class="waitlist-input" 
+                placeholder="Ingresa tu correo electrónico..." 
+                data-i18n-placeholder="waitlist.placeholder"
+                required 
+              />
+              <button type="submit" class="btn btn-primary btn-lg" id="waitlist-btn">
+                <span data-i18n="waitlist.btn">Unirme a la lista</span>
+              </button>
+            </form>
+
+            <div id="waitlist-feedback" class="feedback-msg"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="brand">
+            <div class="brand-icon">
+              <img src="./logo.svg" alt="Billet Logo" class="brand-logo-img" width="38" height="38" />
+            </div>
+            <span class="brand-title">Billet</span>
+            <span class="brand-badge">Offline-First</span>
+          </div>
+
+          <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap; font-size: 0.9rem;">
+            <a href="./privacy.html" style="color: var(--text-secondary); text-decoration: none;" data-i18n="footer.privacy">Política de Privacidad</a>
+            <a href="./privacy.html#disclaimer" style="color: var(--text-secondary); text-decoration: none;" data-i18n="footer.disclaimer">Deslinde Financiero &amp; Pago Único</a>
+            <a href="../kvota/" style="color: #00F5A0; text-decoration: none; font-weight: 600;">📄 Kvota (Presupuestos PDF A4)</a>
+            <a href="../apps/" style="color: var(--text-secondary); text-decoration: none;">📱 Más Apps de Tech Service Apps</a>
+            <a href="https://angel7castillo.github.io/app-ads.txt" style="color: var(--text-secondary); text-decoration: none;">app-ads.txt</a>
+            <a href="mailto:servicios.angelcastillo@gmail.com" style="color: var(--text-secondary); text-decoration: none;" data-i18n="footer.contact">Contacto Oficial</a>
+          </div>
+
+          <div style="font-size: 0.88rem; color: var(--text-secondary);">
+            Desarrollado bajo los estándares de <strong><a href="../apps/" style="color: inherit;">Tech Service Apps</a></strong> (<a href="../" style="color: inherit;">Ángel Castillo</a>).
+          </div>
+        </div>
+
+        <div class="footer-copy" data-i18n="footer.copy">
+          © 2026 Billet. Todos los derechos reservados. Disponible en Google Play y Microsoft Store. Cero cookies invasivas.
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

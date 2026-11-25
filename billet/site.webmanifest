@@ -1,0 +1,23 @@
+{
+  "name": "Billet — Finanzas Personales Multimoneda",
+  "short_name": "Billet",
+  "description": "Controla tus cuentas en múltiples divisas con tus propios tipos de cambio. 100% offline y privado con cifrado local AES-256.",
+  "start_url": "/billet/",
+  "display": "standalone",
+  "background_color": "#07070B",
+  "theme_color": "#07070B",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "./icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

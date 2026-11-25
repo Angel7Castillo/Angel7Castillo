@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="kvotaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0051D5" />
+      <stop offset="100%" stop-color="#0A255E" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#kvotaBg)" />
+  <rect x="116" y="76" width="280" height="360" rx="22" fill="#FFFFFF" />
+  <path d="M116 98 C116 85.85 125.85 76 138 76 L374 76 C386.15 76 396 85.85 396 98 L396 106 L116 106 Z" fill="#10B981" />
+  <text x="256" y="295" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="180" font-weight="800" fill="#0051D5">K</text>
+  <rect x="166" y="346" width="180" height="44" rx="10" fill="#DCFCE7" />
+  <text x="256" y="376" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14532D">PDF A4</text>
+</svg>
