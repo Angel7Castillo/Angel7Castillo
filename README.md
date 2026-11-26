@@ -12,11 +12,11 @@
 
 ## Sobre mí
 
-Soy un desarrollador de software **autodidacta** como regla principal, enfocado en construir aplicaciones de escritorio y móviles con dos prioridades: **que la interfaz responda rápido y que la arquitectura sea ordenada**. 
+Soy un desarrollador de software **autodidacta como regla principal** desde Montevideo, Uruguay. Construyo aplicaciones de escritorio (Windows) y móviles (Android) con dos prioridades innegociables: **que la interfaz responda al instante sin hacerte perder tiempo, y que por dentro la arquitectura sea limpia, privada y verificable**.
 
-Más allá de las herramientas puntuales del momento, mi trabajo se apoya en **metodologías sólidas de ingeniería**: especificar el problema y los contratos antes de construir, separar con claridad la lógica del negocio de la interfaz visual, diseñar sistemas que funcionen sin depender de conexión permanente a internet (*Local-First*) y verificar cada entrega mediante pruebas estructuradas.
+En lugar de obligar al usuario a depender de servidores en la nube o lanzar prototipos a ciegas, diseño bajo **5 pilares de ingeniería pragmática**: especificar contratos y reglas del dominio antes de construir (**SDD**), aislar la lógica de negocio de la pantalla visual (**Clean Architecture**), priorizar sistemas **100% Local-First & Zero-Knowledge** (donde los datos viven cifrados en el propio dispositivo del usuario, con `$0` de costo mensual de servidor y opciones honestas de **Pago Único**) y combinar pruebas automatizadas con **ensayos de calidad 100% manuales en dispositivos físicos reales** (aplicando mi formación técnica como Tester de Software en el **CES — Facultad de Ingeniería, UdelaR**).
 
-Mis proyectos principales no son maquetas: son productos reales, probados, certificados y distribuidos a través de **tiendas oficiales** bajo el sello **Tech Service Apps**.
+Mis proyectos principales no son maquetas: son **5 productos reales**, probados, certificados y distribuidos a través de **Google Play Store** y **Microsoft Store** bajo nuestro sello **Tech Service Apps**.
 
 ---
 
@@ -144,11 +144,11 @@ Documentación detallada sobre cómo diseño, estructuro y verifico sistemas de 
 
 ## About Me
 
-I am a **self-taught software developer** by core principle, focused on building desktop and mobile applications around two priorities: **responsive user interfaces and clean, maintainable architecture**.
+I am a **self-taught software developer by core principle** based in Montevideo, Uruguay. I build desktop (Windows) and mobile (Android) applications around two non-negotiable priorities: **interfaces that respond instantly without friction, and clean, verifiable architectures that respect user privacy**.
 
-Beyond specific tools, my work is grounded in **disciplined engineering methodologies**: defining formal specifications and data contracts before building, strictly separating domain logic from the visual interface, engineering *Local-First* systems that work reliably offline, and verifying every release through structured quality assurance.
+Instead of forcing cloud accounts for everyday utilities or shipping fragile prototypes, my work relies on **5 pragmatic engineering pillars**: writing formal specifications and data contracts before coding (**SDD**), strictly separating domain logic from visual interfaces (**Clean Architecture**), engineering **100% Local-First & Zero-Knowledge** systems (keeping encrypted records on the user's own device with `$0` monthly server overhead—which enables generous free tiers and honest **One-Time Payment** unlocks), and pairing automated tests with **100% manual QA testing on physical hardware** (backed by my technical training as a Software Tester at **CES — Faculty of Engineering, UdelaR**).
 
-My core projects are not just prototypes—they are real products tested, certified, and distributed through **official app stores** under the **Tech Service Apps** publisher seal.
+My core projects are not prototypes—they are **5 real products** tested, certified, and distributed through **Google Play Store** and **Microsoft Store** under the **Tech Service Apps** publisher seal.
 
 ---
 
